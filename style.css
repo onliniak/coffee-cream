@@ -1,0 +1,84 @@
+/*
+Theme Name: Ocean Cream
+Description: Coffee cream remix.
+Version: 0.1
+License: GNU General Public License v3 or later
+Text Domain: ocean-cream
+Tags: featured-images, translation-ready, blog
+*/
+
+html {
+    background-color: #0b0701 /* Smoky Black */
+}
+
+article {
+    background-color: beige;
+    margin: auto;
+	margin-left:25%;
+	margin-top:1%;
+	max-width: 75%;
+	border-radius:25px;
+    padding: 2em 4em 2em
+}
+.attachment-post-thumbnails{
+	width:80%;height:40% }
+
+aside.sidebar{
+	float:left;
+	max-width: 25%;
+	margin-top:1%;
+	color:whitesmoke
+}
+
+aside.sidebar a {
+	color:whitesmoke
+}
+
+p {
+	font-size: calc(14px + 0.4vw);
+    line-height: calc(22px + 0.8vw);
+    font-family: Raleway, arial, sans;
+     color:#333 /* Dark grey */
+}
+/* https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
+
+a{color:#333}
+
+/* Menu */
+ div.menu{
+        margin:auto;
+        padding:0;
+        overflow:auto;
+        background-color:#cfb77b /* Sand */
+    }
+	div.menu li {
+		float:left;
+			 list-style-type:none
+	}
+    div.menu li a:hover{
+		background-color:cadetblue
+    }
+    div.menu li a{
+        display:block;
+        padding:14px 16px;
+        text-decoration:none;
+		color:black
+    }
+/* Submenu */
+div.menu ul ul {display:none}
+div.menu ul li:hover > ul {display:block}
+
+/* Hide unwanted elements */
+.guzik,.hide {display:none}
+/* Show widget when click */
+@media screen and (max-width:999px){
+	
+/* Show mobile menu only when click
+ * Fix width*/
+          #cont {display: none; }
+          .show:focus + .hide + #cont {display: block;}
+	div.menu li {width:100%;float:none}
+	.guzik{
+	/* Buttons */
+			  display:grid}
+}
