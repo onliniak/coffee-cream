@@ -30,17 +30,12 @@ register_sidebar( array(
 add_filter( 'auto_update_plugin', '__return_true' );
 add_filter( 'auto_update_theme', '__return_true' );
 set_post_thumbnail_size( 600, 600, true );
-add_filter( 'the_author', 'guest_author_name' );
-add_filter( 'get_the_author_display_name', 'guest_author_name' );
- 
-function guest_author_name( $name ) {
-global $post;
- 
-$author = get_post_meta( $post->ID, 'pseudonim', true );
- 
-if ( $author )
-$name = $author;
- 
-return $name;
+// HTML5 and RSS
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+//add more link to excerpt
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'coffee-cream') . '</a>';
 }
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 ?>
