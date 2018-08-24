@@ -157,6 +157,7 @@ a.mobinu {display:none}
               <?php _e('Nie znaleziono postow spełniających podane kryteria.','ocean-cream'); ?>
             </p>
 <?php endif;?>
+	  <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
  </article>
 </main>
 	 <?php wp_footer(); ?>
