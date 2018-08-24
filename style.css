@@ -6,3 +6,8 @@ License: GNU General Public License v3 or later
 Text Domain: ocean-cream
 Tags: featured-images, translation-ready, blog
 */
+
+/* nav links */
+.nav-links {letter-spacing: 3mm; line-height: 1cm}
+.page-numbers {border: 1mm solid black}
+.next.page-numbers {letter-spacing: 0; margin-left: 1cm}
