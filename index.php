@@ -33,7 +33,6 @@ echo '<meta name="description" content="'.$blogdes.'">';
 article {
     background-color: beige;
     margin: auto;
-	margin-left:25%;
 	margin-top:1%;
 	max-width: 75%;
 	border-radius:25px;
@@ -96,6 +95,23 @@ a.mobinu {display:none}
 	aside.sidebar {display:none}
 	article {max-width:100%;margin:auto;border-radius:0}
 }
+		/* Sidebar hide */
+		#sidiBer {display:none}
+		/* https://www.w3schools.com/css/css3_buttons.asp */
+		.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/* Change left margin when sidebar is enable */
+#sidiBer[style*='display: block'] ~ article {
+  margin-left:25%;
+}
 	</style>
 	<!-- Load other CSS -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
@@ -123,9 +139,12 @@ a.mobinu {display:none}
 
 <main <?php body_class();?>>
 <!-- Widgets, default hide -->
+	<div id="sidiBer">
 	<aside class="sidebar">
 		<?php dynamic_sidebar( 'sidebar');?> 
 	</aside>
+	</div>
+	<a href="javascript:void(0);" onclick="sidiBer()" class="button">Show sidebar</a>
   <!-- Your post -->
  <article <?php post_class();?>>     
  	<?php if(have_posts()):while(have_posts()):the_post();?>
@@ -172,13 +191,23 @@ function mobinu() {
   }
 }
 </script>
+	<script>
+		function sidiBer() {
+  var x = document.getElementById("sidiBer");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
 	<!-- Load Raleway font from Google (async) 
 	  https://github.com/typekit/webfontloader -->
  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
     google: {
-      families: ['Raleway']
+      families: ['Raleway:500']
     }
   });
 </script>
