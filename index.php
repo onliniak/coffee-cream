@@ -94,6 +94,7 @@ a.mobinu {display:none}
 	a.mobinu {display:block}
 	aside.sidebar {display:none}
 	article {max-width:100%;margin:auto;border-radius:0}
+	#sidihidi {display: none;}
 }
 		/* Sidebar hide */
 		#sidiBer {display:none}
@@ -144,7 +145,7 @@ a.mobinu {display:none}
 		<?php dynamic_sidebar( 'sidebar');?> 
 	</aside>
 	</div>
-	<a href="javascript:void(0);" onclick="sidiBer()" class="button">Show sidebar</a>
+	<a href="javascript:void(0);" onclick="sidiBer()" class="button" id="sidihidi">Show sidebar</a>
   <!-- Your post -->
  <article <?php post_class();?>>     
  	<?php if(have_posts()):while(have_posts()):the_post();?>
