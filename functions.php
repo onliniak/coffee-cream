@@ -7,16 +7,6 @@ function menu() {
 	register_nav_menus( $locations );
 }
 add_action( 'init', 'menu' );
-add_action( 'after_setup_theme', 'wpse_theme_setup' );
-function wpse_theme_setup() {
-    /*
-     * Let WordPress manage the document title.
-     * By adding theme support, we declare that this theme does not use a
-     * hard-coded <title> tag in the document head, and expect WordPress to
-     * provide it for us.
-     */
-    add_theme_support( 'title-tag' );
-}
 // Add sidebar support
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 function theme_slug_widgets_init() {
@@ -33,6 +23,9 @@ set_post_thumbnail_size( 600, 600, true );
 // HTML5 and RSS
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+// Title tag and translations
+load_theme_textdomain('ocean-cream', get_template_directory() . '/languages');
+ add_theme_support( 'title-tag' );
 //add more link to excerpt
 function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'coffee-cream') . '</a>';
