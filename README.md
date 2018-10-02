@@ -12,6 +12,6 @@ Features :
 Screenshots :
 
 ![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
-![Sidebar](https://imgur.com/5WMrvxcl.png "Sidebar")
+![Sidebar](https://imgur.com/mOiRHiCl.png "Sidebar")
 ![Mobile](https://i.imgur.com/8v4i4jx.png  "Mobile")
 ![Menu](https://i.imgur.com/Vat2xVy.png    "Menu")
