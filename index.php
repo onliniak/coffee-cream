@@ -145,7 +145,7 @@ a.mobinu {display:none}
 		<?php dynamic_sidebar( 'sidebar');?> 
 	</aside>
 	</div>
-	<a href="javascript:void(0);" onclick="sidiBer()" class="button" id="sidihidi">Show sidebar</a>
+	<a href="javascript:void(0);" onclick="sidiBer()" class="button" id="sidihidi"><?php _e('Show Sidebar','ocean-cream'); ?></a>
   <!-- Your post -->
  <article <?php post_class();?>>     
  	<?php if(have_posts()):while(have_posts()):the_post();?>
