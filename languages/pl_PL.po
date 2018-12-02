@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-02 16:10+0000\n"
-"PO-Revision-Date: 2018-10-02 16:11+0000\n"
+"POT-Creation-Date: 2018-12-02 20:43+0000\n"
+"PO-Revision-Date: 2018-12-02 20:46+0000\n"
 "Last-Translator: Rafael Pszenny <RafaelPszenny@caramail.com>\n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -12,7 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.9.9-alpha-43656"
 
 #: functions.php:5
 msgid "Header menu"
@@ -25,6 +26,35 @@ msgstr "Pole widżetów"
 #: functions.php:16
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Przeciągnij tutaj swoje widżety, by dodać je do paska bocznego"
+
+#: functions.php:31
+msgid "Read More"
+msgstr "Czytaj Dalej"
+
+#: comments.php:23
+#, php-format
+msgctxt "comments title"
+msgid "One thought on \"%2$s\""
+msgid_plural "%1$s thoughts on \"%2$s\""
+msgstr[0] "Jeden komentarz w \"%2$s\""
+msgstr[1] "%1$s komentarzy w \"%2$s\""
+msgstr[2] "%1$s komentarzy w \"%2$s\""
+
+#: comments.php:43
+msgid "Comment navigation"
+msgstr "Pozostałe komentarze"
+
+#: comments.php:44
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze"
+
+#: comments.php:45
+msgid "Newer Comments &rarr;"
+msgstr "Nowsze &rarr;"
+
+#: comments.php:50
+msgid "Comments are closed."
+msgstr "Komentowanie jest zabronione"
 
 #: index.php:139
 msgid "Show Sidebar"
@@ -42,7 +72,7 @@ msgstr "dnia"
 msgid "in"
 msgstr "w"
 
-#: index.php:168
+#: index.php:171
 msgid "Sorry, no posts matched your criteria."
 msgstr "Nie znaleziono postow spełniających podane kryteria."
 
@@ -52,15 +82,20 @@ msgid "Ocean Cream"
 msgstr "Ocean Cream"
 
 #. Description of the theme
-msgid "Coffee cream remix."
+msgid ""
+"One-file starter theme with lightweight in mind. Include hiden sidebar and "
+"numeric keyboard navigation. Optymalization for Google."
 msgstr ""
-"Lekki i responsywny motyw dla WordPressa. Ukryj zbędny pasek boczny by "
-"zaoszczędzić wolną przestrzeń, dostosuj swoją witrynę do każdego urządzenia "
-"→ od smartfonów (z limitowanym wsparciem dla klasycznych telefonów), przez "
-"tablety i laptopy, aż po telewizory. Zoptymalizowane pod sieci 2G i wolne "
-"wifi. Teraz możesz wyświetlić się wszędzie ! Oparto o niewspieraną już Sagę "
-"w kolorystyce Yarn. "
+"Lekki motyw startowy zamknięty w pojedynczym pliku. Odkryjesz nowe "
+"możliwości z pomocą klawiatury numerycznej, a ukryty pasek boczny nie będzie "
+"już nigdy więcej zasłaniać Ci widoku. Zoptymalizowane pod wyniki Google "
+"Insights. "
 
+# Nazwisk też w zasadzie się nie tłumaczy
 #. Author of the theme
-msgid "Rafael Pszenny @github.com/onliniak"
-msgstr "Rafael Pszenny @github.com/onliniak"
+msgid "Rafael Pszenny"
+msgstr "Rafael Pszenny"
+
+#. Author URI of the theme
+msgid "https://social.onliniak.ct8.pl/profile/rafael"
+msgstr "https://social.onliniak.ct8.pl/profile/rafael"

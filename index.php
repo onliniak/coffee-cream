@@ -9,7 +9,7 @@
 	<!-- Automatic meta description 
          https://gist.github.com/palimadra/3023928
          update to Gutenberg support by me -->
-<? if ( is_singular() ) {
+<?php if ( is_singular() ) {
         $meta = strip_tags( $post->post_content );
         $meta = strip_shortcodes( $post->post_content );
         $meta = str_replace( array("\n", "\r", "\t", "<!-- wp:paragraph -->", "<p>", "<!--nextpage-->"), ' ', $meta );
@@ -26,10 +26,6 @@ echo '<meta name="description" content="'.$blogdes.'">';
 	?>
 	<!-- Critical CSS -->
 	<style>
-	html {
-    background-color: #00040A /* Deep Ocean (Dark Ink)*/
-}
-
 article {
     background-color: beige;
     margin: auto;
@@ -39,28 +35,23 @@ article {
     padding: 2em 4em 2em}
 .attachment-post-thumbnails{
 	width:80%;height:40% }
-
 aside.sidebar{
 	float:left;
 	max-width: 25%;
 	margin-top:1%;
 	color:whitesmoke
 }
-
 aside.sidebar a {
 	color:whitesmoke
 }
-
-p {
+p,li {
 	font-size: calc(14px + 0.4vw);
     line-height: calc(22px + 0.8vw);
-    font-family: Raleway, arial, sans;
+    font-family: Raleway, "Nimbus Sans", "Liberation Sans", sans;
      color:#333 /* Dark grey */
 }
 /* https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
-
 a{color:#333}
-
 /* Menu */
  div.menu{
         margin:auto;
@@ -84,17 +75,14 @@ a{color:#333}
 /* Submenu */
 div.menu ul ul {display:none}
 div.menu ul li:hover > ul {display:block}
-
 /* MOBIle meNU */
 a.mobinu {display:none}
-
 @media screen and (max-width:999px){
 	div.menu li {width:100%;float:none;padding:0}
 	#mobinu {display:none}
 	a.mobinu {display:block}
 	aside.sidebar {display:none}
 	article {max-width:100%;margin:auto;border-radius:0}
-	#sidihidi {display: none;}
 }
 		/* Sidebar hide */
 		#sidiBer {display:none}
@@ -119,7 +107,7 @@ a.mobinu {display:none}
 	
 	 <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class();?>>
 	<!-- Create menu
 	Show on mobile only when click on button -->
 	<header>
@@ -138,14 +126,14 @@ a.mobinu {display:none}
 		</a>
 	</header>
 
-<main <?php body_class();?>>
+<main>
 <!-- Widgets, default hide -->
 	<div id="sidiBer">
 	<aside class="sidebar">
 		<?php dynamic_sidebar( 'sidebar');?> 
 	</aside>
 	</div>
-	<a href="javascript:void(0);" onclick="sidiBer()" class="button" id="sidihidi"><?php _e('Show Sidebar','ocean-cream'); ?></a>
+	<a href="javascript:void(0);" onclick="sidiBer()" class="button"><?php _e('Show Sidebar','ocean-cream'); ?></a>
   <!-- Your post -->
  <article <?php post_class();?>>     
  	<?php if(have_posts()):while(have_posts()):the_post();?>
@@ -162,7 +150,7 @@ a.mobinu {display:none}
      </section>    
             <?php if(has_post_thumbnail()){the_post_thumbnail( 'post-thumbnails');}?>
 	 <!-- Use full content for single post and excerpt for archive/latest posts -->
-<?	 if ( is_archive() ) {
+<?php	 if ( is_archive() ) {
    the_excerpt();
 }
 	 elseif ( is_home() ) {
@@ -171,13 +159,16 @@ a.mobinu {display:none}
 	 else {
     the_content();
 } ?>
-	 <?php wp_link_pages(); ?>
-           <?php comments_template();?>            <?php endwhile;else:?>
+	<?php wp_link_pages(); ?>
+
+<?php wp_list_comments(); ?>
+      
+	 <?php comments_template();?> <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>           <?php endwhile;else:?>
             <p>
-              <?php _e('Nie znaleziono postow spełniających podane kryteria.','ocean-cream'); ?>
+              <?php _e('Sorry, no posts matched your criteria.','ocean-cream'); ?>
             </p>
 <?php endif;?>
-	  <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
+	 <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
  </article>
 </main>
 	 <?php wp_footer(); ?>

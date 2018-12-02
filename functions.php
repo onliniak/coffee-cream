@@ -28,7 +28,20 @@ load_theme_textdomain('ocean-cream', get_template_directory() . '/languages');
  add_theme_support( 'title-tag' );
 //add more link to excerpt
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'coffee-cream') . '</a>';
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'ocean-cream') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+if ( ! isset( $content_width ) ) $content_width = 596;
+// Register Theme Features
+function custom_theme_features()  {
+
+	// Add theme support for Custom Background
+	$background_args = array(
+		'default-color'          => '00040A', //Deep Ocean (Dark Ink)
+	);
+	// Editor style
+	add_editor_style( 'editor-style.css' );
+	add_theme_support( 'custom-background', $background_args );
+}
+add_action( 'after_setup_theme', 'custom_theme_features' );
 ?>

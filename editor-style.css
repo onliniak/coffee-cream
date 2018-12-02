@@ -1,0 +1,7 @@
+p,li {
+	font-size: calc(14px + 0.4vw);
+    line-height: calc(22px + 0.8vw);
+    font-family: Raleway, "Nimbus Sans", "Liberation Sans", sans;
+     color:#333 /* Dark grey */
+}
+body{margin:2em 4em}
