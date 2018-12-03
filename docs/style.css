@@ -1,0 +1,267 @@
+/*
+Theme Name: Ocean Cream
+Description: One-file starter theme with lightweight in mind. Include hiden sidebar and numeric keyboard navigation. Optymalization for Google.
+Author: Rafael Pszenny
+Author URI: https://social.onliniak.ct8.pl/profile/rafael
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: https://github.com/onliniak/ocean-cream/blob/master/LICENSE
+Text Domain: ocean-cream
+Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.gallery-caption .wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* =Required CSS Rules
+-------------------------------------------------------------- */
+/* nav links */
+.nav-links {letter-spacing: 1mm; line-height: 1cm}
+.page-numbers {border: 1mm solid springgreen;background-color: springgreen;text-decoration: none;}
+.next.page-numbers {letter-spacing: 0}
+/* Sticky post */
+article.tag-sticky-2::before,.sticky:before {
+    content: "Sticky Post";
+    background-color: lightskyblue;
+    border: 5px solid darkblue;
+    color: grey;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 16px; }
+/* Author posts */
+.bypostauthor {background: cornflowerblue}
+/* Comments children */
+ol.children {list-style-type:disclosure-open}
+
+/* =HTML CSS Styles
+-------------------------------------------------------------- */
+/*  Blockquotes
+ *  From https://blog.nayma.pl/prosty-i-ladny-blockquote-w-html-i-css/ */
+blockquote {
+background:#EDEDED;
+border-left:8px solid #008FEA;
+box-shadow:0 3px 15px rgba(0,0,0,.15);
+color:#666;
+font-size:1.1em;
+font-style:italic;
+font-weight:300;
+line-height:1.6;
+margin:50px auto;
+padding:1.2em 30px 1.2em 75px;
+position:relative;
+vertical-align:super;
+width:60%;
+z-index: 0;
+overflow: hidden;
+}
+
+blockquote::before {
+color:#008FEA;
+content:"\201C";
+font-size:9em;
+left:0;
+position:absolute;
+top:-35px;
+}
+
+blockquote p::before {
+color: #ddd;
+content:"\201C";
+font-size:100em;
+line-height: 0.65em;
+right: .095em;
+position:absolute;
+z-index:-1;
+}
+/* Tables, from https://www.w3schools.com/css/css_table.asp */
+table {width:100%}
+th, td {
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: deepskyblue}
+
+tr:hover {background-color: #ddd;}
+
+thead th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/* Definitions by https://www.the-art-of-web.com/css/format-dl/ */
+  dl {
+    padding: 0.5em;
+  }
+  dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bolder;
+    color: green;
+  }
+  dt::after {
+    content: ":";
+  }
+  dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+	font-weight: bold;
+  }
+/* Terminal mode https://stackoverflow.com/questions/4000792/how-can-i-style-code-listings-using-css */
+code {background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #008FEA;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;}
+/* =Small Changes
+-------------------------------------------------------------- */
+address, cite {font-style: italic;}
+acronym, abbr {border-bottom: 1px dotted #000;}
+/* See https://stackoverflow.com/questions/43757923/unwanted-double-underline-on-abbr-elements 
+ * You can use acronym[title] (deprecated). I support HTML5 only. */
+abbr[title] {
+  text-decoration: none;
+}
+q {background: #EDEDED;
+    border: 1px solid #ddd;
+    border-left: 3px solid #008FEA;
+    color: #666;
+    padding: 1em 1.5em;
+	box-shadow:0 3px 15px rgba(0,0,0,.15);
+   }
+img {max-width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+figure.wp-caption img {box-shadow: none}
+p,h1,pre {overflow: auto;}
+aside.sidebar h2 {color:white}
+/* Small images like thumbnails or comments */
+p img:hover, img.attachment-thumbnail:hover {width:80%;height:40%}
+/* "Old" Galleries */
+.gallery-columns-1 {columns:1}
+.gallery-columns-2 {columns:2}
+.gallery-columns-3 {columns:3}
+.gallery-columns-4 {columns:4}
