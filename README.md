@@ -8,6 +8,7 @@ Features :
 - Without jQuery
 - True all in one
 - Under 10kb size
+- Numeric keyboard navigation. Use 4 for previous post and 6 for next. 
 
 Screenshots :
 
