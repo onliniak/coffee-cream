@@ -2,7 +2,6 @@
 <html lang="pl-PL">
 <head>
 <title>Ocean Cream</title>
-   <meta charset="DEMO">
     <meta charset="UTF-8">
     
     <!-- Mobile zoom -->
@@ -140,8 +139,7 @@ a.mobinu {display:none}
 </ul>
 </li>
 </ul>
-</li>
-</ul></div>
+</div>
 		</div>
 		<!-- Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
 		<a href="javascript:void(0);" onclick="mobinu()" class="mobinu">
@@ -159,7 +157,8 @@ a.mobinu {display:none}
 <!-- Widgets, default hide -->
 	<div id="sidiBer">
 	<aside class="sidebar">
-		<li id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://onliniak.ct8.pl/">
+		
+		<form role="search" method="get" class="search-form" action="#">
 				<label>
 					<span class="screen-reader-text">Szukaj:</span>
 					<input type="search" class="search-field" placeholder="Szukaj …" value="" name="s">
@@ -193,11 +192,11 @@ a.mobinu {display:none}
  <article>     
 	 <h1>Lorem Ipsum</h1>
  <!-- Header info like date, author, category, tags etc. -->
- <section>
+ 
 <p>Written by admin on 1 september 2015 in default category </p>
             <br>
               <p>Tag1, Tag2, Tag3</p>
-     </section>    
+      
            <img src="https://menorras-cdn.sirv.com/WP_onliniak.ct8.pl/question-mark-2492009_1920.jpg?profile=Example-Frame" alt="image">
 	 <!-- Use full content for single post and excerpt for archive/latest posts -->
 	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu condimentum orci, sed commodo erat. Morbi dignissim eros sed velit volutpat fermentum. Etiam condimentum odio quis lorem elementum tempus. In augue mi, lacinia id bibendum in, rhoncus et sapien. Fusce bibendum ut sapien quis lacinia. Cras convallis sagittis purus. Sed tincidunt cursus odio. Nullam finibus facilisis nulla ut volutpat. </p>
@@ -244,7 +243,7 @@ function mobinu() {
   });
 </script>
 	<!-- Keyboard next/previous page, copy from deprecated WordPress plugin (forget name) -->
-	<script async>document.onkeydown = function (e) {
+	<script>document.onkeydown = function (e) {
     var e = e || event, 
     keycode = e.which || e.keyCode; 
 			//left
