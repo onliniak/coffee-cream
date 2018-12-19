@@ -1,19 +1,12 @@
-/*
-Theme Name: Ocean Cream
-Description: One-file starter theme with lightweight in mind. Include hiden sidebar and numeric keyboard navigation. Optimalization for Google.
-Author: Rafael Pszenny
-Author URI: https://github.com/onliniak
-Version: 0.92
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: ocean-cream
-Tags: featured-images, left-sidebar, blog
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
-
-/* =WordPress Core
+body#tinymce.wp-editor {
+	margin:2em 4em; 
+   font-size: calc(14px + 0.4vw);
+   line-height: calc(22px + 0.8vw);
+   font-family: Raleway, "Nimbus Sans", "Liberation Sans", sans;
+   color:#333 /* Dark grey */
+   background-color: beige;}
+   
+   /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -127,7 +120,7 @@ a img.aligncenter {
 -------------------------------------------------------------- */
 /* nav links */
 .nav-links {letter-spacing: 1mm; line-height: 1cm}
-.page-numbers {border: 1mm solid darkolivegreen;background-color: springgreen;text-decoration: none;}
+.page-numbers {border: 1mm solid springgreen;background-color: springgreen;text-decoration: none;}
 .next.page-numbers {letter-spacing: 0}
 /* Sticky post */
 article.tag-sticky-2::before,.sticky:before {

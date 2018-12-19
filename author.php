@@ -35,41 +35,45 @@
 	</aside>
 	</div>
 	<a href="javascript:void(0);" onclick="sidiBer()" class="button" id="mobinu"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></a>
-  <!-- Your post -->
- <article <?php post_class();?>>     
- 	<?php if(have_posts()):while(have_posts()):the_post();?>
-	 <h1><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h1>
- <!-- Header info like date, author, category, tags etc. -->
+  <!-- Your post
+     Codex example-->
+ <article <?php post_class();?>>    
 
- <?php esc_html_e('Written by','ocean-cream'); ?>
-                <?php the_author_posts_link(); ?>
- <?php esc_html_e('on','ocean-cream'); ?> <?php echo get_the_date(); ?>
-            <?php esc_html_e('in','ocean-cream'); ?>
-            <?php the_category( ', ');?>
-            <br>
-              <?php the_tags();?>
-  
-            <?php if(has_post_thumbnail()){the_post_thumbnail( 'post-thumbnails');}?>
-	 <!-- Use full content for single post and excerpt for archive/latest posts -->
-<?php	 if ( is_archive() ) {
-   the_excerpt();
-}
-	 elseif ( is_home() ) {
-   the_excerpt();
-}
-	 else {
-    the_content();
-} ?>
-	<?php wp_link_pages(); ?>
+<!-- This sets the $curauth variable -->
 
-<?php wp_list_comments(); ?>
-      
-	 <?php comments_template();?> <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>           <?php endwhile;else:?>
-            <p>
-              <?php esc_html_e('Sorry, no posts matched your criteria.','ocean-cream'); ?>
-            </p>
-<?php endif;?>
-	 <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
+    <?php
+    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
+    ?>
+
+    <h2><?php esc_html_e('About:','ocean-cream'); ?> <?php echo esc_html( $curauth->nickname) ?></h2>
+    <dl>
+        <dt><?php esc_html_e('Website','ocean-cream'); ?></dt>
+        <dd><a href="<?php echo esc_html( $curauth->user_url) ?>"><?php echo esc_html( $curauth->user_url) ?></a></dd>
+        <dt><?php esc_html_e('Profile','ocean-cream'); ?></dt>
+        <dd><?php echo esc_html( $curauth->user_description) ?></dd>
+    </dl>
+
+    <h2><?php esc_html_e('Posts by','ocean-cream'); ?> <?php echo esc_html( $curauth->nickname) ?>:</h2>
+
+    <ul>
+<!-- The Loop -->
+
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <li>
+            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+            <?php the_title(); ?></a>,
+            <?php echo get_the_date(); ?> <?php esc_html_e('in','ocean-cream'); ?> <?php the_category('&');?>
+        </li>
+
+    <?php endwhile; else: ?>
+        <p><?php esc_html_e('No posts by this author.','ocean-cream'); ?></p>
+
+    <?php endif; ?>
+
+<!-- End Loop -->
+
+    </ul>
+<?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
  </article>
 </main>
 	 <?php wp_footer(); ?>

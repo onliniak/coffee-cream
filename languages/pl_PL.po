@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-02 20:43+0000\n"
-"PO-Revision-Date: 2018-12-02 20:46+0000\n"
+"POT-Creation-Date: 2018-12-06 20:54+0000\n"
+"PO-Revision-Date: 2018-12-06 21:01+0000\n"
 "Last-Translator: Rafael Pszenny <RafaelPszenny@caramail.com>\n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -27,52 +27,80 @@ msgstr "Pole widżetów"
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Przeciągnij tutaj swoje widżety, by dodać je do paska bocznego"
 
-#: functions.php:31
+#: functions.php:40
 msgid "Read More"
 msgstr "Czytaj Dalej"
 
-#: comments.php:23
+#. %s: post title
+#: comments.php:28
 #, php-format
 msgctxt "comments title"
-msgid "One thought on \"%2$s\""
-msgid_plural "%1$s thoughts on \"%2$s\""
-msgstr[0] "Jeden komentarz w \"%2$s\""
-msgstr[1] "%1$s komentarzy w \"%2$s\""
-msgstr[2] "%1$s komentarzy w \"%2$s\""
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Jedna odpowiedź do &ldquo;%s&rdquo;"
 
-#: comments.php:43
+#. 1: number of comments, 2: post title
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Odpowiedź do &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Odpowiedzi do &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s Odpowiedzi do &ldquo;%2$s&rdquo;"
+
+#: comments.php:61
 msgid "Comment navigation"
 msgstr "Pozostałe komentarze"
 
-#: comments.php:44
+#: comments.php:62
 msgid "&larr; Older Comments"
 msgstr "&larr; Starsze"
 
-#: comments.php:45
+#: comments.php:63
 msgid "Newer Comments &rarr;"
 msgstr "Nowsze &rarr;"
 
-#: comments.php:50
+#: comments.php:68
 msgid "Comments are closed."
 msgstr "Komentowanie jest zabronione"
 
-#: index.php:139
+#: author.php:37 index.php:37
 msgid "Show Sidebar"
 msgstr "Pokaż pasek boczny"
 
-#: index.php:146
+#: author.php:48
+msgid "About:"
+msgstr "Cześć, jestem "
+
+#: author.php:50
+msgid "Website"
+msgstr "WWW"
+
+#: author.php:52
+msgid "Profile"
+msgstr "Kilka słów"
+
+#: author.php:56
+msgid "Posts by"
+msgstr "Napisano przez"
+
+#: author.php:69
+msgid "No posts by this author."
+msgstr "Niestety, ten autor nie napisał jeszcze żadnego wpisu. "
+
+#: index.php:44
 msgid "Written by"
 msgstr "Napisano przez"
 
-#: index.php:148
+#: index.php:46
 msgid "on"
 msgstr "dnia"
 
-#: index.php:149
+#: index.php:47
 msgid "in"
 msgstr "w"
 
-#: index.php:171
+#: index.php:69
 msgid "Sorry, no posts matched your criteria."
 msgstr "Nie znaleziono postow spełniających podane kryteria."
 
@@ -84,18 +112,19 @@ msgstr "Ocean Cream"
 #. Description of the theme
 msgid ""
 "One-file starter theme with lightweight in mind. Include hiden sidebar and "
-"numeric keyboard navigation. Optymalization for Google."
+"numeric keyboard navigation. Optimalization for Google."
 msgstr ""
-"Lekki motyw startowy zamknięty w pojedynczym pliku. Odkryjesz nowe "
-"możliwości z pomocą klawiatury numerycznej, a ukryty pasek boczny nie będzie "
-"już nigdy więcej zasłaniać Ci widoku. Zoptymalizowane pod wyniki Google "
-"Insights. "
+"Prosty motyw startowy, który pozwoli Ci lepiej rozplanować dostępną "
+"przestrzeń (domyślnie ukryty pasek boczny), zwiększyć liczbę punktów w "
+"Google Page Insight oraz przełączać się między kolejnymi wpisami za pomocą "
+"klawiatury numerycznej. "
 
 # Nazwisk też w zasadzie się nie tłumaczy
 #. Author of the theme
 msgid "Rafael Pszenny"
 msgstr "Rafael Pszenny"
 
+# Linków w zasadzie się nie tłumaczy
 #. Author URI of the theme
-msgid "https://social.onliniak.ct8.pl/profile/rafael"
-msgstr "https://social.onliniak.ct8.pl/profile/rafael"
+msgid "https://github.com/onliniak"
+msgstr "https://github.com/onliniak"
