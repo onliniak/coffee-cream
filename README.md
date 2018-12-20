@@ -10,6 +10,12 @@ Features :
 - Under 10kb size
 - Numeric keyboard navigation. Use 4 for previous post and 6 for next. 
 
+Know Issues :
+
+Help, my sidebar is broken !
+
+Disable "minify" plugin.
+
 Screenshots :
 
 ![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
