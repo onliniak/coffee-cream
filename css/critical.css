@@ -1,13 +1,14 @@
 /* Basic CSS required for correct works of website */
 article {
-    background-color: beige;
+    background-color: beige !important;
     margin: auto;
 	margin-top:1%;
 	max-width: 75%;
 	border-radius:25px;
     padding: 2em 4em 2em}
 .attachment-post-thumbnails{
-	width:80%;height:40% }
+	width:80%;height:40%;
+       border:7px #000 double}
 aside.sidebar{
 	float:left;
 	max-width: 25%;
