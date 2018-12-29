@@ -14,10 +14,13 @@ This is Coffee Cream without custom code aka stable. 90% WordPress functions.
 
 ### Help, my sidebar is broken !
 
-Disable "minify" plugin.
+Disable all "minify/compress" HTML options. In this case we have this code :
 
-### Warning: printf(): Too few arguments in ocean-cream/comments.php on line 28 
-Strange ... I have this warning in one post, but not in another. Give me few months for understanding & resolving problem.
+#sidiBer[style*='display: block'] ~ article {
+
+Plugins change this to #sidiBer[style*='display:block'] ~ article { ,
+When we delete space between display: and block → browser skip this line.
+In this line, we say "if sidebar is open (display: block), move article (a.k.a. post) 25% to right (or give me space for my sidebar)."
 
 ## Screenshots :
 
