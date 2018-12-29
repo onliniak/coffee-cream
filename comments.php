@@ -23,10 +23,6 @@ if ( post_password_required() )
            <?php
 			// https://gist.github.com/cristianstan/ff22d64655e322bac1bd737ea35927b4
 $comments_number = get_comments_number();
-if ( '1' === $comments_number ) {
-  /* translators: %s: post title */
-  printf (esc_html( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'ocean-cream' ), get_the_title() ));
-} else {
   printf(
     /* translators: 1: number of comments, 2: post title */
     esc_html(_nx(
@@ -39,7 +35,6 @@ if ( '1' === $comments_number ) {
     esc_html(number_format_i18n( $comments_number )),
     get_the_title()
   );
-}
 ?>
         </h2>
  
