@@ -46,7 +46,7 @@ add_filter( 'excerpt_more', 'ocean_cream_excerpt' );
 
 // Load in header
 // https://wordpress.stackexchange.com/questions/168867/using-wp-add-inline-style-without-a-stylesheet
-add_action('wp_head', 'ocean_cream_header', 100);
+add_action('wp_head', 'ocean_cream_header', 1);
 
 function ocean_cream_header()
 {echo "<style>article{background-color:#f5f5dc;margin:auto;margin-top:1%;max-width:75%;border-radius:25px;padding:2em 4em}.attachment-post-thumbnails{width:80%;height:40%}aside.sidebar{float:left;max-width:25%;margin-top:1%;color:#f5f5f5}aside.sidebar a{color:#f5f5f5}p,li{font-size:calc(14px + 0.4vw);line-height:calc(22px + 0.8vw);font-family:Raleway,Nimbus Sans,Helvetica,sans;color:#333;font-weight:500}a{color:#333}div.menu{margin:auto;padding:0;overflow:auto;background-color:#cfb77b}div.menu li{float:left;list-style-type:none}div.menu li a:hover{background-color:#5f9ea0}div.menu li a{display:block;padding:14px 16px;text-decoration:none;color:#000}div.menu ul ul{display:none}div.menu ul li:hover > ul{display:block}a.mobinu{display:none}@media screen and (max-width:999px){div.menu li{width:100%;float:none;padding:0}#mobinu{display:none}a.mobinu{display:block}{display:none}article{max-width:100%;margin:auto;border-radius:0}}#sidiBer{display:none}.button{background-color:#4CAF50;border:none;color:#fff;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px}#sidiBer[style*='display: block'] ~ article{margin-left:25%}</style>";}
