@@ -265,3 +265,4 @@ p img:hover, img.attachment-thumbnail:hover {width:80%;height:40%}
 .gallery-columns-2 {columns:2}
 .gallery-columns-3 {columns:3}
 .gallery-columns-4 {columns:4}
+.rinav {float: right}
