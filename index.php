@@ -64,7 +64,7 @@
 
 <?php wp_list_comments(); ?>
       
-	 <?php comments_template();?> <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" );  previous_post_link(); echo '<div class="rinav">',  next_post_link(); echo '</div>';}
+	 <?php comments_template();?> <?php if ( is_singular() ){ wp_enqueue_script( "comment-reply" );  previous_post_link(); echo '<div class="rinav">',  next_post_link(); echo '</div>';}
 	 	elseif (is_tax());?>          <?php endwhile;else:?>
             <p>
               <?php esc_html_e('Sorry, no posts matched your criteria.','ocean-cream'); ?>
