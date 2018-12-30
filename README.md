@@ -10,6 +10,10 @@ This is Coffee Cream without custom code aka stable. 90% WordPress functions.
 - Under 10kb size
 - Numeric keyboard navigation. Use 4 for previous post and 6 for next. 
 
+### I nead live website preview for testing
+
+Of course, look at https://skri.ga/nieoznaczony/ (news/status)
+or https://skri.ga/eastern/ (post)
 ## Know Issues :
 
 ### Help, my sidebar is broken !
