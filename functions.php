@@ -54,7 +54,7 @@ function ocean_cream_header()
 // https://wordpress.stackexchange.com/questions/186065/how-to-load-css-in-the-footer
 function ocean_cream_footer_styles() {
 wp_enqueue_style( 'maincss', get_stylesheet_uri() , array(), '20181206', 'screen');
-wp_enqueue_style('printcss', get_stylesheet_directory_uri() . '/css/print.css', array(), '20181206', 'print');}
+wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');}
 add_action( 'wp_footer', 'ocean_cream_footer_styles' );
 // https://stackoverflow.com/questions/4221870/how-to-put-my-javascript-in-the-footer
 // https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
