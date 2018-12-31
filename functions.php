@@ -59,7 +59,7 @@ add_action( 'wp_footer', 'ocean_cream_footer_styles' );
 // https://stackoverflow.com/questions/4221870/how-to-put-my-javascript-in-the-footer
 // https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
 function ocean_cream_footer_scripts() { ?>
-<script>function mobinu(){var e=document.getElementById("mobinu");"block"===e.style.display?e.style.display="none":e.style.display="block"}function sidiBer(){var e=document.getElementById("sidiBer");"block"===e.style.display?e.style.display="none":e.style.display="block"}document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',false))) ?>"),102==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',true))); ?>")};</script>
+<script>function mobinu(){var e=document.getElementById("mobinu");"block"===e.style.display?e.style.display="none":e.style.display="block"}function sidiBer(){var e=document.getElementById("sidiBer");"block"===e.style.display?e.style.display="none":e.style.display="block"}document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',true))) ?>"),102==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',false))); ?>")};</script>
 <?php
 									  }
 add_action( 'wp_footer', 'ocean_cream_footer_scripts' );
