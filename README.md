@@ -3,6 +3,8 @@ Coffee Cream remix (stable)
 
 This is Coffee Cream without custom code aka stable. 90% WordPress functions. 
 
+[![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
+
 ## Features :
 
 - Without jQuery
