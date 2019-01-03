@@ -75,4 +75,5 @@ a.mobinu {display:none}
 #sidiBer[style*='display: block'] ~ article {
   margin-left:25%;
 }
-#mobinu:target{display:block}
+#mobinu:target {display:block}
+#sidiBer:target {display:block}
