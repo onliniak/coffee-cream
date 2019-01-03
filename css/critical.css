@@ -50,14 +50,16 @@ a{color:#333}
 /* Submenu */
 div.menu ul ul {display:none}
 div.menu ul li:hover > ul {display:block}
+#hamburger-cream {display: none}
+
 /* MOBIle meNU */
 a.mobinu {display:none}
 @media screen and (max-width:999px){
     div.menu li {width:100%;float:none;padding:0}
+    	#ShoSid {display: none}
     #mobinu {display:none}
-    a.mobinu {display:block}
+    #hamburger-cream {display: inline-block;width: 100%}
     article {max-width:100%;margin:auto;border-radius:0}
-}
         /* Sidebar hide */
         #sidiBer {display:none}
         /* https://www.w3schools.com/css/css3_buttons.asp */
