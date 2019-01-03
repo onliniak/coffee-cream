@@ -3,7 +3,7 @@ Theme Name: Ocean Cream
 Description: One-file starter theme with lightweight in mind. Include hiden sidebar and numeric keyboard navigation. Optimalization for Google.
 Author: Rafael Pszenny
 Author URI: https://github.com/onliniak
-Version: 0.92
+Version: 0.93
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: ocean-cream
@@ -93,34 +93,34 @@ a img.aligncenter {
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-	background-color: #eee;
-	clip: auto !important;
-	clip-path: none;
-	color: #444;
-	display: block;
-	font-size: 1em;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
 }
 
 /* =Required CSS Rules
@@ -139,7 +139,7 @@ article.tag-sticky-2::before,.sticky:before {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-	font-size: 16px; }
+    font-size: 16px; }
 /* Author posts */
 .bypostauthor {background: cornflowerblue}
 /* Comments children */
@@ -220,7 +220,7 @@ thead th {
   dd {
     margin: 0 0 0 110px;
     padding: 0 0 0.5em 0;
-	font-weight: bold;
+    font-weight: bold;
   }
 /* Terminal mode https://stackoverflow.com/questions/4000792/how-can-i-style-code-listings-using-css */
 code {background: #f4f4f4;
@@ -251,7 +251,7 @@ q {background: #EDEDED;
     border-left: 3px solid #008FEA;
     color: #666;
     padding: 1em 1.5em;
-	box-shadow:0 3px 15px rgba(0,0,0,.15);
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
    }
 img {max-width:100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
