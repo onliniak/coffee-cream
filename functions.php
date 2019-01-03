@@ -54,12 +54,13 @@ function ocean_cream_header()
 // https://wordpress.stackexchange.com/questions/186065/how-to-load-css-in-the-footer
 function ocean_cream_footer_styles() {
 wp_enqueue_style( 'maincss', get_stylesheet_uri() , array(), '20181206', 'screen');
+wp_enqueue_script( 'button', get_template_directory_uri() . '/js/buttons.min.js');
 wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');}
 add_action( 'wp_footer', 'ocean_cream_footer_styles' );
 // https://stackoverflow.com/questions/4221870/how-to-put-my-javascript-in-the-footer
 // https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
 function ocean_cream_footer_scripts() { ?>
-<script>function mobinu(){var e=document.getElementById("mobinu");"block"===e.style.display?e.style.display="none":e.style.display="block"}function sidiBer(){var e=document.getElementById("sidiBer");"block"===e.style.display?e.style.display="none":e.style.display="block"}document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',true))) ?>"),102==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',false))); ?>")};</script>
+<script nonce="aHR0cHM6Ly9naXRodWIuY29tL29ubGluaWFrL29jZWFuLWNyZWFtL2VkaXQvbWFzdGVyL2Z1bmN0aW9ucy5waHA=">function mobinu(){document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',true))) ?>"),102==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',false))); ?>")};</script>
 <?php
 									  }
 add_action( 'wp_footer', 'ocean_cream_footer_scripts' );
