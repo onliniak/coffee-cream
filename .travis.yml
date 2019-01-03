@@ -31,6 +31,7 @@ matrix:
         - php: '7.0'
         # aliased to a recent 7.2.x version
         - php: '7.2'
+          env: SNIFF=1
         # bleeding edge PHP
         - php: 'nightly'
 
