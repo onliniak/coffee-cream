@@ -1,140 +1,77 @@
 /* Basic CSS required for correct works of website */
-
 article {
-	background-color: beige !important;
-	margin: auto;
-	margin-top: 1%;
-	max-width: 75%;
-	border-radius: 25px;
-	padding: 2em 4em 2em
+    background-color: beige !important;
+    margin: auto;
+    margin-top:1%;
+    max-width: 75%;
+    border-radius:25px;
+    padding: 2em 4em 2em}
+.attachment-post-thumbnails{
+    width:80%;height:40%;
+border: 7px black double} }
+aside.sidebar{
+    float:left;
+    max-width: 25%;
+    margin-top:1%;
+    color:whitesmoke
 }
-
-.attachment-post-thumbnails {
-	width: 80%;
-	height: 40%;
-	border: 7px black double
-}
-
-aside.sidebar {
-	float: left;
-	max-width: 25%;
-	margin-top: 1%;
-	color: whitesmoke
-}
-
 aside.sidebar a {
-	color: whitesmoke
+    color:whitesmoke
 }
-
-p,
-li {
-	font-size: calc(14px + 0.4vw);
-	line-height: calc(22px + 0.8vw);
-	font-family: Raleway, Nimbus Sans, Helvetica, sans;
-	font-weight: 500;
-	color: #333/* Dark grey */
+p,li {
+    font-size: calc(14px + 0.4vw);
+    line-height: calc(22px + 0.8vw);
+    font-family: Raleway, Nimbus Sans, Helvetica, sans;
+    font-weight:500;
+     color:#333 /* Dark grey */
 }
-
-
 /* https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
-
-a {
-	color: #333
-}
-
-
+a{color:#333}
 /* Menu */
-
-div.menu {
-	margin: auto;
-	padding: 0;
-	overflow: auto;
-	background-color: #cfb77b/* Sand */
-}
-
-div.menu li {
-	float: left;
-	list-style-type: none
-}
-
-div.menu li a:hover {
-	background-color: cadetblue
-}
-
-div.menu li a {
-	display: block;
-	padding: 14px 16px;
-	text-decoration: none;
-	color: black
-}
-
-
+ div.menu{
+        margin:auto;
+        padding:0;
+        overflow:auto;
+        background-color:#cfb77b /* Sand */
+    }
+    div.menu li {
+        float:left;
+             list-style-type:none
+    }
+    div.menu li a:hover{
+        background-color:cadetblue
+    }
+    div.menu li a{
+        display:block;
+        padding:14px 16px;
+        text-decoration:none;
+        color:black
+    }
 /* Submenu */
-
-div.menu ul ul {
-	display: none
-}
-
-div.menu ul li:hover>ul {
-	display: block
-}
-
-
+div.menu ul ul {display:none}
+div.menu ul li:hover > ul {display:block}
 /* MOBIle meNU */
-
-#hamburger-cream {
-	display: none
+a.mobinu {display:none}
+@media screen and (max-width:999px){
+    div.menu li {width:100%;float:none;padding:0}
+    #mobinu {display:none}
+    a.mobinu {display:block}
+    article {max-width:100%;margin:auto;border-radius:0}
 }
-
-@media screen and (max-width:999px) {
-	div.menu li {
-		width: 100%;
-		float: none;
-		padding: 0
-	}
-	#ShoSid {
-		display: none
-	}
-	/* mobile(di)sable */
-	#mobinu {
-		display: none;
-	}
-	#hamburger-cream {
-		display: inline-block;
-		width: 100%
-	}
-	article {
-		max-width: 100%;
-		margin: auto;
-		border-radius: 0
-	}
+        /* Sidebar hide */
+        #sidiBer {display:none}
+        /* https://www.w3schools.com/css/css3_buttons.asp */
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
-
-
-/* Sidebar hide */
-
-#sidiBer {
-	display: none
-}
-
-
-/* https://www.w3schools.com/css/css3_buttons.asp */
-
-.button {
-	background-color: #4CAF50;
-	/* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-
-
 /* Change left margin when sidebar is enable */
-
-#sidiBer[style*='display: block']~article {
-	margin-left: 25%;
+#sidiBer[style*='display: block'] ~ article {
+  margin-left:25%;
 }
