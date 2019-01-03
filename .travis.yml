@@ -16,7 +16,10 @@ language: php
 # Declare versions of PHP to use. Use one decimal max.
 # @link http://docs.travis-ci.com/user/build-configuration/
 
-   php:
+matrix:
+    fast_finish: true
+
+include:
   - 7.3
   - 7.2
     env: SNIFF=1
