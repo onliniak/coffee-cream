@@ -17,7 +17,7 @@
 			<a href="#">Return</a>
 		</div>
 		<!-- Icons from Freepic -->
-		<a href="mobinu" class="mobinu">
+		<a href="#mobinu" class="mobinu">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
 <g>
 	<path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z" fill="#FFFFFF"/>
