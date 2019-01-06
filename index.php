@@ -34,7 +34,6 @@ body_class(); ?>>
     <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z" fill="#FFFFFF"/>
     </g>
 </svg>
-        </a>
     </header>
 
 <main>
@@ -45,8 +44,7 @@ body_class(); ?>>
     dynamic_sidebar('sidebar'); ?> 
     </aside>
     </div>
-   <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span><?php
-    esc_html_e('Show Sidebar', 'ocean-cream'); ?></a>
+   <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span>
   <!-- Your post -->
  <article <?php
     post_class(); ?>>     
