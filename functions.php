@@ -55,7 +55,7 @@ add_filter('excerpt_more', 'ocean_cream_excerpt');
 add_action('wp_head', 'ocean_cream_header', 1);
 
 function ocean_cream_header() {
-    wp_enqueue_style('criticalcss', get_template_directory_uri() . '/css/critical.min.css', array() , '20190103', 'print');
+    wp_enqueue_style('criticalcss', get_template_directory_uri() . '/css/critical.min.css', array() , '20190103', 'screen');
     }
 // Load in footer
 // https://wordpress.stackexchange.com/questions/186065/how-to-load-css-in-the-footer
