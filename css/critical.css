@@ -59,7 +59,7 @@ a.mobinu {display:none}
     	#ShoSid {display: none}
     #mobinu {display:none}
     #hamburger-cream {display: inline-block;width: 100%}
-    article {max-width:100%;margin:auto;border-radius:0}
+    article {max-width:100%;margin:auto;border-radius:0;padding:10px}
         /* Sidebar hide */
         #sidiBer {display:none}
         /* https://www.w3schools.com/css/css3_buttons.asp */
