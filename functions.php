@@ -73,4 +73,22 @@ function ocean_cream_footer_scripts() { ?>
 <?php
 									  }
 add_action( 'wp_footer', 'ocean_cream_footer_scripts' );
+/**
+ * Do not load Merriweather Google fonts on AMP pages
+ * Steal from https://isabelcastillo.com/wordpress-amp-plugin
+ */
+add_action( 'amp_post_template_head', 'isa_remove_amp_google_fonts', 2 );
+function isa_remove_amp_google_fonts() {
+    remove_action( 'amp_post_template_head', 'amp_post_template_add_fonts' );
+}
+add_action( 'amp_post_template_css', 'isa_amp_css_styles_fonts' );
+function isa_amp_css_styles_fonts( $amp_template ) {
+    ?>
+    body { 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+        background-color: beige;
+        margin: auto;
+        }
+    <?php
+}
 ?>
