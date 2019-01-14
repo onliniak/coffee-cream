@@ -126,8 +126,8 @@ a img.aligncenter {
 /* =Required CSS Rules
 -------------------------------------------------------------- */
 /* nav links */
-.nav-links {letter-spacing: 1mm; line-height: 1cm}
-.page-numbers {border: 1mm solid darkolivegreen;background-color: springgreen;text-decoration: none;}
+.nav-links, .OCnextpage a {letter-spacing: 1mm; line-height: 1cm}
+.page-numbers, .OCnextpage a {border: 1mm solid darkolivegreen;background-color: springgreen;text-decoration: none;}
 .next.page-numbers {letter-spacing: 0}
 /* Sticky post */
 article.tag-sticky-2::before,.sticky:before {
