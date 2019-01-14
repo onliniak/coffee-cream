@@ -85,8 +85,10 @@ body_class(); ?>>
         <?php
         wp_link_pages(); ?>
 
+	 <div class="OCnextpage">
         <?php
         wp_list_comments(); ?>
+	 </div>
       
         <?php
         comments_template(); ?> <?php
