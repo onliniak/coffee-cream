@@ -16,6 +16,7 @@
 10. PHP 5/7 and WP 4/5 compatible.
 11. Numeric keyboard support (4 for previous post and 6 for next post).
 12. Old paper mimic
+13. Ready for 3G Network.
 
 ## Polski
 
