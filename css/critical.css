@@ -101,14 +101,12 @@ div.menu ul li:hover>ul {
 }
 
 .button {
-	background-color: #4CAF50;
-	border: none;
-	color: #fff;
+	background-color: #cfb77b;
 	padding: 15px 11px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px
+	font-weight:bolder
 }
 
 #sidiBer[style*='display: block']~article {
