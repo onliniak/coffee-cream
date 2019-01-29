@@ -2,11 +2,14 @@
 
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
 
+![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
+
 ## English
 
 1. Always legible screen, regardless of the size of the screen.
 7. Responsive images mimic (via by the screen scaling).
 2. Very small size a.k.a. lightweight.
+14. jQuery is not loaded by default.
 3. JS buttons with CSP support.
 4. Free CDN include (only Github version).
 5. WordPress Blog theme.
@@ -35,7 +38,6 @@
 
 ### Zrzuty ekranu/Screenshots
 
-![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
 ![Sidebar](https://imgur.com/mOiRHiCl.png "Sidebar")
 ![Mobile](https://i.imgur.com/8v4i4jx.png  "Mobile")
 ![Menu](https://i.imgur.com/Vat2xVy.png    "Menu")
