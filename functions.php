@@ -21,7 +21,7 @@ function ocean_cream_features() {
 
     // Add theme support for Custom Background
     $background_args = array(
-        'default-color' => '442d21', //Morocco Brown
+        'default-color' => '2A1C06', //Morocco Brown
         
     );
     add_editor_style('/css/editor-style.css');
