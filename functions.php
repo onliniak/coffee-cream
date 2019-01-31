@@ -55,12 +55,12 @@ add_filter('excerpt_more', 'ocean_cream_excerpt');
 // https://wordpress.stackexchange.com/questions/168867/using-wp-add-inline-style-without-a-stylesheet
 add_action('wp_head', 'ocean_cream_header', 1);
 function ocean_cream_header(){
-	wp_enqueue_style('criticalcss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/css/critical.min.css' , '20181206', 'screen');
+	wp_enqueue_style('printcss', get_template_directory_uri() . '/css/critical.min.css', array() , '20181206', 'screen');
 }
 // Load in footer
 // https://wordpress.stackexchange.com/questions/186065/how-to-load-css-in-the-footer
 function ocean_cream_footer_styles() {
-    wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/style.css' '20181206', 'screen');
+    wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/style.css', '20181206', 'screen');
     wp_enqueue_script('button', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/js/buttons.min.js');
     wp_enqueue_style('printcss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/css/print.css' , '20181206', 'print');
 }
