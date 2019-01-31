@@ -21,6 +21,9 @@
 12. Old paper mimic
 13. Ready for 3G Network.
 
+Warning ! 2018 and under was tested on 1366x768 TN panel. 2019 and later I will be test on 1920x800 VA panel. So, I migrate colours from HEX to HSLA.
+Uwaga ! Do 2018 korzystałem głównie z laptopowej matrycy TN. Od 2019 używam matrycy VA FHD. W skrócie kolory TN są brudne, szare a VA jasne, żywe. Czy zatem posiadacze "lepszych" monitorów są skazani na przekłamania kolorów i wypalenie wzroku ? Absolutnie, od tej chwili wszystkie ważniejsze barwy będą podawane w HSLA, to zminimalizuje różnice. Przy okazji chciałbym zauważyć, że skalowanie czcionki działa jak najbardziej i na obu ekranach litery są wysokości kursora myszy (KDE Bryza, bodajże odpowiednik dużego Windowsa 7). Chociaż … pomysł ze zwiększaniem wszystkiego był głupi.
+
 ## Polski
 
 | Nazwa | Opis |
