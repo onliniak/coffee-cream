@@ -190,9 +190,8 @@ table {width:100%}
 th, td {
     padding: 8px;
 }
-
+tr {background-color: darkseagreen}
 tr:nth-child(even){background-color: deepskyblue}
-
 tr:hover {background-color: #ddd;}
 
 thead th {
