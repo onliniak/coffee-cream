@@ -1,5 +1,5 @@
 article {
-	background-color: #F8ECC2!important;
+	background-color: hsla(47, 60%, 90%, 1) !important;
 	margin: auto;
 	margin-top: 1%;
 	max-width: 75%;
@@ -26,8 +26,8 @@ aside.sidebar a {
 
 p,
 li {
-	font-size: calc(14px + 0.4vw);
-	line-height: calc(22px + 0.8vw);
+	font-size: calc(14px + 0.25vw);
+	line-height: calc(22px + 0.45vw);
 	font-family: Raleway, "Nimbus Sans", Helvetica, sans;
 	font-weight: 500;
 	color: #333
@@ -41,7 +41,7 @@ div.menu {
 	margin: auto;
 	padding: 0;
 	overflow: auto;
-	background-color: #cfb77b
+	background-color: hsla(43, 47%, 67%, 1)
 }
 
 div.menu li {
@@ -50,7 +50,7 @@ div.menu li {
 }
 
 div.menu li a:hover {
-	background-color: #5f9ea0
+	background-color: hsla(212, 26%, 55%, 1)
 }
 
 div.menu li a {
@@ -101,7 +101,8 @@ div.menu ul li:hover>ul {
 }
 
 .button {
-	background-color: #cfb77b;
+	background-color: hsla(212, 26%, 55%, 1);
+	color: white;
 	padding: 15px 11px;
 	text-align: center;
 	text-decoration: none;
