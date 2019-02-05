@@ -189,7 +189,7 @@ th, td {
     padding: 8px;
 }
 tr {background-color: #00bfa5}
-tr a {color:}
+tr a {color:black}
 tr:hover {background-color: #e1bee7;}
 
 thead th {
