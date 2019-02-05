@@ -74,6 +74,6 @@ In this case I use really very small files like 415B, 563B, 1.8kB and first 1kB 
 - Stackoverflow
 
 == Resources ==
-* Buttons (and colours) from  Materialize (https://github.com/Dogfalo/materialize)
+* Buttons, pagination (and colours) from  Materialize (https://github.com/Dogfalo/materialize)
 * "Hamburger" icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 * Keyboard next/previous page, copy from deprecated WordPress plugin (forget name)
