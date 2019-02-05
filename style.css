@@ -183,21 +183,21 @@ right: .095em;
 position:absolute;
 z-index:-1;
 }
-/* Tables, from https://www.w3schools.com/css/css_table.asp */
+/* Tables */
 table {width:100%}
 th, td {
     padding: 8px;
 }
-tr {background-color: darkseagreen}
-tr:nth-child(even){background-color: deepskyblue}
-tr:hover {background-color: #ddd;}
+tr {background-color: #00bfa5}
+tr a {color:}
+tr:hover {background-color: #e1bee7;}
 
 thead th {
     padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
+padding-bottom: 12px;
+text-align: left;
+background-color: #00897b;
+color: white;
 }
 /* Definitions by https://www.the-art-of-web.com/css/format-dl/ */
   dl {
