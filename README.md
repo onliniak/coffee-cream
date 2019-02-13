@@ -20,10 +20,7 @@
 11. Numeric keyboard support (4 for previous post and 6 for next post).
 12. Old paper mimic
 13. Ready for 3G Network.
-
-Warning ! 2018 and under was tested on 1366x768 TN panel. 2019 and later I will be test on 1920x800 VA panel. So, I migrate colours from HEX to HSLA.
-
-Uwaga ! Do 2018 korzystałem głównie z laptopowej matrycy TN. Od 2019 używam matrycy VA FHD. W skrócie kolory TN są brudne, szare a VA jasne, żywe. Czy zatem posiadacze "lepszych" monitorów są skazani na przekłamania kolorów i wypalenie wzroku ? Absolutnie, od tej chwili wszystkie ważniejsze barwy będą podawane w HSLA, to zminimalizuje różnice. Przy okazji chciałbym zauważyć, że skalowanie czcionki działa jak najbardziej i na obu ekranach litery są wysokości kursora myszy (KDE Bryza, bodajże odpowiednik dużego Windowsa 7). Chociaż … pomysł ze zwiększaniem wszystkiego był głupi.
+22. Copyright protection (ß), auto. add link to your website after copied text.
 
 ## Polski
 
@@ -31,13 +28,13 @@ Uwaga ! Do 2018 korzystałem głównie z laptopowej matrycy TN. Od 2019 używam 
 | --- | --- |
 | Autor | Rafael Pszenny (@onliniak) <RafaelPszenny@caramail.com> |
 | Inspiracje | https://themehybrid.com/themes/yarn, W3C School, fork Coffee Cream |
-| Testowane na/Tested with | WordPress 5.0.3, PHP 7.3 XAMPP 1366x768 (laptop TN), Samsung Full HD TV VA, MSI Full HD Monitor VA, Samsung Galaxy Tab 4, Motorola Moto G 2013 IPS |
+| Testowane na/Tested with | WordPress 5.0.3, PHP 7.3 XAMPP 1366x768 (laptop TN), Full HD TV VA, Full HD Monitor VA, Samsung Galaxy Tab 4, Motorola Moto G 2013 IPS |
 | Powinno działać z: /should work with | PHP5 i WP4, niesprawdzane/untested |
 | Stopień ukończenia/Status | W mojej ocenie projekt jest stabilny … no może przydałoby się zmienić nieco kosmetyki | In my opinion stable … maybe I need little cosmetic changes |
 | Przeznaczenie/Created for | Motyw blogowy na WordPressa/Blog theme |
 | Powód powstania/I create this theme due to errors in Bing and slow public wifi hotspots | Powodem jest znany i kochany Bing, niepotrafiący przetworzyć strony powyżej 30kb, a przy okazji znańszy i lubiańszy publiczny hotspot wifi z super wolnym internetem. Szukałem więc lżejszej alternatywy wśród minimalistów ale oni ? Wszystko albo bez CSS albo takie puste, białe. Mój motyw próbuje naśladować stare, żółte kartki papieru (które moim zdaniem są bardziej czytelne i mniej męczące od białych). Pierwotny projekt miał nie wymagać dalszych udoskonaleń, czy fork przekaże tą cechę ? Nie wiadomo … |
 | Na czym się skupiłem ?/Created with modern, simplicity and Google Insight in mind | 1. Jak najwyższy wynik w Google Page Speed Insight. 2. Jak najmniej kodu. 3. Prosty, przyjemny i nie męczący wzroku motyw, który (miejmy nadzieję) można by łatwo zmodyfikować. 4. Eksperymentalne ficzery jak automatycznie skalowane zdjęcia, automatyczne wyznaczenie wielkości tekstu, możliwość przełączania się pomiędzy następną i poprzednią stroną za pomocą 4 i 6 numerycznej (później mam zamiar rozpocząć projekt poświęcony lepszemu wykorzystaniu klawiatury numerycznej), ukryty pasek boczny, krytyczny CSS 5. Wczytywanie jQuery tylko, gdy potrzebne. 6. Brak błędów PHP i JS. 7. Bez zewnętrznych fontów.|
-| Czy pojawi się w repozytorium WordPressa ?/When do you add your theme to WordPress Repository ?| Patrz na https://themes.trac.wordpress.org/query?keywords=~ocean-cream&order=priority i wypatruj znaków  :pray: Póki co czekam na akceptację  :disappointed: |
+| Czy pojawi się w repozytorium WordPressa ?/When do you add your theme to WordPress Repository ?| Patrz na https://themes.trac.wordpress.org/query?keywords=~ocean-cream&order=priority i wypatruj znaków  :pray: Póki co czekam w kolejce   :disappointed: |
 | Wersja płatna/Donations | Kiedyś miałem wersję płatną na Much Markecie ale chyba się wynieśli :cry: W każdym bądź razie jeśli chcesz wrzucić 1/10/100 lub nawet 1000 :dog: (inaczej groszy) → wyślij je pod DL2ua8w6QBULciR5EEjE3qi76WRPQLMBAw (i powiedz mi, gdzie znajdę jakiś sklepik by je wydać). Chyba, że wolisz :turtle: TRTLv1cxpuEFMCm2WsgjUka4JFNUt9pcqVJrCjd8TruqaZNqSnDCYG5Xeu1LXpeHWsHiE6hZHqncudGz2xdhdUFjQvJFSWrzsiM  Jeśli chcesz samemu sprzedać ten motyw, nie zapomnij o wskazaniu autora w widocznym miejscu  :exclamation: |
 
 ### Zrzuty ekranu/Screenshots
