@@ -10,6 +10,6 @@ article {
 margin:0 auto
 }
 
-div#respond.comment-respond,aside,.menu,.button,article.tag-sticky-2::before{
+div#comments,aside,.menu,.button,article.tag-sticky-2::before{
 display:none
 }
