@@ -91,7 +91,9 @@ body_class(); ?>>
 	 </div>
       
         <?php
-        comments_template(); ?> <?php
+        comments_template(); ?>
+	 <a href="#comments" class="button"><?php esc_html_e('Comments','ocean-cream'); ?></a>
+	 <?php
 if (is_singular()) {
     wp_enqueue_script("comment-reply");
     previous_post_link();
