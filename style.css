@@ -267,3 +267,5 @@ p img:hover, img.attachment-thumbnail:hover {width:80%;height:40%}
 /* We have 2 links in recent comments and only 25% of screen, so we use smaller letters, also if author don't use website (only username) change grey colour to white*/
 li.recentcomments {white-space: nowrap;font-size:small}
 span.comment-author-link {color:white}
+#comments {display:none}
+#comments:target {display:block}
