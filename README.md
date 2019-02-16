@@ -15,7 +15,7 @@
 5. WordPress Blog theme.
 6. Google Page Speed Insight optimalization.
 8. Minimalistic design with non-white colours.
-9. Hidden sidebar.
+9. Hidden sidebar and comments.
 10. PHP 5/7 and WP 4/5 compatible.
 11. Numeric keyboard support (4 for previous post and 6 for next post).
 12. Old paper mimic
