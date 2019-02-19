@@ -4,7 +4,18 @@
 
 ![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
 
-## English
+## Install
+
+1. Download and install [github-updater](https://github.com/afragen/github-updater/archive/develop.zip)
+![installPlugin](https://i.imgur.com/Y1bSB48.png)
+2. Select correct theme.
+![auto_installator](https://i.imgur.com/RxjBl0P.png)
+2. Wait few seconds.
+![it works](https://i.imgur.com/NKDltpK.png)
+3. Active
+4. [Optional] Test. Edit style.css from 0.93 to 0.90. save. Check new updates. It should be show new Ocean Cream version to update.
+
+## Features
 
 1. Always legible screen, regardless of the size of the screen.
 7. Responsive images mimic (via by the screen scaling).
