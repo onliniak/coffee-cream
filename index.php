@@ -96,8 +96,8 @@ body_class(); ?>>
 	 <?php
 if (is_singular()) {
     wp_enqueue_script("comment-reply");
-    previous_post_link();
-    echo '<div class="rinav">', next_post_link();
+    esc_url(previous_post_link());
+    echo '<div class="rinav">', esc_url( next_post_link());
     echo '</div>';
 } elseif (is_tax()) {
     ;
