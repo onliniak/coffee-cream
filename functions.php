@@ -45,7 +45,7 @@ add_action('after_setup_theme', 'ocean_cream_features');
 if (!isset($content_width)) $content_width = 596;
 //add more link to excerpt
 function ocean_cream_excerpt($more) {
-    return ' <a class="read-more" href="' . get_permalink(get_the_ID()) . '">' . __('Read More', 'ocean-cream') . '</a>';
+    return ' <a class="read-more" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read More', 'ocean-cream') . '</a>';
 }
 add_filter('excerpt_more', 'ocean_cream_excerpt');
 
@@ -68,7 +68,7 @@ add_action('wp_footer', 'ocean_cream_footer_styles');
 // https://stackoverflow.com/questions/4221870/how-to-put-my-javascript-in-the-footer
 // https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
 function ocean_cream_footer_scripts() { ?>
-<script>document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',true))) ?>"),102==t&&(location="<?php echo esc_html( get_permalink(get_adjacent_post(false,'',false))); ?>")};</script>
+<script>document.onkeydown=function(e){var t=(e=e||event).which||e.keyCode;100==t&&(location="<?php echo esc_url( get_permalink(get_adjacent_post(false,'',true))) ?>"),102==t&&(location="<?php echo esc_url( get_permalink(get_adjacent_post(false,'',false))); ?>")};</script>
 <?php
 									  }
 add_action( 'wp_footer', 'ocean_cream_footer_scripts' );
