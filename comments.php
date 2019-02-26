@@ -8,7 +8,7 @@
  * PHP version 7
  *
  * LICENSE: This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+ 
  *
  * @category  Blog
  * @package   OceanCream
@@ -48,7 +48,7 @@ if (post_password_required() ) {
                     )
                 ),
                 esc_html(number_format_i18n($comments_number)),
-                get_the_title()
+                esc_html(get_the_title())
             );
             ?>
         </h2>
