@@ -2,20 +2,25 @@
 
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
 
-![Desktop](https://imgur.com/89yjw8Tl.png "Desktop")
+![Desktop](https://i.imgur.com/BgRtRok.png "Desktop")
 
-## Install
+## O Mnie | About me
 
-1. Download and install [github-updater](https://github.com/afragen/github-updater/archive/develop.zip)
-![installPlugin](https://i.imgur.com/Y1bSB48.png)
-2. Select correct theme.
-![auto_installator](https://i.imgur.com/RxjBl0P.png)
-2. Wait few seconds.
-![it works](https://i.imgur.com/NKDltpK.png)
-3. Active
-4. [Optional] Test. Edit style.css from 0.93 to 0.90. save. Check new updates. It should be show new Ocean Cream version to update.
+Polski: 
 
-## Features
+Czy kiedykolwiek zastanawiałeś/-aś się:
+- Dlaczego te wszystkie motywy minimalistyczne są białe ?
+- Dlaczego moja strona jest zaśmiecana dziesiątkami pasków bocznych ? 
+- Dlaczego źle wygląda na tabletach ? 
+- Dlaczego jest taka wolna ? 
+- Czy można stworzyć wygodniejszą nawigację ? 
+- Na co mi tyle plików ?
+
+Jeśli tak, to przedstawiam Ocean Cream (formalnie Coffee Cream) → lekki motyw blogowy dla WordPressa, który dostosuje się do większości ekranów (responsywne), przeskaluje automatycznie obrazki (i czcionkę) do akceptowalnej wielkości, ukryje zbędne elementy (komentarze i pasek boczny) i - o ile to możliwe - przyśpieszy Twojego WordPressa. 
+
+Ponadto pozwoli Ci przeglądać swojego bloga za pomocą klawiatury numerycznej (4 i 6 numeryczna jako następny/poprzedni wpis, na razie sprawdzam reakcje ale w przyszłości planuję rozszerzyć jej funkcje) i możliwe, że zmniejszy zmęczenie wzroku (ja na przykład nie mogę wytrzymać zbyt długo przy białej stronie z czarnym tekstem … ale może to tylko u mnie, zresztą skoro producenci monitorów dają tryb żółty, to coś w tym musi być). Doklejenie linku swojej strony do każdego skopiowanego elementu ? Czemu nie ?
+
+English:
 
 1. Always legible screen, regardless of the size of the screen.
 7. Responsive images mimic (via by the screen scaling).
@@ -33,22 +38,18 @@
 13. Ready for 3G Network.
 22. Copyright protection (ß), auto. add link to your website after copied text.
 
-## Polski
+## Install
 
-| Nazwa | Opis |
-| --- | --- |
-| Autor | Rafael Pszenny (@onliniak) <RafaelPszenny@caramail.com> |
-| Inspiracje | https://themehybrid.com/themes/yarn, W3C School, fork Coffee Cream |
-| Testowane na/Tested with | WordPress 5.0.3, PHP 7.3 XAMPP 1366x768 (laptop TN), Full HD TV VA, Full HD Monitor VA, Samsung Galaxy Tab 4, Motorola Moto G 2013 IPS |
-| Powinno działać z: /should work with | PHP5 i WP4, niesprawdzane/untested |
-| Stopień ukończenia/Status | W mojej ocenie projekt jest stabilny … no może przydałoby się zmienić nieco kosmetyki | In my opinion stable … maybe I need little cosmetic changes |
-| Przeznaczenie/Created for | Motyw blogowy na WordPressa/Blog theme |
-| Powód powstania/I create this theme due to errors in Bing and slow public wifi hotspots | Powodem jest znany i kochany Bing, niepotrafiący przetworzyć strony powyżej 30kb, a przy okazji znańszy i lubiańszy publiczny hotspot wifi z super wolnym internetem. Szukałem więc lżejszej alternatywy wśród minimalistów ale oni ? Wszystko albo bez CSS albo takie puste, białe. Mój motyw próbuje naśladować stare, żółte kartki papieru (które moim zdaniem są bardziej czytelne i mniej męczące od białych). Pierwotny projekt miał nie wymagać dalszych udoskonaleń, czy fork przekaże tą cechę ? Nie wiadomo … |
-| Na czym się skupiłem ?/Created with modern, simplicity and Google Insight in mind | 1. Jak najwyższy wynik w Google Page Speed Insight. 2. Jak najmniej kodu. 3. Prosty, przyjemny i nie męczący wzroku motyw, który (miejmy nadzieję) można by łatwo zmodyfikować. 4. Eksperymentalne ficzery jak automatycznie skalowane zdjęcia, automatyczne wyznaczenie wielkości tekstu, możliwość przełączania się pomiędzy następną i poprzednią stroną za pomocą 4 i 6 numerycznej (później mam zamiar rozpocząć projekt poświęcony lepszemu wykorzystaniu klawiatury numerycznej), ukryty pasek boczny, krytyczny CSS 5. Wczytywanie jQuery tylko, gdy potrzebne. 6. Brak błędów PHP i JS. 7. Bez zewnętrznych fontów.|
-| Czy pojawi się w repozytorium WordPressa ?/When do you add your theme to WordPress Repository ?| Patrz na https://themes.trac.wordpress.org/query?keywords=~ocean-cream&order=priority i wypatruj znaków  :pray: Póki co czekam w kolejce   :disappointed: |
-| Wersja płatna/Donations | [Donate with Coinpayments](https://onliniak.github.io/ocean-cream/donation.htm) Chyba, że wolisz :turtle: TRTLv1cxpuEFMCm2WsgjUka4JFNUt9pcqVJrCjd8TruqaZNqSnDCYG5Xeu1LXpeHWsHiE6hZHqncudGz2xdhdUFjQvJFSWrzsiM  Jeśli chcesz samemu sprzedać ten motyw, nie zapomnij o wskazaniu autora w widocznym miejscu  :exclamation: |
+1. Download and install [github-updater](https://github.com/afragen/github-updater/archive/develop.zip)
+![installPlugin](https://i.imgur.com/Y1bSB48.png)
+2. Select correct theme.
+![auto_installator](https://i.imgur.com/RxjBl0P.png)
+2. Wait few seconds.
+![it works](https://i.imgur.com/NKDltpK.png)
+3. Active
+4. [Optional] Test. Edit style.css from 0.93 to 0.90. save. Check new updates. It should be show new Ocean Cream version to update.
 
-### Zrzuty ekranu/Screenshots
+## [Old/Nieaktualne] Zrzuty ekranu/Screenshots
 
 ![Sidebar](https://imgur.com/mOiRHiCl.png "Sidebar")
 ![Mobile](https://i.imgur.com/8v4i4jx.png  "Mobile")
