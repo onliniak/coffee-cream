@@ -36,25 +36,20 @@
     </div>
     <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span><?php
     esc_html_e('Show Sidebar', 'ocean-cream'); ?></a>
-  <!-- Your post
-     Codex example-->
+  <!-- Your post. Based on Codex example-->
  <article <?php post_class();?>>    
-
-<!-- This sets the $curauth variable -->
-
-    <?php
-    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
-    ?>
-
-    <h2><?php esc_html_e('About:', 'ocean-cream'); ?> <?php echo esc_html($curauth->nickname) ?></h2>
+	 <h2><?php esc_html_e('About:', 'ocean-cream'); ?><?php the_author_meta('user_nicename'); ?></h2>
     <dl>
-        <dt><?php esc_html_e('Website', 'ocean-cream'); ?></dt>
-        <dd><a href="<?php echo esc_html($curauth->user_url) ?>"><?php echo esc_html($curauth->user_url) ?></a></dd>
-        <dt><?php esc_html_e('Profile', 'ocean-cream'); ?></dt>
-        <dd><?php echo esc_html($curauth->user_description) ?></dd>
-    </dl>
-
-    <h2><?php esc_html_e('Posts by', 'ocean-cream'); ?> <?php echo esc_html($curauth->nickname) ?>:</h2>
+		<!-- https://codex.wordpress.org/Template_Tags/the_author_meta -->
+		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt> 
+		<dd><?php the_author_meta('user_registered'); ?></dd>
+		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?></dt>
+		<dd><?php the_author_meta('user_url'); ?></dd>
+		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt> 
+		<dd><?php the_author_meta('description'); ?></dd>
+	 </dl>
+	 <br>
+    <h2><?php esc_html_e('My posts:', 'ocean-cream'); ?></h2>
 
     <ul>
 <!-- The Loop -->
