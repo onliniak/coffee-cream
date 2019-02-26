@@ -42,11 +42,11 @@
     <dl>
 		<!-- https://codex.wordpress.org/Template_Tags/the_author_meta -->
 		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt> 
-		<dd><?php the_author_meta('user_registered'); ?></dd>
+		<dd> <?php the_author_meta('user_registered'); ?></dd>
 		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?></dt>
-		<dd><?php the_author_meta('user_url'); ?></dd>
+		<dd> <?php esc_url( the_author_meta('user_url')); ?></dd>
 		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt> 
-		<dd><?php the_author_meta('description'); ?></dd>
+		<dd> <?php esc_html( the_author_meta('description')); ?></dd>
 	 </dl>
 	 <br>
     <h2><?php esc_html_e('My posts:', 'ocean-cream'); ?></h2>
