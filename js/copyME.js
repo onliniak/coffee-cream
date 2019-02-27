@@ -2,7 +2,7 @@
         //Get the selected text and append the extra info
         //Steal from https://stackoverflow.com/questions/2026335/how-to-add-extra-info-to-copied-web-text
         var selection = window.getSelection(),
-            pagelink = OCreamCPRight + document.location.href,
+            pagelink = OCreamCPRight + document.location.href, // Ocean Cream CoPyRight (protection)
             copytext = selection + pagelink,
             newdiv = document.createElement('div');
 
