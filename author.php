@@ -24,7 +24,7 @@
     <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z" fill="#FFFFFF"/>
     </g>
 </svg>
-        </a>
+        </span>
     </header>
 
 <main>
@@ -34,8 +34,7 @@
     <?php dynamic_sidebar('sidebar');?> 
     </aside>
     </div>
-    <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span><?php
-    esc_html_e('Show Sidebar', 'ocean-cream'); ?></a>
+    <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span>
   <!-- Your post. Based on Codex example-->
  <article <?php post_class();?>>    
 	 <h2><?php esc_html_e('About:', 'ocean-cream'); ?><?php the_author_meta('user_nicename'); ?></h2>
