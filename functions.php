@@ -54,8 +54,8 @@ add_filter('excerpt_more', 'ocean_cream_excerpt');
 
 function ocean_cream_js() { ?>
 <script type="text/javascript">
-	var OCreamPPost = "<?php echo get_permalink(get_adjacent_post(false,'',false)) ?>";
-	var OCreamNTP = "<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>";
+	var OCreamPPost = "<?php echo esc_url(get_permalink(get_adjacent_post(false,'',false))) ?>";
+	var OCreamNTP = "<?php echo esc_url(get_permalink(get_adjacent_post(false,'',true))); ?>";
 	var OCreamCPRight = "<p>   <?php esc_html_e('Created by', 'ocean-cream'); ?> <?php the_author(); ?>  <?php esc_html_e('from', 'ocean-cream'); ?> "
 </script>
 <?php
