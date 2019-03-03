@@ -1,28 +1,20 @@
 # Ocean Cream
 
-[![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
-
 ![Desktop](https://i.imgur.com/BgRtRok.png "Desktop")
 
-## English:
+## Features
 
-1. Always legible screen, regardless of the size of the screen.
-7. Responsive images mimic (via by the screen scaling).
-2. Very small size a.k.a. lightweight.
-14. jQuery is not loaded by default.
-3. JS buttons with CSP support.
-4. Free CDN include (only Github version).
-5. WordPress Blog theme.
-6. Google Page Speed Insight optimalization.
-8. Minimalistic design with non-white colours.
-9. Hidden sidebar and comments.
-10. PHP 5/7 and WP 4/5 compatible.
-11. Numeric keyboard support (4 for previous post and 6 for next post).
-12. Old paper mimic
-13. Ready for 3G Network.
-22. Copyright protection (ß), auto. add link to your website after copied text.
+- Lightweight WordPress blog theme (~20kb or 40 with photo)
+- Non-white and minimalistic
+- Faster website (compared to Twenty Nineteen)
+- jQuery only on demand
+- Hiden sidebar and comments
+- Numeric keyboard navigation (4 for previous post and 6 for next post)
+- Critical css for higher Google PageSpeed Insight
+- CSP ready (without inline scripts and styles)
+- Copyright protection + beige AMP style + CDN (only on github)
 
-## Polski: 
+## Funkcje
 
 Czy kiedykolwiek zastanawiałeś/-aś się:
 - Dlaczego te wszystkie motywy minimalistyczne są białe ?
@@ -37,6 +29,8 @@ Jeśli tak, to przedstawiam Ocean Cream (formalnie Coffee Cream) → lekki motyw
 Ponadto pozwoli Ci przeglądać swojego bloga za pomocą klawiatury numerycznej (4 i 6 numeryczna jako następny/poprzedni wpis, na razie sprawdzam reakcje ale w przyszłości planuję rozszerzyć jej funkcje) i możliwe, że zmniejszy zmęczenie wzroku (ja na przykład nie mogę wytrzymać zbyt długo przy białej stronie z czarnym tekstem … ale może to tylko u mnie, zresztą skoro producenci monitorów dają tryb żółty, to coś w tym musi być). Doklejenie linku swojej strony do każdego skopiowanego elementu ? Czemu nie ?
 
 ## Install
+
+Generally, you should use WordPress repo, but at this moment I wait for approval. https://themes.trac.wordpress.org/ticket/63048
 
 1. Download and install [github-updater](https://github.com/afragen/github-updater/archive/develop.zip)
 ![installPlugin](https://i.imgur.com/Y1bSB48.png)
@@ -58,7 +52,10 @@ Ponadto pozwoli Ci przeglądać swojego bloga za pomocą klawiatury numerycznej 
 Of course, look at https://skri.ga/nieoznaczony/ (news/status)
 or https://skri.ga/eastern/ (post)
 
-## Help me | Pomoc
+## Child themes:
++ Add your child theme (full or little changes).
+
+## Help me and donations| Pomoc i dotacje
 
 [Donate with Coinpayments](https://onliniak.github.io/ocean-cream/donation.htm) 
 
