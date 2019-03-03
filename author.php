@@ -43,9 +43,9 @@
 		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt> 
 		<dd> <?php the_author_meta('user_registered'); ?></dd>
 		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?></dt>
-		<dd> <?php esc_url( the_author_meta('user_url')); ?></dd>
+		<dd> <?php the_author_meta('user_url'); ?></dd>
 		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt> 
-		<dd> <?php esc_html( the_author_meta('description')); ?></dd>
+		<dd> <?php the_author_meta('description'); ?></dd>
 	 </dl>
 	 <br>
     <h2><?php esc_html_e('My posts:', 'ocean-cream'); ?></h2>
@@ -55,7 +55,7 @@
 
     <?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <li>
-            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+            <a href="<?php esc_url(the_permalink()) ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
             <?php the_title(); ?></a>,
             <?php echo get_the_date(); ?> <?php esc_html_e('in', 'ocean-cream'); ?> <?php the_category('&');?>
         </li>
