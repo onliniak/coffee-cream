@@ -1,4 +1,9 @@
 <?php
+include 'kirki_customizer.php';
+# I use kirki plugin as customizer framework, so if you want to change colors via customizer → please,
+# install https://pl.wordpress.org/plugins/kirki/ or help me with rewrite my code to WordPress customizer API.
+# No, I've tried native WP Customizer API, but it not work. 
+
 // Add menu in header
 function ocean_cream_menu() {
     $locations = array(
