@@ -127,7 +127,7 @@ a img.aligncenter {
 /* =Required CSS Rules
 -------------------------------------------------------------- */
 /* nav links */
-.page-numbers, .OCnextpage a {padding:0 10px;text-decoration:none;display:inline-block;background-color:#00b0ff;border-radius:5px}
+.page-numbers, .OCnextpage a {padding:0 10px;text-decoration:none;display:inline-block;border-radius:5px}
 /* Sticky post */
 article.tag-sticky-2::before,.sticky:before {
     content: "Sticky Post";
