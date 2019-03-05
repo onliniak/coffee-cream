@@ -124,4 +124,3 @@ $wp_customize->add_control( new WP_Customize_Color_Control(
 	}
 add_action( 'customize_register', 'ocean_cream_customize_register' );
 include 'customizer_output.php';
-?>
