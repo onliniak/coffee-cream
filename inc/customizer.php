@@ -61,6 +61,66 @@ $wp_customize->add_control( new WP_Customize_Color_Control(
 	)
 ));
 	
+		 $wp_customize->add_setting( 'article_background', array(
+  'type' => 'theme_mod',
+  'capability' => 'edit_theme_options',
+) );
+$wp_customize->add_control( new WP_Customize_Color_Control( 
+	$wp_customize, 
+	'article_background', 
+	array(
+		'label'      => esc_html__( 'Post background', 'ocean-cream' ),
+		'description' => esc_html__( 'Change background color of posts (article)', 'ocean-cream' ),
+		'settings'   => 'article_background',
+		'section' => 'colors',
+	)
+));
+	
+			 $wp_customize->add_setting( 'menu_background', array(
+  'type' => 'theme_mod',
+  'capability' => 'edit_theme_options',
+) );
+$wp_customize->add_control( new WP_Customize_Color_Control( 
+	$wp_customize, 
+	'menu_background', 
+	array(
+		'label'      => esc_html__( 'Menu background', 'ocean-cream' ),
+		'description' => esc_html__( 'Change background color of menu', 'ocean-cream' ),
+		'settings'   => 'menu_background',
+		'section' => 'colors',
+	)
+));
+	
+			 $wp_customize->add_setting( 'menu_text', array(
+  'type' => 'theme_mod',
+  'capability' => 'edit_theme_options',
+) );
+$wp_customize->add_control( new WP_Customize_Color_Control( 
+	$wp_customize, 
+	'menu_text', 
+	array(
+		'label'      => esc_html__( 'Menu text', 'ocean-cream' ),
+		'description' => esc_html__( 'Change text color of menu', 'ocean-cream' ),
+		'settings'   => 'menu_text',
+		'section' => 'colors',
+	)
+));
+	
+			 $wp_customize->add_setting( 'menu_item_hover', array(
+  'type' => 'theme_mod',
+  'capability' => 'edit_theme_options',
+) );
+$wp_customize->add_control( new WP_Customize_Color_Control( 
+	$wp_customize, 
+	'menu_item_hover', 
+	array(
+		'label'      => esc_html__( 'Menu item hover', 'ocean-cream' ),
+		'description' => esc_html__( 'Change background color of menu, when hover.', 'ocean-cream' ),
+		'settings'   => 'menu_item_hover',
+		'section' => 'colors',
+	)
+));
+	
 	}
 add_action( 'customize_register', 'ocean_cream_customize_register' );
 include 'customizer_output.php';
