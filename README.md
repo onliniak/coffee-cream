@@ -6,6 +6,7 @@
 
 - Lightweight WordPress blog theme (~20kb or 40 with photo)
 - Non-white and minimalistic
+- Customizer support (color section)
 - Responsive web design
 - Automatic resize images and font, when screen size is changing.
 - Faster website (compared to Twenty Nineteen)
