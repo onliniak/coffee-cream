@@ -1,6 +1,6 @@
 # Ocean Cream
 
-![Desktop](https://i.imgur.com/BgRtRok.png "Desktop")
+![Desktop](https://i.imgur.com/tw7FAZt.png "Desktop")
 
 ## Features
 
