@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 20:42+0000\n"
-"PO-Revision-Date: 2019-02-26 20:43+0000\n"
+"POT-Creation-Date: 2019-03-05 15:17+0000\n"
+"PO-Revision-Date: 2019-03-05 15:23+0000\n"
 "Last-Translator: Rafael Pszenny <RafaelPszenny@caramail.com>\n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -15,23 +15,27 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-5.1"
 
-#: index.php:47 author.php:37 author.php:38
+#: index.php:48 author.php:36
 msgid "Show Sidebar"
 msgstr "Pokaż pasek boczny"
 
-#: index.php:58
+#: index.php:59
 msgid "Written by"
 msgstr "Napisano przez"
 
-#: index.php:62
+#: index.php:63
 msgid "on"
 msgstr "dnia"
 
-#: index.php:65 author.php:61
+#: index.php:66 author.php:59
 msgid "in"
 msgstr "w"
 
-#: index.php:106
+#: index.php:96
+msgid "Comments"
+msgstr "Komentarze"
+
+#: index.php:109
 msgid "Sorry, no posts matched your criteria."
 msgstr "Nie znaleziono postow spełniających podane kryteria."
 
@@ -61,45 +65,109 @@ msgstr "Nowsze &rarr;"
 msgid "Comments are closed."
 msgstr "Komentowanie jest zabronione"
 
-#: functions.php:5
+#: functions.php:7
 msgid "Header menu"
 msgstr "Menu Główne"
 
-#: functions.php:14
+#: functions.php:17
 msgid "Widget Area"
 msgstr "Pole widżetów"
 
-#: functions.php:16
+#: functions.php:19
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Przeciągnij tutaj swoje widżety, by dodać je do paska bocznego"
 
-#: functions.php:48
+#: functions.php:54
 msgid "Read More"
 msgstr "Czytaj Dalej"
 
-#: author.php:41
+#: author.php:39
 msgid "About:"
 msgstr "Cześć, jestem "
 
-#: author.php:44
+#: author.php:42
 msgid "From"
 msgstr "Od"
 
-#: author.php:46
+#: author.php:44
 msgid "Website"
 msgstr "WWW"
 
-#: author.php:48
+#: author.php:46
 msgid "Biography"
 msgstr "Kilka słów"
 
-#: author.php:52
+#: author.php:50
 msgid "My posts:"
 msgstr "Moje wpisy:"
 
-#: author.php:65
+#: author.php:63
 msgid "No posts by this author."
 msgstr "Niestety, ten autor nie napisał jeszcze żadnego wpisu. "
+
+#: inc/customizer.php:12
+msgid "Accent background"
+msgstr "Akcent - tło"
+
+#: inc/customizer.php:13
+msgid "Change background color of buttons"
+msgstr "Zmień kolor tła (przycisków)"
+
+#: inc/customizer.php:27
+msgid "Accent text"
+msgstr "Akcent - tekst"
+
+#: inc/customizer.php:28
+msgid "Change text color of buttons"
+msgstr "Zmień kolor czcionki (przycisków)"
+
+#: inc/customizer.php:42
+msgid "Accent hover"
+msgstr "Akcent - hover"
+
+#: inc/customizer.php:43
+msgid "Change background color of buttons, when mouse hover"
+msgstr "Zmień kolor tła (przycisków), po najechaniu myszką."
+
+#: inc/customizer.php:57
+msgid "Pagination background"
+msgstr "Paginacja - tło"
+
+#: inc/customizer.php:58
+msgid "Change background color of navigation"
+msgstr "Zmień kolor tła przycisków nawigacji"
+
+#: inc/customizer.php:72
+msgid "Post background"
+msgstr "Tło wpisu"
+
+#: inc/customizer.php:73
+msgid "Change background color of posts (article)"
+msgstr "Zmień kolor tła obszaru wpisów"
+
+#: inc/customizer.php:87
+msgid "Menu background"
+msgstr "Menu - tło"
+
+#: inc/customizer.php:88
+msgid "Change background color of menu"
+msgstr "Zmień kolor tła (menu)"
+
+#: inc/customizer.php:102
+msgid "Menu text"
+msgstr "Menu - tekst"
+
+#: inc/customizer.php:103
+msgid "Change text color of menu"
+msgstr "Zmień kolor czcionki (menu)"
+
+#: inc/customizer.php:117
+msgid "Menu item hover"
+msgstr "Menu - hover"
+
+#: inc/customizer.php:118
+msgid "Change background color of menu, when hover."
+msgstr "Zmień kolor tła, po najechaniu myszką na menu"
 
 # Nazw w zasadzie się nie tłumaczy
 #. Name of the theme

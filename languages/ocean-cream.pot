@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 20:42+0000\n"
+"POT-Creation-Date: 2019-03-05 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,23 +14,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: index.php:47 author.php:37 author.php:38
+#: index.php:48 author.php:36
 msgid "Show Sidebar"
 msgstr ""
 
-#: index.php:58
+#: index.php:59
 msgid "Written by"
 msgstr ""
 
-#: index.php:62
+#: index.php:63
 msgid "on"
 msgstr ""
 
-#: index.php:65 author.php:61
+#: index.php:66 author.php:59
 msgid "in"
 msgstr ""
 
-#: index.php:106
+#: index.php:96
+msgid "Comments"
+msgstr ""
+
+#: index.php:109
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -59,44 +63,108 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:5
+#: functions.php:7
 msgid "Header menu"
 msgstr ""
 
-#: functions.php:14
+#: functions.php:17
 msgid "Widget Area"
 msgstr ""
 
-#: functions.php:16
+#: functions.php:19
 msgid "Add widgets here to appear in your sidebar."
 msgstr ""
 
-#: functions.php:48
+#: functions.php:54
 msgid "Read More"
 msgstr ""
 
-#: author.php:41
+#: author.php:39
 msgid "About:"
 msgstr ""
 
-#: author.php:44
+#: author.php:42
 msgid "From"
 msgstr ""
 
-#: author.php:46
+#: author.php:44
 msgid "Website"
 msgstr ""
 
-#: author.php:48
+#: author.php:46
 msgid "Biography"
 msgstr ""
 
-#: author.php:52
+#: author.php:50
 msgid "My posts:"
 msgstr ""
 
-#: author.php:65
+#: author.php:63
 msgid "No posts by this author."
+msgstr ""
+
+#: inc/customizer.php:12
+msgid "Accent background"
+msgstr ""
+
+#: inc/customizer.php:13
+msgid "Change background color of buttons"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Accent text"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Change text color of buttons"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Accent hover"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Change background color of buttons, when mouse hover"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Pagination background"
+msgstr ""
+
+#: inc/customizer.php:58
+msgid "Change background color of navigation"
+msgstr ""
+
+#: inc/customizer.php:72
+msgid "Post background"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "Change background color of posts (article)"
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Menu background"
+msgstr ""
+
+#: inc/customizer.php:88
+msgid "Change background color of menu"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Menu text"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "Change text color of menu"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid "Menu item hover"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Change background color of menu, when hover."
 msgstr ""
 
 #. Name of the theme
