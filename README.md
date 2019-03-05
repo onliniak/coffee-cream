@@ -14,7 +14,6 @@
 - Hiden sidebar and comments
 - Numeric keyboard navigation (4 for previous post and 6 for next post)
 - Critical css for higher Google PageSpeed Insight
-- CSP ready (without inline scripts and styles)
 - Copyright protection + beige AMP style + CDN (only on github)
 
 ## Funkcje
