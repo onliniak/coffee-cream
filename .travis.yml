@@ -15,9 +15,8 @@ before_script:
 dist: trusty
 ignore: 
   - /docs/*
-  - /js/keyboard.js
+  - /js/bundle.min.js
   - /css/critical.min.css
-  - /js/buttons.min.js
 language: php
 matrix: 
   allow_failures: 
