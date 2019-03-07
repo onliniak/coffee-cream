@@ -2,9 +2,8 @@ language: php
 
 ignore: 
   - /docs/*
-  - /js/bundle.min.js
+  - /js/*
   - /css/critical.min.css
-  - /js/keyboard.js
 
 matrix:
   include:
