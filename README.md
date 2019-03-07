@@ -1,4 +1,6 @@
 # Ocean Cream
+[![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
+Check PHP syntax errors in PHP 5.2, 5.6, 7.0, 7.3, hhvm
 
 ![Desktop](https://i.imgur.com/tw7FAZt.png "Desktop")
 
