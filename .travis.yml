@@ -31,18 +31,14 @@ matrix:
           dist: precise
         # aliased to a recent 5.6.x version
         - php: '5.6'
-          env: SNIFF=1
+          #env: SNIFF=1
         # aliased to a recent 7.0.x version
         - php: '7.0'
         # aliased to a recent 7.3.x version
         # from now we will test with the latest PHP in XAMPP
         - php: '7.3'
-          env: SNIFF=1
-        # bleeding edge PHP
-        - php: 'nightly'
-
-    allow_failures:
-        - php: 'nightly'
+          #env: SNIFF=1
+        - php: 'hhvm'
 
 # Use this to prepare the system to install prerequisites or dependencies.
 # e.g. sudo apt-get update.
