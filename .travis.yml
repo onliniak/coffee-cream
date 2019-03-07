@@ -1,15 +1,26 @@
 language: php
 
+matrix: 
+  allow_failures: 
+    - 
+      php: nightly
+  fast_finish: true
+  include: 
+    - 
+      dist: precise
+      php: "5.2"
+
 ignore: 
   - /docs/*
   - /js/*
   - /css/critical.min.css
+  
+  
 
 matrix:
   include:
-  dist: precise
     # Check minimal PHP
-    - php: "5.2"
+    - php: '5.2'
     - php: '5.6'
     # Check latest PHP
     - php: '7.3'
