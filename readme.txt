@@ -12,10 +12,6 @@ One-file starter theme with lightweight in mind. Include hiden sidebar and numer
 
 == Frequently Asked Questions ==
 
-= I have suggestion/issue =
-
-Please, use https://github.com/onliniak/ocean-cream/issues/new
-
 = Help, my plugins don't works (load in footer) =
 
 Some plugins use get_footer to load scripts in footer.
@@ -23,8 +19,7 @@ But in this case we don't use footer.php, so you must change get_footer to wp_fo
 
 = I want to change XYZ (for example colours) =
 
-For background use WP Customize (/wp-admin/customize.php).
-For other changes use theme editor and favourite search engine (for example Google).
+Use WP Customize (/wp-admin/customize.php).
 
 = How exactly works "keyboard navigation" ? =
 
@@ -33,12 +28,6 @@ Press 4 on the numeric keypad to go to the previous entry or 6 numeric keys to g
 = How exactly works "automatic screen" ? =
 
 The size of the font and entry / sidebar is automatically determined based on the width of the window.
-
-= I want to enable auto update for themes and plugins =
-
-Add this code to functions.php
- add_filter( 'auto_update_plugin', '__return_true' );
- add_filter( 'auto_update_theme', '__return_true' );
  
  = I need automatic meta description =
  
