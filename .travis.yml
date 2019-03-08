@@ -38,7 +38,7 @@ matrix:
         # from now we will test with the latest PHP in XAMPP
         - php: '7.3'
           #env: SNIFF=1
-        - php: 'hhvm'
+        - php: 'nightly'
 
 # Use this to prepare the system to install prerequisites or dependencies.
 # e.g. sudo apt-get update.
