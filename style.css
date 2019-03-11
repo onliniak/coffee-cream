@@ -359,3 +359,9 @@ span.comment-author-link {
 #comments:target {
   display: block
 }
+
+/*Disable comments button in home and archives*/
+body.home.blog.archive>main>article>a.button,
+body.archive>main>article>a.button {
+  display: none;
+}
