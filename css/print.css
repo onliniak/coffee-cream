@@ -1,15 +1,15 @@
 h1 {
-text-align:center
+  text-align: center
 }
 
 a {
-color:#000
+  color: #000
 }
 
 article {
-margin:0 auto
+  margin: 0 auto
 }
 
-div#comments,aside,.menu,.button,article.tag-sticky-2::before{
-display:none
+div#comments, aside, .menu, .button, article.tag-sticky-2::before {
+  display: none
 }

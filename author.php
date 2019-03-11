@@ -2,10 +2,10 @@
 <html <?php language_attributes(); ?>>
 <head>
    <meta charset="<?php bloginfo('charset'); ?>">
-    
+
     <!-- Mobile zoom -->
     <meta name=viewport content="width=device-width, initial-scale=1">
-    
+
     <?php wp_head(); ?>
 </head>
 <body <?php body_class();?>>
@@ -31,20 +31,20 @@
 <!-- Widgets, default hide -->
     <div id="sidiBer">
     <aside class="sidebar">
-    <?php dynamic_sidebar('sidebar');?> 
+    <?php dynamic_sidebar('sidebar');?>
     </aside>
     </div>
-    <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span>
+    <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
   <!-- Your post. Based on Codex example-->
- <article <?php post_class();?>>    
+ <article <?php post_class();?>>
 	 <h2><?php esc_html_e('About:', 'ocean-cream'); ?><?php the_author_meta('user_nicename'); ?></h2>
     <dl>
 		<!-- https://codex.wordpress.org/Template_Tags/the_author_meta -->
-		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt> 
+		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt>
 		<dd> <?php the_author_meta('user_registered'); ?></dd>
 		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?></dt>
 		<dd> <?php the_author_meta('user_url'); ?></dd>
-		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt> 
+		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt>
 		<dd> <?php the_author_meta('description'); ?></dd>
 	 </dl>
 	 <br>
@@ -53,7 +53,7 @@
     <ul>
 <!-- The Loop -->
 
-    <?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <li>
             <a href="<?php esc_url(the_permalink()) ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
             <?php the_title(); ?></a>,

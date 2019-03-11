@@ -12,12 +12,12 @@ ignore:
 # Ditch sudo and use containers.
 # @link https://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
 # @link https://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
-sudo: false
-dist: trusty
+sudo:            false
+dist:            trusty
 
 # Declare project language.
 # @link https://about.travis-ci.org/docs/user/languages/php/
-language: php
+language:        php
 
 # Declare versions of PHP to use. Use one decimal max.
 # @link https://docs.travis-ci.com/user/build-configuration/
@@ -27,18 +27,18 @@ matrix:
     include:
         # Current $required_php_version for WordPress: 5.2.4
         # aliased to 5.2.17
-        - php: '5.2'
-          dist: precise
+        - php:   '5.2'
+          dist:  precise
         # aliased to a recent 5.6.x version
-        - php: '5.6'
-          #env: SNIFF=1
+        - php:   '5.6'
+          #env:  SNIFF=1
         # aliased to a recent 7.0.x version
-        - php: '7.0'
+        - php:   '7.0'
         # aliased to a recent 7.3.x version
         # from now we will test with the latest PHP in XAMPP
-        - php: '7.3'
-          #env: SNIFF=1
-        - php: 'nightly'
+        - php:   '7.3'
+          #env:  SNIFF=1
+        - php:   'nightly'
 
 # Use this to prepare the system to install prerequisites or dependencies.
 # e.g. sudo apt-get update.
@@ -62,4 +62,3 @@ before_script:
 script:
     # Search for PHP syntax errors.
     - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
- 

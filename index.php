@@ -4,10 +4,10 @@ language_attributes(); ?>>
 <head>
    <meta charset="<?php
     bloginfo('charset'); ?>">
-    
+
     <!-- Mobile zoom -->
     <meta name=viewport content="width=device-width, initial-scale=1">
-    
+
     <?php
     wp_head(); ?>
 </head>
@@ -19,7 +19,7 @@ body_class(); ?>>
         <div id="mobinu">
     <?php
     wp_nav_menu(
-        array(
+    array(
         'theme_location' => 'header-menu',
         'container_class' => 'menu'
         )
@@ -42,15 +42,15 @@ body_class(); ?>>
     <div id="sidiBer">
     <aside class="sidebar">
     <?php
-    dynamic_sidebar('sidebar'); ?> 
+    dynamic_sidebar('sidebar'); ?>
     </aside>
     </div>
-   <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar','ocean-cream'); ?></span>
+   <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
   <!-- Your post -->
  <article <?php
-    post_class(); ?>>     
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-     <h1><a href="<?php     
+    post_class(); ?>>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+     <h1><a href="<?php
         the_permalink(); ?>"><?php
         the_title(); ?></a></h1>
  <!-- Header info like date, author, category, tags etc. -->
@@ -69,7 +69,7 @@ body_class(); ?>>
             <br />
                 <?php
                 the_tags(); ?>
-  
+
             <?php
             if (has_post_thumbnail()) {
                 the_post_thumbnail('post-thumbnails');
@@ -90,19 +90,19 @@ body_class(); ?>>
         <?php
         wp_list_comments(); ?>
 	 </div>
-      
+
         <?php
         comments_template(); ?>
-	 <a href="#comments" class="button"><?php esc_html_e('Comments','ocean-cream'); ?></a>
+	 <a href="#comments" class="button"><?php esc_html_e('Comments', 'ocean-cream'); ?></a>
 	 <?php
 if (is_singular()) {
-    wp_enqueue_script("comment-reply");
-    esc_url(previous_post_link());
-    echo '<div class="rinav">', esc_url( next_post_link());
-    echo '</div>';
-} elseif (is_tax()) {
-    ;
-}?>          
+            wp_enqueue_script("comment-reply");
+            esc_url(previous_post_link());
+            echo '<div class="rinav">', esc_url(next_post_link());
+            echo '</div>';
+        } elseif (is_tax()) {
+            ;
+        }?>
 	 <?php endwhile; else : ?>
             <p>
               <?php
