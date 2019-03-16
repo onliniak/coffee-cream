@@ -1,14 +1,16 @@
 === Ocean Cream ===
 Contributors: onliniak
+Donate link: https://onliniak.github.io/ocean-cream/donation.htm
 Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
 Requires at least: 4.0
-Tested up to: 5.0
-Stable tag: 0.9
+Tested up to: 5.1.1
+Requires PHP: 5.2
+Stable tag: 0.96
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
-One-file starter theme with lightweight in mind. Include hiden sidebar and numeric keyboard navigation. Optimalization for Google.
+Never waste space on your blog again! Choose hidden comments and sidebar, choose Ocean Cream. In addition, thanks to its lightness, it will speed up your website.
 
 == Frequently Asked Questions ==
 
@@ -17,52 +19,51 @@ One-file starter theme with lightweight in mind. Include hiden sidebar and numer
 Some plugins use get_footer to load scripts in footer.
 But in this case we don't use footer.php, so you must change get_footer to wp_footer .
 
-= I want to change XYZ (for example colours) =
+= I want to change XYZ =
 
-Use WP Customize (/wp-admin/customize.php).
+For colors use WP Customizer (/wp-admin/customize.php).
+For other changes use theme editor and favourite search engine (for example Google)
+or write new support ticket.
 
-= How exactly works "keyboard navigation" ? =
+= In  Customizer, some colors is invisible =
 
-Press 4 on the numeric keypad to go to the previous entry or 6 numeric keys to go to the next one.
+I not use sidebar text and pagination background, it doesn't make sense.
+
+= How reset all colors options ? =
+
+Just delete theme_mods_ocean-cream from wp_options table.
+
+= Why the_author_meta ? (author page) =
+
+In the future it will be easier to change presented informations. 
 
 = How exactly works "automatic screen" ? =
 
 The size of the font and entry / sidebar is automatically determined based on the width of the window.
- 
- = I need automatic meta description =
- 
- Use "seo" plugin or  https://gist.github.com/palimadra/3023928
- 
- = The file size is too big =
- 
- Use "minify" plugin. It will delete comments and spaces → size will decrease more than 50%.
- 
+
  = I have under 100 points in Google Page Insight =
  
  You must add Expire Headers and Gzip support to your .htaccess . Also plugins may decrease score. 
  
- = Why you paste inline js and css ? =
- https://www.keycdn.com/support/inline-small-css-and-javascript
+ = You repeat CSS code few times, for example 3 article background =
  
-"In the event that you have one or multiple files which don’t contain much CSS or JS, including them within your HTML document can result in a more efficient loading time." … "In most cases, using an external file to call your CSS and JavaScript is considered best practice. However, page speed improvements can be achieved by including small CSS and JavaScript snippets within your HTML file in order to avoid additional round trips.
-
-Inline small CSS and inline small JavaScript are both recommendations provided by certain site speed test tools. This recommendation is quite straightforward to implement, however being careful in not going overboard by inlining too much CSS and JS is important."
-
-In this case I use really very small files like 415B, 563B, 1.8kB and first 1kB in footer. Also I need critical CSS very first after page load. On the other hand I sacrify 2kB of cache for better score in test. 
-
+ This is for compatibility issues. It will be remove in future releases.
+ 
+ = Wrong gramatic =
+ 
+ Create new ticket or even better send new pull request on Github.
+ 
 == Changelog ==
 
-= 0.9 = Upload to WordPress repository.
-= 0.91 = Remove Google Fonts, hardcoded css and js ; repair minor errors, add escaping functions, rename functions, add print.css, repair all php/js errors.
-= 0.92 = Remove "hard coded date" in author.php, add other escaping functions, minor update in polish language, WordPress 5.0 compatible. 
+= 0.9 =  Upload to WordPress repository. Again, again, again …
+= 0.94 = Ready for CSP. (rewrite js buttons from onload() to span).
+= 0.95 = Rewrire author page (the_author function, instead of $curauth), new pagination CSS, smaller font, hsla colors (better VA/IPS support), hide comments by default, minify and merge keyboard.js + buttons.js to bundle.min.js
+= 0.96 = remove no-GPL code, WP customizer support.
+
 == Inspirations ==
 
-- Yarn (https://wordpress.org/themes/yarn/)
-- 2015 (https://pl.wordpress.org/themes/twentyfifteen/)
-- W3Schools
-- Stackoverflow
+- Yarn (colors, mobile version) (https://wordpress.org/themes/yarn/)
+- "Material" colors of buttons (https://materializecss.com/buttons.html)
 
 == Resources ==
-* Buttons, pagination (and colours) from  Materialize (https://github.com/Dogfalo/materialize)
-* "Hamburger" icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-* Keyboard next/previous page, copy from deprecated WordPress plugin (forget name)
+* "Hamburger" icon made by danklammer from https://github.com/danklammer/bytesize-icons. Licensed under MIT.
