@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 15:17+0000\n"
+"POT-Creation-Date: 2019-03-16 18:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,27 +14,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: index.php:48 author.php:36
+#: index.php:43 author.php:32
 msgid "Show Sidebar"
 msgstr ""
 
-#: index.php:59
+#: index.php:54
 msgid "Written by"
 msgstr ""
 
-#: index.php:63
+#: index.php:58
 msgid "on"
 msgstr ""
 
-#: index.php:66 author.php:59
+#: index.php:61 author.php:55
 msgid "in"
 msgstr ""
 
-#: index.php:96
+#: index.php:91
 msgid "Comments"
 msgstr ""
 
-#: index.php:109
+#: index.php:104
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -79,92 +79,124 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: author.php:39
+#: author.php:35
 msgid "About:"
 msgstr ""
 
-#: author.php:42
+#: author.php:38
 msgid "From"
 msgstr ""
 
-#: author.php:44
+#: author.php:40
 msgid "Website"
 msgstr ""
 
-#: author.php:46
+#: author.php:42
 msgid "Biography"
 msgstr ""
 
-#: author.php:50
+#: author.php:46
 msgid "My posts:"
 msgstr ""
 
-#: author.php:63
+#: author.php:59
 msgid "No posts by this author."
 msgstr ""
 
-#: inc/customizer.php:12
+#: inc/customizer.php:13
 msgid "Accent background"
 msgstr ""
 
-#: inc/customizer.php:13
+#: inc/customizer.php:14
 msgid "Change background color of buttons"
 msgstr ""
 
-#: inc/customizer.php:27
+#: inc/customizer.php:28
 msgid "Accent text"
 msgstr ""
 
-#: inc/customizer.php:28
+#: inc/customizer.php:29
 msgid "Change text color of buttons"
 msgstr ""
 
-#: inc/customizer.php:42
+#: inc/customizer.php:43
 msgid "Accent hover"
 msgstr ""
 
-#: inc/customizer.php:43
+#: inc/customizer.php:44
 msgid "Change background color of buttons, when mouse hover"
 msgstr ""
 
-#: inc/customizer.php:57
+#: inc/customizer.php:58
 msgid "Pagination background"
 msgstr ""
 
-#: inc/customizer.php:58
+#: inc/customizer.php:59
 msgid "Change background color of navigation"
 msgstr ""
 
-#: inc/customizer.php:72
+#: inc/customizer.php:73
 msgid "Post background"
 msgstr ""
 
-#: inc/customizer.php:73
+#: inc/customizer.php:74
 msgid "Change background color of posts (article)"
 msgstr ""
 
-#: inc/customizer.php:87
-msgid "Menu background"
-msgstr ""
-
 #: inc/customizer.php:88
-msgid "Change background color of menu"
+msgid "Post text"
 msgstr ""
 
-#: inc/customizer.php:102
-msgid "Menu text"
+#: inc/customizer.php:89
+msgid "Change text color of posts (article)"
 msgstr ""
 
 #: inc/customizer.php:103
-msgid "Change text color of menu"
+msgid "Post link"
 msgstr ""
 
-#: inc/customizer.php:117
-msgid "Menu item hover"
+#: inc/customizer.php:104
+msgid "Change link color of posts (article)"
 msgstr ""
 
 #: inc/customizer.php:118
+msgid "Menu background"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Change background color of menu"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Menu text"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Change text color of menu"
+msgstr ""
+
+#: inc/customizer.php:148
+msgid "Menu item hover"
+msgstr ""
+
+#: inc/customizer.php:149
 msgid "Change background color of menu, when hover."
+msgstr ""
+
+#: inc/customizer.php:163
+msgid "Sidebar text"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Change text color of sidebar and \"Hamburger\" icon color."
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Sidebar text links"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Change color of sidebar links."
 msgstr ""
 
 #. Name of the theme
@@ -173,8 +205,9 @@ msgstr ""
 
 #. Description of the theme
 msgid ""
-"One-file starter theme with lightweight in mind. Include hiden sidebar and "
-"numeric keyboard navigation. Optimalization for Google."
+"Never waste space on your blog again! Choose hidden comments and sidebar, "
+"choose Ocean Cream. In addition, thanks to its lightness, it will speed up "
+"your website."
 msgstr ""
 
 #. Author of the theme
