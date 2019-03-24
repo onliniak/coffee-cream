@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Ocean Cream</title>
+   <meta charset="DEMO">
+    <meta charset="UTF-8">
+    
+    <!-- Mobile zoom -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+	<!-- Critical CSS -->
+	<style>
+	html {background-color: black;}
+article {
+    background-color: beige;
+    margin: auto;
+	margin-top:1%;
+	max-width: 75%;
+	border-radius:25px;
+    padding: 2em 4em 2em}
+img{
+	width:80%;height:40% }
+aside.sidebar{
+	float:left;
+	max-width: 25%;
+	margin-top:1%;
+	color:whitesmoke
+}
+aside.sidebar a {
+	color:whitesmoke
+}
+p,li {
+	font-size: calc(14px + 0.4vw);
+    line-height: calc(22px + 0.8vw);
+    font-family: Raleway, "Nimbus Sans", "Liberation Sans", sans;
+     color:#333 /* Dark grey */
+}
+/* https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
+a{color:#333}
+/* Menu */
+ div.menu{
+        margin:auto;
+        padding:0;
+        overflow:auto;
+        background-color:#cfb77b /* Sand */
+    }
+	div.menu li {
+		float:left;
+			 list-style-type:none
+	}
+    div.menu li a:hover{
+		background-color:cadetblue
+    }
+    div.menu li a{
+        display:block;
+        padding:14px 16px;
+        text-decoration:none;
+		color:black
+    }
+/* Submenu */
+div.menu ul ul {display:none}
+div.menu ul li:hover > ul {display:block}
+/* MOBIle meNU */
+a.mobinu {display:none}
+@media screen and (max-width:999px){
+	div.menu li {width:100%;float:none;padding:0}
+	#mobinu {display:none}
+	a.mobinu {display:block}
+	aside.sidebar {display:none}
+	article {max-width:100%;margin:auto;border-radius:0}
+}
+		/* Sidebar hide */
+		#sidiBer {display:none}
+		/* https://www.w3schools.com/css/css3_buttons.asp */
+		.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/* Change left margin when sidebar is enable */
+#sidiBer[style*='display: block'] ~ article {
+  margin-left:25%;
+}
+	</style>
+	<!-- Load other CSS -->
+  <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<!-- Create menu
+	Show on mobile only when click on button -->
+	<header>
+		<div id="mobinu">
+			<div class="menu"><ul>
+<li class="page_item page-item-738"><a href="index0.html">Lorem Ipsum (Latin)</a></li>
+<li class="page_item page-item-7"><a href="index.html">Start</a></li>
+<li class="page_item page-item-3"><a href="index2.html">Nowomowa (Polski)</a></li>
+<li class="page_item page-item-8"><a href="index3.html">Greek/Cyrylica (another alphabet)</a></li>
+<li class="page_item page-item-837"><a href="index4.html">WordPress Typography Test</a></li>
+</ul></div>
+		</div>
+		<!-- Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
+		<a href="javascript:void(0);" onclick="mobinu()" class="mobinu">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+<g>
+	<path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z" fill="#FFFFFF"/>
+	<path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z" fill="#FFFFFF"/>
+	<path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z" fill="#FFFFFF"/>
+	</g>
+</svg>
+		</a>
+	</header>
+
+<main>
+<!-- Widgets, default hide -->
+	<div id="sidiBer">
+	<aside class="sidebar">
+		<li id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://onliniak.ct8.pl/">
+				<label>
+					<span class="screen-reader-text">Szukaj:</span>
+					<input type="search" class="search-field" placeholder="Szukaj …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Szukaj">
+			</form></li>
+		<li id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widgettitle">Najnowsze wpisy</h2>
+		<ul>
+											<li>
+				<a href="#">Hello, World</a>
+									</li>
+											<li>
+					<a href="#">Post 2</a>
+									</li>
+											<li>
+					<a href="#">Post 3</a>
+									</li>
+											<li>
+					<a href="#">Post 4</a>
+									</li>
+											<li>
+					<a href="#">Post 5</a>
+									</li>
+					</ul>
+		</li>
+ 
+	</aside>
+	</div>
+	<a href="javascript:void(0);" onclick="sidiBer()" class="button">Show Sidebar</a>
+  <!-- Your post -->
+ <article>     
+	 <h1>Another alphabet - greek and cyryllic</h1>
+ <!-- Header info like date, author, category, tags etc. -->
+ <section>
+<p>Written by admin on 1 september 2015 in default category </p>
+            <br>
+              <p>Tag1, Tag2, Tag3</p>
+     </section>    
+           <img src="https://menorras-cdn.sirv.com/WP_onliniak.ct8.pl/question-mark-2492009_1920.jpg?profile=Example-Frame" alt="image">
+	 <!-- Use full content for single post and excerpt for archive/latest posts -->
+	 <p>Mater dolorosaи несколько лет. Утверждают, что он рад явиться в свидетелях, по имущественным расчетам Дмитрия Федоровича, которого в теперешнее поколение, но по матери Алеша во весь год, как дети божий и час вечерний. Федор Павлович на обиду, сначала недоверчиво и глубоко и променяла бедняжка благодетельницу на земле, как бы испугать; но уже деньгами всю жизнь, в монастыре внимательнее и гуманнейшему человеку, из самых отраднейших воспоминаний его и подметил вначале на него важной, что брат Дмитрий Федорович, никогда не желает, чувством своей воли отрешаетесь и неподвижным взглядом уперся в каком случае, если бы вздрагивая. Тяжело было в том, что еще в царствии небесном: ты, плачущую мать свою, тоже желал бы собственным его приезда. Всего вероятнее, что Федору Павловичу с одной и сознавал, что я всё равно, он возбуждал в худенькую его нарушаешь? Ведь там в самом деле в голове. Вот сюда, сюда… Они уже своего неутолимого сердца. Впрочем, и известных случаях тянул, иногда в нем и достойным подражания. Видя, что у него и сам воздвиг ее с своих физиономий, с лежащим в классах между тем многие годы всех подвизающихся старцу и.</p>
+
+<p> много, дескать, молчит и час и которому привязался всею горячею первою любовью своего неутолимого сердца. Так как в себе непреодолимые препятствия и проволочкам, то есть наружный, и пил, и сосцы, тебя простила за что старец и, сверх того будет независим. Юность и когда он прежде никогда и в который меня долго потом не вымолвив ни за ним, кончила, однако же, как говорили про такие подробности, которые умеют отлично понимал, что от своего она на первые года четыре спустя, Митя, потеряв терпение, но вместе с каким-то жидком в тебе и плачь, и какого-то вялого вида. Вещи и совершить не мог слышать этих могущих прибыть лицах, но и утешения, как монастырь и презрение к учению. В реалисте вера не мог. Посему знай и их обучение, и сосчитать даже редко встречаются. Он приписал равнодушие брата Ивана, но тотчас же я к половине двенадцатого. Наши посетители монастыря и не будет просьбица моя в таких случаях тянул, иногда познаниями. Он совершенно тут отчасти зависели по одному делу, с колыбели. Кстати, я с тою многочисленною, вечно нуждающеюся и совсем запамятовал, где же если он всё.</p>
+
+<p> много, дескать, молчит и продолговатый, как бы тогда он вовсе даже и обойтись без сомнения отголоском чужих хлебах у него попросил, но вот что его всеобщим любимцем во всех и вдруг явился в тебе кроткие сны пошлет. Ступай и совершенно бросил своего имущества. Кажется, он даже через лесок, через лесок… Это такой безобразный дом, которые возбуждают к этой болезни, встречаемой чаще и направились лесом. Помещик Максимов, человек всегда найдет в ней он и попали всё это я этого дома Григорий, мрачный, глупый анекдот неправда, к дарам, наклонят пред ними, читал над тою многочисленною, вечно наглыми, подозрительными и положил, еще накануне сообщен был только по этому двоюродному дяде, но им половину денег ни за него нарочно толпой и, казалось, на Востоке из Парижа, в который рос в антрактах ездил чуть не жил в нашем монастыре и, сверх того, что много лет тридцать, может быть, с вами жить! Вы не могла разрешить его товарищах постоянное желание подтрунить над вратами и будут все они тут вдруг рядом для этого только б я о крещении-то Дидерота, сам он забыл или о вас охранить.</p>
+
+<p> много, дескать, молчит и неверное. Федор Павлович был принят. Надо думать, что за мной, если уж покончить дела с колен во всех четверых рядышком, на коленях рыдающую как беспрекословно и дух нечистый, может, до того много их мнение, вы, Федор Павлович, спровадив с высокого роста, темно-рус, с места: Простите, господа, зато правда, тот у нас Петр Александрович. Посмотрите-ка, вскричал он совершенно Алеше очень заманчиво. Что же оно не у меня, голубчик, почему знаешь, интересно, в некоторых из чувства собственного сердца. Впрочем, лишь слезами умиления и теперь совершилось, едва лишь черта, которая после тяжелых, неправильных, безо всякой медицинской помощи родов; кроме множества глубоких морщинок на земле, и целомудренность. Он свел его месте лишь завидела старца, имевшая чрезвычайное участие. Ему вдруг объявил своим трудом, и воспитываться у которого факт достопримечательный ни Ефима Петровича он святой, и приживанием хлеб добывал. Я шут коренной, с другим, составляли, казалось, всю жизнь свою вторую супругу о своей кипучей юностью жизни Федора Павловича с каким-то жидком в обоюдоострое орудие, так и когда настала та единственная причина, почему знаешь, интересно, в некоторых из помещиков, когда-то приживальщик, а.</p>
+
+<p>Mater dolorosaи несколько весьма тогда сделать списаться с чувством, позвольте мне тебя оскорбил, примирись с тою многочисленною, вечно наглыми, подозрительными и выделило беглянке приданое, он вдруг умерла, и развлечь, предается страстям и отказывавшего по одному делу, за него в келью и прожил довольно часто, однако, бестолковых, которые слишком не то, что этот счет вопросе, он эту вторую супругу свою, схватившую его маленьком, но уже не из практики, в его выхода старца верил беспрекословно и пьяного лукавства улыбкою. Гм, так сказать, человеком, лет двадцати пяти тысяч, только не в приживальщики, а только что у нас припоминаемого по таким-то и осторожный на старика; тот зато я непременно хочет быть судьей людей, а с детства горько грустя. Мало того, что Алешка Карамазов, когда молодой человек никогда, конечно, в прежнем шуте других не от чуда рождается, а просто потому, что Алексей был до того, ожидал, стоя в час, не знал их там до того и в уголку и бог знает впрочем, ступай, доберись там такое. Да нет крючьев, тихо и верующий в смысле он именно пожаловал, не сердись. Покойнику в тот прямо на все.</p> 
+
+
+<p>Οἱ δὲ Φοίνιϰες οὗτοι οἱ σὺν Κάδμῳ ἀπιϰόμενοι.. ἐσήγαγον διδασϰάλια ἐς τοὺς ῞Ελληνας ϰαὶ δὴ ϰαὶ γράμματα, οὐϰ ἐόντα πρὶν ῞Ελλησι ὡς ἐμοὶ δοϰέειν, πρῶτα μὲν τοῖσι ϰαὶ ἅπαντες χρέωνται Φοίνιϰες· μετὰ δὲ χρόνου προβαίνοντος ἅμα τῇ ϕωνῇ μετέβαλον ϰαὶ τὸν ϱυϑμὸν τῶν γραμμάτων. Περιοίϰεον δέ σϕεας τὰ πολλὰ τῶν χώρων τοῦτον τὸν χρόνον ῾Ελλήνων ῎Ιωνες· οἳ παραλαβόντες διδαχῇ παρὰ τῶν Φοινίϰων τὰ γράμματα, μεταρρυϑμίσαντές σϕεων ὀλίγα ἐχρέωντο, χρεώμενοι δὲ ἐϕάτισαν, ὥσπερ ϰαὶ τὸ δίϰαιον ἔϕερε ἐσαγαγόντων Φοινίϰων ἐς τὴν ῾Ελλάδα, ϕοινιϰήια ϰεϰλῆσϑαι. </p> </article>
+
+</main>
+	
+<!-- Mobile menu via javascript -->
+<script>
+function mobinu() {
+  var x = document.getElementById("mobinu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	<script>
+		function sidiBer() {
+  var x = document.getElementById("sidiBer");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
+	<!-- Load Raleway font from Google (async) 
+	  https://github.com/typekit/webfontloader -->
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Raleway:500']
+    }
+  });
+</script>
+	<!-- Keyboard next/previous page, copy from deprecated WordPress plugin (forget name) -->
+	<script async>document.onkeydown = function (e) {
+    var e = e || event, 
+    keycode = e.which || e.keyCode; 
+			//left
+			//numpad 4
+			//previous post
+    if (keycode == 100)
+        location = "index2.html";
+			//right
+			//numpad 6
+			//next post
+    if (keycode == 102)
+        location = "index4.html";
+}</script>
+	
+</body>
+</html>
