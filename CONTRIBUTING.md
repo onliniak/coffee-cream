@@ -4,7 +4,7 @@
 + Without risky rules.
 + I recommend atom editor with https://atom.io/packages/atom-beautify
 2. Additionally we use https://github.com/WPTRT/theme-sniffer.
-2. In official branch (master) we may use only GPL3+ compatible code like GPL, X11/MIT, Creative Commons 4, LGPL, "New"/3-clause BSD etc.
+2. In official branch (WordPress-repo) we may use only GPL3+ compatible code like GPL, X11/MIT, Creative Commons 4, LGPL, "New"/3-clause BSD etc.
 3. In child theme (github-flavoured) we may use any code.
 4. Check your code once again for parse errors.
 
