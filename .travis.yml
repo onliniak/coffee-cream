@@ -27,5 +27,5 @@ matrix:
       php: nightly
 script: 
   - "find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
-  - "php-cs-fixer fix --verbose --diff"
+  - "find -L . -name '*.php' -print0 | php php-cs-fixer fix --diff"
 sudo: false
