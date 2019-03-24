@@ -1,5 +1,8 @@
 <?php
 include 'inc/customizer.php';
+function ocean_cream_js()
+{
+    ?>
 <script type="text/javascript">
 	var OCreamPPost = "<?php echo esc_url(get_permalink(get_adjacent_post(false, '', false))) ?>";
 	var OCreamNTP = "<?php echo esc_url(get_permalink(get_adjacent_post(false, '', true))); ?>";
@@ -9,20 +12,22 @@ include 'inc/customizer.php';
 }
 add_action('wp_footer', 'ocean_cream_js');
 
+remove_action('wp_head', 'ocean_cream_header', '1');
+
 // Load basic CSS before other styles.
-add_action('wp_head', 'ocean_cream_header', '1');
-function ocean_cream_header()
+add_action('wp_head', 'ocean_cream_github_header', '1');
+function ocean_cream_github_header()
 {
     wp_enqueue_style('criticalcss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/WordPress-repo/css/critical.min.css', '20181206', 'screen');
 }
 // Load other scripts and styles (after load site).
-function ocean_cream_footer_styles()
+function ocean_cream_github_footer_styles()
 {
     wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/WordPress-repo/style.css', '20181206', 'screen');
     wp_enqueue_script('bundle', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/github-flavoured/js/bundle.min.js');
     wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');
 }
-add_action('wp_footer', 'ocean_cream_footer_styles');
+add_action('wp_footer', 'ocean_cream_github_footer_styles');
 
 // load emojis via CDN
 // https://www.marsble.com/t/serving-wordpress-org-emojis-using-staticaly-cdn/94
@@ -57,5 +62,4 @@ function isa_amp_css_styles_fonts($amp_template)
         }
     <?php
 }
-?>
 ?>
