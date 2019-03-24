@@ -2,10 +2,10 @@
 // And mobinu function say 'if menu is hiden and someone click, open it but if is open, hide it'
 // https://www.w3schools.com/jsref/event_onclick.asp
 
-document.getElementById('ocean_cream_mobile_menu_icon').addEventListener('click', mobinu);
+document.getElementById('hamburger-cream').addEventListener('click', mobinu);
 
 function mobinu() {
-  var x = document.getElementById('ocean_cream_mobile_menu');
+  var x = document.getElementById('mobinu');
   if (x.style.display === 'block') {
     x.style.display = 'none';
   } else {
@@ -13,10 +13,10 @@ function mobinu() {
   }
 }
 
-document.getElementById('ocean_cream_sidebar_open').addEventListener('click', sidiBer);
+document.getElementById('ShoSid').addEventListener('click', sidiBer);
 
 function sidiBer() {
-  var x = document.getElementById('ocean_cream_sidebar');
+  var x = document.getElementById('sidiBer');
   if (x.style.display === 'block') {
     x.style.display = 'none';
   } else {
