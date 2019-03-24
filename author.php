@@ -12,36 +12,35 @@
     <!-- Create menu
     Show on mobile only when click on button -->
     <header>
-        <div id="mobinu">
-    <?php wp_nav_menu(array( 'theme_location' => 'header-menu','container_class' => 'menu'  )); ?>
+        <div id="ocean_cream_mobile_menu">
+    <?php wp_nav_menu(array( 'theme_location' => 'header-menu','container_class' => 'menu','container' => 'nav'  )); ?>
         </div>
-        <!-- Icons from Freepic -->
-               <span id="hamburger-cream">
+		<span id="ocean_cream_mobile_menu_icon">
 <svg class="i-menu" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
         </svg>
-        </span>
+		</span>
     </header>
 
 <main>
 <!-- Widgets, default hide -->
-    <div id="sidiBer">
-    <aside class="sidebar">
+    <div id="ocean_cream_sidebar">
+    <aside class="ocean_cream_sidebar">
     <?php dynamic_sidebar('sidebar');?>
     </aside>
     </div>
-    <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
+    <span id="ocean_cream_sidebar_open" class="ocean_cream_button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
   <!-- Your post. Based on Codex example-->
  <article <?php post_class();?>>
 	 <h2><?php esc_html_e('About:', 'ocean-cream'); ?><?php the_author_meta('user_nicename'); ?></h2>
     <dl>
 		<!-- https://codex.wordpress.org/Template_Tags/the_author_meta -->
-		<dt> <?php esc_html_e('From', 'ocean-cream'); ?></dt>
-		<dd> <?php the_author_meta('user_registered'); ?></dd>
-		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?></dt>
-		<dd> <?php the_author_meta('user_url'); ?></dd>
-		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?></dt>
-		<dd> <?php the_author_meta('description'); ?></dd>
+		<dt> <?php esc_html_e('From', 'ocean-cream'); ?>        </dt>
+		<dd> <?php the_author_meta('user_registered'); ?>       </dd>
+		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?>     </dt>
+		<dd> <?php the_author_meta('user_url'); ?>              </dd>
+		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?>   </dt>
+		<dd> <?php the_author_meta('description'); ?>           </dd>
 	 </dl>
 	 <br>
     <h2><?php esc_html_e('My posts:', 'ocean-cream'); ?></h2>
@@ -51,7 +50,7 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <li>
-            <a href="<?php esc_url(the_permalink()) ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+            <a href="<?php esc_url(the_permalink()) ?>" rel="bookmark">
             <?php the_title(); ?></a>,
             <?php echo get_the_date(); ?> <?php esc_html_e('in', 'ocean-cream'); ?> <?php the_category('&');?>
         </li>

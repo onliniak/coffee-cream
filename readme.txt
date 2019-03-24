@@ -5,7 +5,7 @@ Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
 Requires at least: 4.0
 Tested up to: 5.1.1
 Requires PHP: 5.2
-Stable tag: 0.96
+Stable tag: 0.96.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,17 +21,9 @@ But in this case we don't use footer.php, so you must change get_footer to wp_fo
 
 = I want to change XYZ =
 
-For colors use WP Customizer (/wp-admin/customize.php).
+For colors, look at https://github.com/onliniak/ocean-cream/tree/master/inc. Copy inc directory and add this line https://github.com/onliniak/ocean-cream/blob/master/functions.php#L2 or use custom CSS (look at customizer_output for example). 
 For other changes use theme editor and favourite search engine (for example Google)
 or write new support ticket.
-
-= In  Customizer, some colors is invisible =
-
-I not use sidebar text and pagination background, it doesn't make sense.
-
-= How reset all colors options ? =
-
-Just delete theme_mods_ocean-cream from wp_options table.
 
 = Why the_author_meta ? (author page) =
 
@@ -59,6 +51,8 @@ The size of the font and entry / sidebar is automatically determined based on th
 = 0.94 = Ready for CSP. (rewrite js buttons from onload() to span).
 = 0.95 = Rewrire author page (the_author function, instead of $curauth), new pagination CSS, smaller font, hsla colors (better VA/IPS support), hide comments by default, minify and merge keyboard.js + buttons.js to bundle.min.js
 = 0.96 = remove no-GPL code, WP customizer support.
+= 0.96.1 = remove unverified code (WP Customizer, hsla colors and custom background color support).
+= 0.96.2 = new CSS selectors → for example sidiBer is now ocean_cream_sidebar, hamburger_cream is now ocean_cream_mobile_menu_icon etc, fix transparent background after upgrade to 0.96.1
 
 == Inspirations ==
 

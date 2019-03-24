@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-16 18:15+0000\n"
-"PO-Revision-Date: 2019-03-16 18:16+0000\n"
+"POT-Creation-Date: 2019-03-21 23:28+0000\n"
+"PO-Revision-Date: 2019-03-21 23:28+0000\n"
 "Last-Translator: Rafael Pszenny <RafaelPszenny@caramail.com>\n"
-"Language-Team: Polish\n"
+"Language-Team: Polski\n"
 "Language: pl_PL\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
@@ -65,19 +65,19 @@ msgstr "Nowsze &rarr;"
 msgid "Comments are closed."
 msgstr "Komentowanie jest zabronione"
 
-#: functions.php:7
+#: functions.php:6
 msgid "Header menu"
 msgstr "Menu Główne"
 
-#: functions.php:17
+#: functions.php:16
 msgid "Widget Area"
 msgstr "Pole widżetów"
 
-#: functions.php:19
+#: functions.php:18
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Przeciągnij tutaj swoje widżety, by dodać je do paska bocznego"
 
-#: functions.php:54
+#: functions.php:47
 msgid "Read More"
 msgstr "Czytaj Dalej"
 
@@ -104,102 +104,6 @@ msgstr "Moje wpisy:"
 #: author.php:59
 msgid "No posts by this author."
 msgstr "Niestety, ten autor nie napisał jeszcze żadnego wpisu. "
-
-#: inc/customizer.php:13
-msgid "Accent background"
-msgstr "Przyciski | Tło"
-
-#: inc/customizer.php:14
-msgid "Change background color of buttons"
-msgstr "Zmień kolor tła przycisków"
-
-#: inc/customizer.php:28
-msgid "Accent text"
-msgstr "Przyciski | Tekst"
-
-#: inc/customizer.php:29
-msgid "Change text color of buttons"
-msgstr "Zmień kolor tekstu (przyciski)"
-
-#: inc/customizer.php:43
-msgid "Accent hover"
-msgstr "Przyciski | Hover"
-
-#: inc/customizer.php:44
-msgid "Change background color of buttons, when mouse hover"
-msgstr "Zmień kolor tła przycisków, po najechaniu myszką "
-
-#: inc/customizer.php:58
-msgid "Pagination background"
-msgstr "Paginacja | Tło"
-
-#: inc/customizer.php:59
-msgid "Change background color of navigation"
-msgstr "Zmień kolor tła przycisków nawigacji"
-
-#: inc/customizer.php:73
-msgid "Post background"
-msgstr "Wpis | Tło"
-
-#: inc/customizer.php:74
-msgid "Change background color of posts (article)"
-msgstr "Zmień kolor tła wpisu (tej wewnętrznej, jaśniejszej części)"
-
-#: inc/customizer.php:88
-msgid "Post text"
-msgstr "Wpis | Tekst"
-
-#: inc/customizer.php:89
-msgid "Change text color of posts (article)"
-msgstr "Zmień kolor tekstu (jaśniejsza część)"
-
-#: inc/customizer.php:103
-msgid "Post link"
-msgstr "Wpis | Linki"
-
-#: inc/customizer.php:104
-msgid "Change link color of posts (article)"
-msgstr "Zmień kolor linków (jaśniejsza część)"
-
-#: inc/customizer.php:118
-msgid "Menu background"
-msgstr "Menu | Tło"
-
-#: inc/customizer.php:119
-msgid "Change background color of menu"
-msgstr "Zmień kolor tła menu"
-
-#: inc/customizer.php:133
-msgid "Menu text"
-msgstr "Menu | Tekst"
-
-#: inc/customizer.php:134
-msgid "Change text color of menu"
-msgstr "Zmień kolor liter (menu)"
-
-#: inc/customizer.php:148
-msgid "Menu item hover"
-msgstr "Menu | Hover"
-
-#: inc/customizer.php:149
-msgid "Change background color of menu, when hover."
-msgstr "Zmień kolor tła, po najechaniu myszką na menu"
-
-#: inc/customizer.php:163
-msgid "Sidebar text"
-msgstr "Pasek Boczny | Tło"
-
-#: inc/customizer.php:164
-msgid "Change text color of sidebar and \"Hamburger\" icon color."
-msgstr "Zmień kolor tła tekstu, na obszarze paska bocznego oraz ikonki menu "
-
-#: inc/customizer.php:178
-msgid "Sidebar text links"
-msgstr "Pasek Boczny | Linki"
-
-#: inc/customizer.php:179
-msgid "Change color of sidebar links."
-msgstr "Zmień kolor tła linków, na obszarze paska bocznego"
 
 # Nazw w zasadzie się nie tłumaczy
 #. Name of the theme

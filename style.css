@@ -1,14 +1,13 @@
 /*
 Theme Name: Ocean Cream
-Description: One-file starter theme with lightweight in mind. Include hiden sidebar and numeric keyboard navigation. Optimalization for Google.
+Description: Never waste space on your blog again! Choose hidden comments and sidebar, choose Ocean Cream. In addition, thanks to its lightness, it will speed up your website.
 Author: Rafael Pszenny
 Author URI: https://github.com/onliniak
-Version: 0.93
+Version: 0.96.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: ocean-cream
 Tags: featured-images, left-sidebar, blog
-GitHub Theme URI: onliniak/ocean-cream
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -129,10 +128,26 @@ a img.aligncenter {
 -------------------------------------------------------------- */
 /* nav links */
 .page-numbers, .OCnextpage a {
+  background-color: #00b0ff;
   padding: 0 10px;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px
+  border-radius: 5px;
+  border: solid black
+}
+
+.page-numbers:hover, .OCnextpage:hover a {
+  background-color: #2a91d1
+}
+
+/* Sidebar text and "hamburger" icon color */
+aside li,
+svg.i-menu {
+  color: #fff
+}
+
+aside a {
+  color: #fff;
 }
 
 /* Sticky post */
@@ -161,7 +176,8 @@ ol.children {
 /* =HTML CSS Styles
 -------------------------------------------------------------- */
 /*  Blockquotes
- *  From https://blog.nayma.pl/prosty-i-ladny-blockquote-w-html-i-css/ */
+ *  From https://codepen.io/Naymapl/pen/QvpGxK, licensed under MIT.
+ * https://blog.codepen.io/legal/licensing/ */
 blockquote {
   background: #EDEDED;
   border-left: 8px solid #008FEA;
@@ -191,6 +207,7 @@ blockquote::before {
 
 blockquote p::before {
   color: #ddd;
+  content: "\201C";
   font-size: 100em;
   line-height: 0.65em;
   right: .095em;
@@ -198,32 +215,29 @@ blockquote p::before {
   z-index: -1;
 }
 
-/* Tables */
+/* Tables, from https://www.w3schools.com/css/css_table.asp */
 table {
   width: 100%
 }
 
-th, td {
+th,
+td {
   padding: 8px;
 }
 
-tr {
-  background-color: #00bfa5
-}
-
-tr a {
-  color: black
+tr:nth-child(even) {
+  background-color: deepskyblue
 }
 
 tr:hover {
-  background-color: #e1bee7;
+  background-color: #ddd;
 }
 
 thead th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #00897b;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -271,11 +285,20 @@ code {
 
 /* =Small Changes
 -------------------------------------------------------------- */
-address, cite {
+.button {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: medium;
+  margin-bottom: 3mm
+}
+
+address,
+cite {
   font-style: italic;
 }
 
-acronym, abbr {
+acronym,
+abbr {
   border-bottom: 1px dotted #000;
 }
 
@@ -303,7 +326,9 @@ figure.wp-caption img {
   box-shadow: none
 }
 
-p, h1, pre {
+article p,
+h1,
+pre {
   overflow: auto;
 }
 
@@ -312,7 +337,8 @@ aside.sidebar h2 {
 }
 
 /* Small images like thumbnails or comments */
-p img:hover, img.attachment-thumbnail:hover {
+p img:hover,
+img.attachment-thumbnail:hover {
   width: 80%;
   height: 40%
 }

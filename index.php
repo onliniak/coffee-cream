@@ -16,16 +16,17 @@ body_class(); ?>>
     <!-- Create menu
     Show on mobile only when click on button -->
     <header>
-        <div id="mobinu">
+        <div id="ocean_cream_mobile_menu">
     <?php
     wp_nav_menu(
     array(
         'theme_location' => 'header-menu',
-        'container_class' => 'menu'
+        'container_class' => 'menu',
+        'container' => 'nav'
         )
     ); ?>
-	    </div>
-		<span id="hamburger-cream">
+        </div>
+		<span id="ocean_cream_mobile_menu_icon">
 <svg class="i-menu" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
         </svg>
@@ -34,13 +35,13 @@ body_class(); ?>>
 
 <main>
 <!-- Widgets, default hide -->
-    <div id="sidiBer">
-    <aside class="sidebar">
+    <div id="ocean_cream_sidebar">
+    <aside class="ocean_cream_sidebar">
     <?php
     dynamic_sidebar('sidebar'); ?>
     </aside>
     </div>
-   <span id="ShoSid" class="button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
+   <span id="ocean_cream_sidebar_open" class="ocean_cream_button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
   <!-- Your post -->
  <article <?php
     post_class(); ?>>
@@ -49,14 +50,14 @@ body_class(); ?>>
         the_permalink(); ?>"><?php
         the_title(); ?></a></h1>
  <!-- Header info like date, author, category, tags etc. -->
-
+<section class="ocean_cream_info">
         <?php
         esc_html_e('Written by', 'ocean-cream'); ?>
                 <?php
                 the_author_posts_link(); ?>
         <?php
         esc_html_e('on', 'ocean-cream'); ?> <?php
-        echo get_the_date(); ?>
+        echo esc_html(get_the_date()); ?>
             <?php
             esc_html_e('in', 'ocean-cream'); ?>
             <?php
@@ -64,7 +65,7 @@ body_class(); ?>>
             <br />
                 <?php
                 the_tags(); ?>
-
+  </section>
             <?php
             if (has_post_thumbnail()) {
                 the_post_thumbnail('post-thumbnails');
@@ -86,9 +87,9 @@ body_class(); ?>>
         wp_list_comments(); ?>
 	 </div>
 
-        <?php
+         <?php
         comments_template(); ?>
-	 <a href="#comments" class="button"><?php esc_html_e('Comments', 'ocean-cream'); ?></a>
+	 <a href="#comments" class="ocean_cream_button"><?php esc_html_e('Comments', 'ocean-cream'); ?></a>
 	 <?php
 if (is_singular()) {
             wp_enqueue_script("comment-reply");
