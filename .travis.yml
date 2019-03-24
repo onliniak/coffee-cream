@@ -1,7 +1,6 @@
 --- 
 before_script: 
   - "phpenv config-rm xdebug.ini || echo 'No xdebug config.'"
-  - "vendor/bin/php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run"
 cache: 
   directories: 
     - $HOME/.php-cs-fixer
@@ -27,4 +26,5 @@ matrix:
       php: nightly
 script: 
   - "find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
+  - "vendor/bin/php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run"
 sudo: false
