@@ -2,6 +2,7 @@
 before_script: 
   - "phpenv config-rm xdebug.ini || echo 'No xdebug config.'"
   - "composer global require friendsofphp/php-cs-fixer"
+  - "export PATH="$PATH:$HOME/.composer/vendor/bin"
 cache: 
   directories: 
     - $HOME/.php-cs-fixer
@@ -27,5 +28,5 @@ matrix:
       php: nightly
 script: 
   - "find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
-  - "find -L . -name '*.php' -print0 | php php-cs-fixer fix --diff"
+  - "php-cs-fixer fix index.php "
 sudo: false
