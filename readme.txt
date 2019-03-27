@@ -21,7 +21,7 @@ But in this case we don't use footer.php, so you must change get_footer to wp_fo
 
 = I want to change XYZ =
 
-For colors, look at https://github.com/onliniak/ocean-cream/tree/master/inc. Copy inc directory and add this line https://github.com/onliniak/ocean-cream/blob/master/functions.php#L2 or use custom CSS (look at customizer_output for example). 
+For colors, look at https://github.com/onliniak/ocean-cream/tree/github-flavoured/inc. Copy inc directory and add this line https://github.com/onliniak/ocean-cream/blob/github-flavoured/functions.php#L2 or use custom CSS (look at customizer_output for example). 
 For other changes use theme editor and favourite search engine (for example Google)
 or write new support ticket.
 
