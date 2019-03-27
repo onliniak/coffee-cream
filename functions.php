@@ -24,7 +24,7 @@ function ocean_cream_github_header()
 function ocean_cream_github_footer_styles()
 {
     wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/WordPress-repo/style.css', '20181206', 'screen');
-    wp_enqueue_script('bundle', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/github-flavoured/js/bundle.min.js');
+    wp_enqueue_script('bundle', 'https://gitcdn.xyz/repo/onliniak/ocean-cream/github-flavoured/js/bundle.min.js');
     wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');
 }
 add_action('wp_footer', 'ocean_cream_github_footer_styles');
