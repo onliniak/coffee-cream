@@ -14,6 +14,14 @@ Never waste space on your blog again! Choose hidden comments and sidebar, choose
 
 == Frequently Asked Questions ==
 
+= Supported browsers =
+
+Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chromium 37, IE 10+, WebKit( Midori 0.5, Luakit 1.8.0, Arora 0.11, Safari 9.1.3+ etc.), tested on latest Firefox (Linux).
+
+= Tested screen resolutions =
+
+1366x768 (mainly, laptop), 1920x1080, 1440x900, 600x831 (Samsung Galaxy Tab 4 7.0, mainly), Motorola Moto G (falcon).
+
 = Help, my plugins don't works (load in footer) =
 
 Some plugins use get_footer to load scripts in footer.
