@@ -16,7 +16,7 @@ Never waste space on your blog again! Choose hidden comments and sidebar, choose
 
 = Supported browsers =
 
-Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chromium 37, IE 10+, WebKit( Midori 0.5, Luakit 1.8.0, Arora 0.11, Safari 9.1.3+ etc.), tested on latest Firefox (Linux).
+Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chromium 37+, IE 10+, WebKit( Midori 0.5, Luakit 1.8.0, Arora 0.11, Safari 9.1.3+ etc.), tested on latest Firefox (Linux).
 
 = Tested screen resolutions =
 
