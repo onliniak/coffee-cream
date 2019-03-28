@@ -23,7 +23,7 @@ Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chromium 30+, IE 10+, WebK
 1366x768 (mainly, laptop), 1920x1080, 1440x900, 600x831 (Samsung Galaxy Tab 4 7.0, mainly), Motorola Moto G (falcon).
 
 = Help, my plugins don't works (load in footer) =
-
+ 
 Some plugins use get_footer to load scripts in footer.
 But in this case we don't use footer.php, so you must change get_footer to wp_footer .
 
