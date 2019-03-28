@@ -15,7 +15,6 @@ language_attributes(); ?>>
 body_class(); ?>>
     <!-- Create menu
     Show on mobile only when click on button -->
-    <header>
         <div id="ocean_cream_mobile_menu">
     <?php
     wp_nav_menu(
@@ -31,7 +30,6 @@ body_class(); ?>>
             <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
         </svg>
 			</span>
-    </header>
 
 <main>
 <!-- Widgets, default hide -->
