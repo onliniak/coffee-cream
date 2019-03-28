@@ -36,7 +36,7 @@ or write new support ticket.
 = Why the_author_meta ? (author page) =
 
 In the future it will be easier to change presented informations. 
-
+ 
 = How exactly works "automatic screen" ? =
 
 The size of the font and entry / sidebar is automatically determined based on the width of the window.
