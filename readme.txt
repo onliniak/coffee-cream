@@ -39,6 +39,8 @@ In the future it will be easier to change presented informations.
 
 = I want to display Facebook/Twitter/xyz in author's page. =
 
+Example: https://easywebdesigntutorials.com/create-your-own-author-bio-box-in-wordpress-without-a-plugin/
+
 Add this code to your functions.php
 
 function ocean_cream_author_box( $user_contact ) {
