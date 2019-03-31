@@ -336,13 +336,6 @@ aside.sidebar h2 {
   color: white
 }
 
-/* Small images like thumbnails or comments */
-p img:hover,
-img.attachment-thumbnail:hover {
-  width: 80%;
-  height: 40%
-}
-
 /* "Old" Galleries */
 .gallery-columns-1 {
   columns: 1
