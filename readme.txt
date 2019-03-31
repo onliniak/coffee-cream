@@ -36,6 +36,24 @@ or write new support ticket.
 = Why the_author_meta ? (author page) =
 
 In the future it will be easier to change presented informations. 
+
+= I want to display Facebook/Twitter/xyz in author's page. =
+
+Add this code to your functions.php
+
+function ocean_cream_author_box( $user_contact ) {
+# add new field to profile.php
+ $user_contact['facebook'] = __( 'Facebook' );
+ $user_contact['twitter'] = __( 'Twitter' );
+ return $user_contact; 
+}
+add_filter( 'user_contactmethods', 'ocean_cream_author_box' );
+
+and this code to author.php
+
+<dt> <?php esc_html_e('Facebook', 'ocean-cream'); ?>   </dt>
+# Display field "facebook"
+<dd> <?php the_author_meta('facebook'); ?> </dd>
  
 = How exactly works "automatic screen" ? =
 
