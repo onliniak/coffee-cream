@@ -5,7 +5,7 @@ Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
 Requires at least: 4.0
 Tested up to: 5.1.1
 Requires PHP: 5.2
-Stable tag: 0.96.2
+Stable tag: 0.97
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,7 +44,7 @@ Example: https://easywebdesigntutorials.com/create-your-own-author-bio-box-in-wo
 Add this code to your functions.php
 
 function ocean_cream_author_box( $user_contact ) {
-# add new field to profile.php
+// add new field to profile.php
  $user_contact['facebook'] = __( 'Facebook' );
  $user_contact['twitter'] = __( 'Twitter' );
  return $user_contact; 
@@ -54,7 +54,7 @@ add_filter( 'user_contactmethods', 'ocean_cream_author_box' );
 and this code to author.php
 
 <dt> <?php esc_html_e('Facebook', 'ocean-cream'); ?>   </dt>
-# Display field "facebook"
+// Display field "facebook"
 <dd> <?php the_author_meta('facebook'); ?> </dd>
  
 = How exactly works "automatic screen" ? =
@@ -81,6 +81,7 @@ The size of the font and entry / sidebar is automatically determined based on th
 = 0.96 = remove no-GPL code, WP customizer support.
 = 0.96.1 = remove unverified code (WP Customizer, hsla colors and custom background color support).
 = 0.96.2 = new CSS selectors → for example sidiBer is now ocean_cream_sidebar, hamburger_cream is now ocean_cream_mobile_menu_icon etc, fix transparent background after upgrade to 0.96.1
+= 0.97 = Fix white letters on white background (text widgets), styles/scripts variables, new submenus, add Arial font as fallback, hide www/biography when empty (author's page), change div.menu to nav.menu, "tutorial" how add social media links, wrong urls in readme.
 
 == Inspirations ==
 

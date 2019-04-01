@@ -3,11 +3,12 @@ Theme Name: Ocean Cream
 Description: Never waste space on your blog again! Choose hidden comments and sidebar, choose Ocean Cream. In addition, thanks to its lightness, it will speed up your website.
 Author: Rafael Pszenny
 Author URI: https://github.com/onliniak
-Version: 0.96.2
+Version: 0.97
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: ocean-cream
 Tags: featured-images, left-sidebar, blog
+GitHub Theme URI: onliniak/ocean-cream
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -142,6 +143,7 @@ a img.aligncenter {
 
 /* Sidebar text and "hamburger" icon color */
 aside li,
+aside p,
 svg.i-menu {
   color: #fff
 }
@@ -290,6 +292,11 @@ code {
   border-radius: 2px;
   font-size: medium;
   margin-bottom: 3mm
+}
+
+ul.sub-menu li a {
+	min-width:100px;
+	text-align:center
 }
 
 address,

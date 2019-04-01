@@ -7,6 +7,10 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
 
     <?php wp_head(); ?>
+    <?php //PHP variables
+    $ocean_cream_website = get_the_author_meta('url', $post->post_author);
+    $ocean_cream_description = get_the_author_meta('user_description', $post->post_author);
+    ?>
 </head>
 <body <?php body_class();?>>
     <!-- Create menu
@@ -35,12 +39,20 @@
 		<!-- https://codex.wordpress.org/Template_Tags/the_author_meta -->
 		<dt> <?php esc_html_e('From', 'ocean-cream'); ?>        </dt>
 		<dd> <?php the_author_meta('user_registered'); ?>       </dd>
-		<dt> <?php esc_html_e('Website', 'ocean-cream'); ?>     </dt>
+		<?php if (!empty($ocean_cream_website)) {
+        echo "<dt> ";
+        esc_html_e('Website', 'ocean-cream');
+        echo "</dt>";
+    } ?>
 		<dd> <?php the_author_meta('user_url'); ?>              </dd>
-		<dt> <?php esc_html_e('Biography', 'ocean-cream'); ?>   </dt>
+		<?php if (!empty($ocean_cream_description)) {
+        echo "<dt> ";
+        esc_html_e('Biography', 'ocean-cream');
+        echo "</dt>";
+    } ?>
 		<dd> <?php the_author_meta('description'); ?>           </dd>
-	 </dl>
-	 <br>
+	</dl>
+	    <br>
     <h2><?php esc_html_e('My posts:', 'ocean-cream'); ?></h2>
 
     <ul>
