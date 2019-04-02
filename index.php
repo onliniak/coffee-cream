@@ -40,29 +40,24 @@ body_class(); ?>>
     </aside>
     </div>
    <span id="ocean_cream_sidebar_open" class="ocean_cream_button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
-  <!-- Your post -->
+  <!-- Your post
+	   http://microformats.org/wiki/h-entry-->
  <article <?php
-    post_class(); ?>>
+    post_class('h-entry'); ?>>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-     <h1><a href="<?php
+     <h1 class="p-name"><a href="<?php
         the_permalink(); ?>"><?php
         the_title(); ?></a></h1>
  <!-- Header info like date, author, category, tags etc. -->
 <section class="ocean_cream_info">
         <?php
         esc_html_e('Written by', 'ocean-cream'); ?>
-                <?php
-                the_author_posts_link(); ?>
+               <a class="p-author h-card" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo get_the_author(); ?></a>
         <?php
-        esc_html_e('on', 'ocean-cream'); ?> <?php
-        echo esc_html(get_the_date()); ?>
-            <?php
-            esc_html_e('in', 'ocean-cream'); ?>
-            <?php
-            the_category(', '); ?>
-            <br />
-                <?php
-                the_tags(); ?>
+        esc_html_e('on', 'ocean-cream'); ?>
+	<?php the_date('c', '<time class="dt-published" datetime="', '">'); ?><?php
+        echo esc_html(get_the_date()); ?></time>
+	 <?php the_tags(); ?>
   </section>
             <?php
             if (has_post_thumbnail()) {
@@ -71,11 +66,20 @@ body_class(); ?>>
      <!-- Use full content for single post and excerpt for archive/latest posts -->
         <?php
         if (is_archive()) {
-            the_excerpt();
+			echo '<p class="p-summary">';
+			echo  get_the_excerpt();
+			echo '</p>'; 
         } elseif (is_home()) {
-            the_excerpt();
+            echo '<p class="p-summary">';
+			echo  get_the_excerpt();
+			echo '</p>'; 
         } else {
+			echo '<div class="e-content">';
             the_content();
+			echo '</div>';
+            echo '<p class="p-category">';
+			echo  the_category(', ');
+			echo '</p>';
         } ?>
         <?php
         wp_link_pages(); ?>
