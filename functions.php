@@ -1,5 +1,6 @@
 <?php
 include 'inc/customizer.php';
+include 'inc/customizer_output.php';
 function ocean_cream_js()
 {
     ?>
@@ -7,20 +8,6 @@ function ocean_cream_js()
 	var OCreamPPost = "<?php echo esc_url(get_permalink(get_adjacent_post(false, '', false))) ?>";
 	var OCreamNTP = "<?php echo esc_url(get_permalink(get_adjacent_post(false, '', true))); ?>";
 	var OCreamCPRight = "<p>   <?php esc_html_e('Created by', 'ocean-cream'); ?> <?php the_author(); ?>  <?php esc_html_e('from', 'ocean-cream'); ?> "
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Raleway:500']
-    }
-  });
-	(function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js?ver=5.1.1';
-      wf.async = true;
-      s.parentNode.insertBefore(wf, s);
-   })(document);
 </script>
 <?php
 }
@@ -42,6 +29,11 @@ function ocean_cream_github_footer_styles()
     wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');
 }
 add_action('wp_footer', 'ocean_cream_github_footer_styles');
+
+ // Run function (load custom changes) only when customizer is enable.
+    if (get_theme_mod('ocean_cream_customizer_enable') == 'enable') {
+        add_theme_support('custom-background');
+    };
 
 // load emojis via CDN
 // https://www.marsble.com/t/serving-wordpress-org-emojis-using-staticaly-cdn/94
