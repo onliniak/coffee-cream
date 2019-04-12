@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-criticalcss.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Critical CSS</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-criticalcss-template" class="kss-section kss-section--depth-2 is-fullscreen">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-criticalcss-template">
+            <span class="kss-title__ref">
+              1.3
+              <span class="kss-title__permalink-hash">
+                  #Criticalcss.template
+              </span>
+            </span>
+            Font
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <pre class="hljs"><code class="language-">p,
+li {
+   font-size: calc(14px + 0.25vw);
+   line-height: 150%;
+   font-family: &quot;Nimbus Sans&quot;, Helvetica, Arial, sans;
+   color: #333
+}
+a {
+   color: #333
+}
+</code></pre>
+<p>Here, I create secend important part of this site - typography.</p>
+<p>I use 3 Helvetica's fonts → more info <a href="http://www.identifont.com/differences?first=Nimbus+Sans&amp;second=Helvetica">http://www.identifont.com/differences?first=Nimbus+Sans&amp;second=Helvetica</a>
+and <a href="http://www.identifont.com/differences?first=Arial&amp;second=Helvetica&amp;q=Go">http://www.identifont.com/differences?first=Arial&amp;second=Helvetica&amp;q=Go</a> and &quot;automatic/mathematic&quot; font size.</p>
+<pre class="hljs"><code class="language-">14px + (¼*%*x) or 14px + (0.25*0.01*x)
+Where x =  height of article/content area.
+</code></pre>
+<p>For example on laptops (1366x768px) we use ~ 17.3px
+I am using 150% since I noticed that the &quot;automatic&quot; version causes problems with larger fonts like 30 / 40px
+And colors - dark grey for text and links.</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>critical.css</code>, line 87
+        </div>
+
+    </div>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
+s-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

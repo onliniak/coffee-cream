@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-criticalcss.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Critical CSS</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-criticalcss-mobile" class="kss-section kss-section--depth-2 is-fullscreen">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-criticalcss-mobile">
+            <span class="kss-title__ref">
+              1.1
+              <span class="kss-title__permalink-hash">
+                  #Criticalcss.Mobile
+              </span>
+            </span>
+            Mobile
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <p>I am responsible for mobile. I hide unecessary elements like sidebar or full-menu.
+Thanks to my help, mobile devices can see only one area - your entries.
+I also make sure that the content does not go beyond my area.</p>
+<p>@media screen and (max-width:999px)	- Display only, when window width under 1000px (mobile)
+<a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a>
+nav.menu li	- Show vertically menu (look at menus section).
+#ocean_cream_sidebar_open	- hide &quot;show sidebar&quot; button.
+#ocean_cream_mobile_menu	- hide menu until click &quot;Hamburger menu&quot; (© Bytesize icons). More info in buttons.js
+#ocean_cream_mobile_menu_icon	- Show &quot;Hamburger menu&quot; icon (© Bytesize icons).
+article	- Display only &quot;content area&quot; (or hide sidebar).</p>
+<pre class="hljs"><code class="language-">@media screen and (max-width:999px) {
+   nav.menu li {
+       width: 100%;
+       float: none;
+       padding: 0
+   }
+
+   #ocean_cream_sidebar_open {
+       display: none
+   }
+
+   #ocean_cream_mobile_menu {
+       display: none
+   }
+
+   #ocean_cream_mobile_menu_icon {
+       display: inline-block;
+       width: 100%
+   }
+
+   article {
+       max-width: 100%;
+       margin: auto;
+       border-radius: 0;
+       padding: 10px
+   }
+}
+</code></pre>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>critical.css</code>, line 225
+        </div>
+
+    </div>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
