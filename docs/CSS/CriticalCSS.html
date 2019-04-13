@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Critical CSS &#8212; Ocean Cream 1.0 - dokumentacja</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../search.html" />
+    <link rel="prev" title="Welcome to Ocean Cream’s documentation!" href="../../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="critical-css">
+<h1>Critical CSS<a class="headerlink" href="#critical-css" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<p>This file is responsible for the correct display of the website, so we load it very early.</p>
+<div class="section" id="main-template">
+<h2>Main Template<a class="headerlink" href="#main-template" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<p>I am sub-section of critical.css, I am responsible for dividing the page between the sidebar and your entries.
+I also designate the size of the font, its color and coloring the links in black.</p>
+<div class="section" id="main-color">
+<h3>Main color<a class="headerlink" href="#main-color" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>This is main color of our website. I call it Coffee Brown or brown darken-4 Materialize.css</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#3e2723</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="content-post-area">
+<h3>Content/Post Area<a class="headerlink" href="#content-post-area" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">article</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f5eed6</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="k">max-width</span><span class="p">:</span> <span class="mi">75</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">2</span><span class="kt">em</span> <span class="mi">4</span><span class="kt">em</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This is most important part of our file.</p>
+<ul class="simple">
+<li><p>We are about to display your entries here.</p></li>
+<li><p>In a big simplification, I create a slightly rounded rectangle (25%), with a contrasting cream color.</p></li>
+<li><p>That’s why the first version was called Coffee Cream.</p></li>
+<li><p>I noticed that placing a light element on a dark background is less eyes-tiring than the „classic” white and black text.</p></li>
+<li><p>Our rectangle will be 75% wide, in this way I leave myself 25% side for the sidebar … and I create a nice brown frame.</p></li>
+<li><p>Why background-color is !important ? Long time ago, in the days of CSS1 the browsers was not able to display two backgrounds simultaneously, and when this happened, it choosed the lowest one. In other words, if I skip !important, I risk that older browsers display dark text on a dark background.</p></li>
+</ul>
+<p>Why is margin set to auto? Well … it’s best to see it on your own eyes.
+Let’s say blue is our article a.k.a. „Content Area”, red is main or just page and Coffee Brown is our menu.</p>
+<div style="background-color: #3e2723"; width="50px">.</div><div style="background-color: red">.
+<div style="background-color: blue;width:300px">.</div></div><p>The site align to left? And with a margin?</p>
+<div style="background-color: #3e2723"; width="50px">.</div><div style="background-color: red">.
+<div style="background-color: blue;width:300px;margin:auto">.</div></div><p>Our „Content Area” is symetrically in center.</p>
+<p>Bonus: Padding, violet = 0, tomato = 1cm and … tomato = 1cm 5cm.</p>
+<dl class="simple">
+<dt>Padding</dt><dd><p>„The CSS padding properties are used to generate space around an element’s content, inside of any defined borders.” W3Schools &lt;<a class="reference external" href="https://www.w3schools.com/css/css_padding.asp">https://www.w3schools.com/css/css_padding.asp</a>&gt;”</p>
+</dd>
+</dl>
+<div style="background-color:violet">di di di di di di</div>
+<div style="background-color:tomato;padding:1cm">di di di di di di</div>
+<div style="background-color:tomato;padding:1cm 5cm">di di di di di di</div></div>
+<div class="section" id="font">
+<h3>Font<a class="headerlink" href="#font" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Here, I create secend important part of this site - typography.</p>
+<ul class="simple">
+<li><p>I use 3 Helvetica’s fonts → more info &lt;<a class="reference external" href="http://www.identifont.com/differences?first=Nimbus+Sans&amp;second=Helvetica">http://www.identifont.com/differences?first=Nimbus+Sans&amp;second=Helvetica</a>&gt;, &lt;<a class="reference external" href="http://www.identifont.com/differences?first=Arial&amp;second=Helvetica&amp;q=Go">http://www.identifont.com/differences?first=Arial&amp;second=Helvetica&amp;q=Go</a>&gt;</p></li>
+<li><p>and „automatic/mathematic” font size.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[14px + (0.25*0.01x)\]</div>
+<p>Where x = height of article/content area and vw = % of x.</p>
+<ul class="simple">
+<li><p>For example on laptops (1366x768px) we use ~ 17.3px</p></li>
+<li><p>I am using 150% since I noticed that the „automatic” version causes problems with larger fonts like 30 / 40px</p></li>
+<li><p>And colors - dark grey for text and links.</p></li>
+</ul>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">p</span><span class="o">,</span>
+<span class="nt">li</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="mi">14</span><span class="kt">px</span> <span class="o">+</span> <span class="mf">0.25</span><span class="kt">vw</span><span class="p">);</span>
+    <span class="k">line-height</span><span class="p">:</span> <span class="mi">150</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Nimbus Sans&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">sans</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span>
+<span class="p">}</span>
+
+<span class="nt">a</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="menu">
+<h3>Menu<a class="headerlink" href="#menu" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>Hi, I am another sub-section. I am not responsible for the whole page, like my sister, but I focus on the menu.
+I make it visible to both computers and mobile devices.</p>
+<dl class="simple">
+<dt>.menu</dt><dd><p>sand background</p>
+</dd>
+<dt>.menu li</dt><dd><p>menu is displayed vertically by default, by use <strong>float:left</strong>, I create single level (horizontally) menu.</p>
+</dd>
+<dt>.menu li a</dt><dd><p>I separate individual links and give them a more „button-like” look. If I did not do it, the links would display in a line as a super long text.</p>
+</dd>
+<dt>.menu li a:hover</dt><dd><p>I change background color to blue (to give you the illusion of a pressed button).</p>
+</dd>
+<dt>.menu ul ul</dt><dd><p>I create submenus, position: absolute; padding: 0; background-color: #d2bc83; border-top: 2px solid is responsible for displaying submenus below the main level.</p>
+</dd>
+<dt>.menu ul li:hover&gt;ul</dt><dd><p>I display a submenu, without me all levels will be displayed simultaneously, creating a super high block of links</p>
+</dd>
+<dt>#ocean_cream_mobile_menu_icon</dt><dd><p>I hide „hamburger-menu” (© Bytesize icons) icon on desktops (&gt;999px).</p>
+</dd>
+</dl>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#d2bc83</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+    <span class="k">list-style-type</span><span class="p">:</span> <span class="kc">none</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#000</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#2a91d1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Submenus */</span>
+<span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#d2bc83</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span><span class="o">&gt;</span><span class="nt">ul</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">ocean_cream_mobile_menu_icon</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mobile">
+<h3>Mobile<a class="headerlink" href="#mobile" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>I am responsible for mobile. I hide unecessary elements like sidebar or full-menu.
+Thanks to my help, mobile devices can see only one area - your entries.
+I also make sure that the content does not go beyond my area.</p>
+<dl class="simple">
+<dt>&#64;media screen and (max-width:999px)</dt><dd><p>Display only, when window width under 1000px (mobile) &lt;<a class="reference external" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a>&gt;</p>
+</dd>
+<dt>nav.menu li</dt><dd><p>Show vertically menu (look at menus section).</p>
+</dd>
+<dt>#ocean_cream_sidebar_open</dt><dd><p>hide „show sidebar” button.</p>
+</dd>
+<dt>#ocean_cream_mobile_menu</dt><dd><p>hide menu until click „Hamburger menu” (© Bytesize icons). More info in buttons.js</p>
+</dd>
+<dt>#ocean_cream_mobile_menu_icon</dt><dd><p>Show „Hamburger menu” icon (© Bytesize icons).</p>
+</dd>
+<dt>article</dt><dd><p>Display only „content area” (or hide sidebar).</p>
+</dd>
+</dl>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="p">:</span><span class="nd">999px</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">nav</span><span class="p">.</span><span class="nc">menu</span> <span class="nt">li</span> <span class="p">{</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">float</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">ocean_cream_sidebar_open</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">ocean_cream_mobile_menu</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span>
+    <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">ocean_cream_mobile_menu_icon</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span>
+    <span class="p">}</span>
+
+    <span class="nt">article</span> <span class="p">{</span>
+        <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="another-changes">
+<h3>Another changes<a class="headerlink" href="#another-changes" title="Stały odnośnik do tego nagłówka">¶</a></h3>
+<p>I am last subsection, I am responsible for others changes like buttons, change entries width when sidebar is open or hide comments. So, I clean your website.</p>
+<dl class="simple">
+<dt>#ocean_cream_sidebar</dt><dd><p>hide sidebar, by default.</p>
+</dd>
+<dt>.ocean_cream_button</dt><dd><p>display buttons (© Materialize CSS)</p>
+</dd>
+<dt>.ocean_cream_button:hover</dt><dd><p>I change background color to blue (to give you the illusion of a pressed button)</p>
+</dd>
+<dt>#ocean_cream_sidebar[style*=»display: block»]~article {</dt><dd><p>Display sidebar → if sidebar is open (display:block), change article („content area”) width and show sidebar in new, empty place.</p>
+</dd>
+<dt>#comments</dt><dd><p>Hide comments</p>
+</dd>
+</dl>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">ocean_cream_sidebar</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">ocean_cream_button</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#00b0ff</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#3e2723</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">2</span><span class="kt">mm</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">ocean_cream_button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#2a91d1</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">ocean_cream_sidebar</span><span class="o">[</span><span class="nt">style</span><span class="o">*=</span><span class="s1">&#39;display: block&#39;</span><span class="o">]~</span><span class="nt">article</span> <span class="p">{</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">comments</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Ocean Cream</a></h1>
+
+
+
+
+
+
+
+
+<h3>Nawigacja</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Critical CSS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-template">Main Template</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-color">Main color</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#content-post-area">Content/Post Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#font">Font</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#menu">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobile">Mobile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#another-changes">Another changes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../../index.html" title="poprzedni rozdział">Welcome to Ocean Cream’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Szybkie wyszukiwanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Szukaj" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Rafael Pszenny.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/docs/CSS/CriticalCSS.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

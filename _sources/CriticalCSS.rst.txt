@@ -1,0 +1,43 @@
+############
+Critical CSS
+############
+
+This file is responsible for the correct display of the website, so we load it very early.
+
+*************
+Main Template
+*************
+
+I am sub-section of critical.css, I am responsible for dividing the page between the sidebar and your entries.
+I also designate the size of the font, its color and coloring the links in black.
+
+Main color
+==========
+
+This is main color of our website. I call it Coffee Brown or brown darken-4 Materialize.css
+
+.. literalinclude:: /css/critical.css
+   :language: css
+   :lines: 1-3
+
+Content/Post Area
+=================
+
+.. literalinclude:: /css/critical.css
+   :language: css
+   :lines: 5-11
+
+This is most important part of our file.
+We are about to display your entries here.
+In a big simplification, I create a slightly rounded rectangle (25%), with a contrasting cream color.
+That's why the first version was called Coffee Cream.
+I noticed that placing a light element on a dark background is less eyes-tiring than the "classic" white and black text.
+Our rectangle will be 75% wide, in this way I leave myself 25% side for the sidebar … and I create a nice brown frame.
+Why background-color is !important ? Long time ago, in the days of CSS1 the browsers was not able to display two backgrounds simultaneously, and when this happened, it choosed the lowest one. In other words, if I skip !important, I risk that older browsers display dark text on a dark background.
+
+Why is margin set to auto? Well … it's best to see it on your own eyes. Let's say blue is our article a.k.a. "Content Area", red is main or just page and Coffee Brown is our menu.
+
+.. raw:: html
+
+    <div style="background-color: #3e2723"; width="50px">.</div><div style="background-color: red">.
+    <div style="background-color: blue;width:300px">.</div></div>
