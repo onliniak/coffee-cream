@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Rafael Pszenny
+# This file is distributed under the same license as the Ocean Cream package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ocean Cream \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-14 15:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../CSS/CriticalCSS.rst:3
+msgid "Critical CSS"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:5
+msgid "This file is responsible for the correct display of the website, so we load it very early."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:9
+msgid "Main Template"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:11
+msgid "I am sub-section of critical.css, I am responsible for dividing the page between the sidebar and your entries. I also designate the size of the font, its color and coloring the links in black."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:15
+msgid "Main color"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:17
+msgid "This is main color of our website. I call it Coffee Brown or brown darken-4 Materialize.css"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:24
+msgid "Content/Post Area"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:30
+msgid "This is most important part of our file."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:32
+msgid "We are about to display your entries here."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:33
+msgid "In a big simplification, I create a slightly rounded rectangle (25%), with a contrasting cream color."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:34
+msgid "That's why the first version was called Coffee Cream."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:35
+msgid "I noticed that placing a light element on a dark background is less eyes-tiring than the \"classic\" white and black text."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:36
+msgid "Our rectangle will be 75% wide, in this way I leave myself 25% side for the sidebar … and I create a nice brown frame."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:37
+msgid "Why background-color is !important ? Long time ago, in the days of CSS1 the browsers was not able to display two backgrounds simultaneously, and when this happened, it choosed the lowest one. In other words, if I skip !important, I risk that older browsers display dark text on a dark background."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:39
+msgid "Why is margin set to auto? Well … it's best to see it on your own eyes. Let's say blue is our article a.k.a. \"Content Area\", red is main or just page and Coffee Brown is our menu."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:47
+msgid "The site align to left? And with a margin?"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:54
+msgid "Our \"Content Area\" is symetrically in center."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:56
+msgid "Bonus: Padding, violet = 0, tomato = 1cm and … tomato = 1cm 5cm."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:59
+msgid "Padding"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:59
+msgid "\"The CSS padding properties are used to generate space around an element's content, inside of any defined borders.\" W3Schools <https://www.w3schools.com/css/css_padding.asp>\""
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:68
+msgid "Font"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:70
+msgid "Here, I create secend important part of this site - typography."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:72
+msgid "I use 3 Helvetica's fonts → more info <http://www.identifont.com/differences?first=Nimbus+Sans&second=Helvetica>, <http://www.identifont.com/differences?first=Arial&second=Helvetica&q=Go>"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:73
+msgid "and \"automatic/mathematic\" font size."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:75
+msgid "14px + (0.25*0.01x)"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:79
+msgid "Where x = height of article/content area and vw = % of x."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:81
+msgid "For example on laptops (1366x768px) we use ~ 17.3px"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:82
+msgid "I am using 150% since I noticed that the \"automatic\" version causes problems with larger fonts like 30 / 40px"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:83
+msgid "And colors - dark grey for text and links."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:91
+msgid "Menu"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:93
+msgid "Hi, I am another sub-section. I am not responsible for the whole page, like my sister, but I focus on the menu. I make it visible to both computers and mobile devices."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:96
+msgid ".menu"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:97
+msgid "sand background"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:98
+msgid ".menu li"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:99
+msgid "menu is displayed vertically by default, by use **float:left**, I create single level (horizontally) menu."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:100
+msgid ".menu li a"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:101
+msgid "I separate individual links and give them a more \"button-like\" look. If I did not do it, the links would display in a line as a super long text."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:102
+msgid ".menu li a:hover"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:103
+msgid "I change background color to blue (to give you the illusion of a pressed button)."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:104
+msgid ".menu ul ul"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:105
+msgid "I create submenus, position: absolute; padding: 0; background-color: #d2bc83; border-top: 2px solid is responsible for displaying submenus below the main level."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:106
+msgid ".menu ul li:hover>ul"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:107
+msgid "I display a submenu, without me all levels will be displayed simultaneously, creating a super high block of links"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:110
+#: ../../CSS/CriticalCSS.rst:132
+msgid "#ocean_cream_mobile_menu_icon"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:109
+msgid "I hide \"hamburger-menu\" (© Bytesize icons) icon on desktops (>999px)."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:118
+msgid "Mobile"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:120
+msgid "I am responsible for mobile. I hide unecessary elements like sidebar or full-menu. Thanks to my help, mobile devices can see only one area - your entries. I also make sure that the content does not go beyond my area."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:124
+msgid "@media screen and (max-width:999px)"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:125
+msgid "Display only, when window width under 1000px (mobile) <https://www.w3schools.com/cssref/css3_pr_mediaquery.asp>"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:126
+msgid "nav.menu li"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:127
+msgid "Show vertically menu (look at menus section)."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:128
+msgid "#ocean_cream_sidebar_open"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:129
+msgid "hide \"show sidebar\" button."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:130
+msgid "#ocean_cream_mobile_menu"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:131
+msgid "hide menu until click \"Hamburger menu\" (© Bytesize icons). More info in buttons.js"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:133
+msgid "Show \"Hamburger menu\" icon (© Bytesize icons)."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:135
+msgid "article"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:135
+msgid "Display only \"content area\" (or hide sidebar)."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:143
+msgid "Another changes"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:145
+msgid "I am last subsection, I am responsible for others changes like buttons, change entries width when sidebar is open or hide comments. So, I clean your website."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:147
+msgid "#ocean_cream_sidebar"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:148
+msgid "hide sidebar, by default."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:149
+msgid ".ocean_cream_button"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:150
+msgid "display buttons (© Materialize CSS)"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:151
+msgid ".ocean_cream_button:hover"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:152
+msgid "I change background color to blue (to give you the illusion of a pressed button)"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:153
+msgid "#ocean_cream_sidebar[style*='display: block']~article {"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:154
+msgid "Display sidebar → if sidebar is open (display:block), change article (\"content area\") width and show sidebar in new, empty place."
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:156
+msgid "#comments"
+msgstr ""
+
+#: ../../CSS/CriticalCSS.rst:156
+msgid "Hide comments"
+msgstr ""
+
