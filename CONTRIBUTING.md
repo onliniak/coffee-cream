@@ -1,9 +1,11 @@
 # Translators
+If you want, we have visual editor on https://translate.zanata.org/project/view/ocean-cream
 1. Translate theme.
 - If you want translate this theme to your language, please download latest [pot file](https://github.com/onliniak/ocean-cream/blob/master/languages/ocean-cream.pot) and rename to [your_country.po](https://translate.wordpress.org/projects/wp/dev/), for example Poland → https://translate.wordpress.org/projects/wp/dev/pl/default/ → pl-PL (replace all - to _), so I create [pl_PL.po](https://github.com/onliniak/ocean-cream/blob/master/languages/pl_PL.po).
 - After create po file → please, send pull request to https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/
 2. Translate documentation. 
 - Similar to theme, but pot → https://github.com/onliniak/ocean-cream/tree/master/languages/gettext
+- Note, in new release I will move docs translation to /docs/_build/gettext
 # Documentation
 - We use Sphinx documentation based on reStructuredText.
 - Main documentation will be in polish.
