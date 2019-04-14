@@ -1,0 +1,15 @@
+h1 {
+  text-align: center
+}
+
+a {
+  color: #000
+}
+
+article {
+  margin: 0 auto
+}
+
+div#respond.comment-respond, aside, .menu, .button, article.tag-sticky-2::before {
+  display: none
+}
