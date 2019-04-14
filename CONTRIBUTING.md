@@ -1,9 +1,9 @@
 # Translators
 1. Translate theme.
-- If you want translate this theme to your language, please download latest [pot file](https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/ocean-cream.pot) and rename to [your_country.po](https://translate.wordpress.org/projects/wp/dev/), for example Poland → https://translate.wordpress.org/projects/wp/dev/pl/default/ → pl-PL (replace all - to _), so I create [pl_PL.po](https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/pl_PL.po).
+- If you want translate this theme to your language, please download latest [pot file](https://github.com/onliniak/ocean-cream/blob/master/languages/ocean-cream.pot) and rename to [your_country.po](https://translate.wordpress.org/projects/wp/dev/), for example Poland → https://translate.wordpress.org/projects/wp/dev/pl/default/ → pl-PL (replace all - to _), so I create [pl_PL.po](https://github.com/onliniak/ocean-cream/blob/master/languages/pl_PL.po).
 - After create po file → please, send pull request to https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/
 2. Translate documentation. 
-- Similar to theme, but pot → https://github.com/onliniak/ocean-cream/tree/master/gettext
+- Similar to theme, but pot → https://github.com/onliniak/ocean-cream/tree/master/languages/gettext
 # Documentation
 - We use Sphinx documentation based on reStructuredText.
 - Main documentation will be in polish.
@@ -14,9 +14,10 @@
    :lines: 66-92
 ```
 - Include all code with comments. 
-- Maybe I will use Read The Docs website …
 - Tutorial → http://docutils.sourceforge.net/docs/user/rst/quickref.html#enumerated-lists or https://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html
-- Today, we must replace '_static' with 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/_static' in html files.
+- Send all .rst files to /docs (source directory).
+- Do not send build directory, Read The Docs will be create it for us.
+- Send .pot files to languages/gettext directory. 
 # Issues
 - Please, write issues in english or polish.
 - It's good idea to include screenshots.
