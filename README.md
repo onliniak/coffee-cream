@@ -1,14 +1,15 @@
 # Ocean Cream
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
+[![Documentation Status](https://readthedocs.org/projects/ocean-cream/badge/?version=master)](https://ocean-cream.readthedocs.io/pl/master/?badge=master)
 
-![Standard](https://raw.githubusercontent.com/onliniak/ocean-cream/WordPress-repo/screenshot.png "Standard")
+![Standard](screenshot.png "Standard")
 
 Quick overwiew:
 
 - Lightweight WordPress blog theme (about 30 kB with WordPress Gutenberg CSS and emojis)
 - Non-white and minimalistic
 - Responsive web design
-- HTML Documentation based on Sphinx <https://onliniak.github.io/ocean-cream/>
+- [PDF](https://buildmedia.readthedocs.org/media/pdf/ocean-cream/master/ocean-cream.pdf) (included by default in WordPress repo), [EPUB](https://readthedocs.org/projects/ocean-cream/downloads/epub/master/) and [HTML](https://readthedocs.org/projects/ocean-cream/downloads/htmlzip/master/) documentation based on Sphinx (with manual translation).
   - I am little confused … I am not able to create "elegant" english documentation, from the other hand if I create documentation in polish no one understand that. 
 - Faster website (compared to Twenty Nineteen)
 - jQuery only on demand
@@ -16,7 +17,7 @@ Quick overwiew:
 - Critical css for higher Google PageSpeed Insight
     - My goal is for the theme to be at least 90% compatible with Google PageSpeed Insight after adding the cache (Expire Headers and Gzip) in htaccess.
  - 2 main branches:
-    - WordPress-repo = stable = official version for WordPress repository.
+    - Master = stable = official version for WordPress repository and documentation.
     - github-flavoured = testing = child theme with unverified or not approved features like WP Customizer, CDN, copyright protection, beige AMP style or numeric keyboard navigation.
 
 ## Install
