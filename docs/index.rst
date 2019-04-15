@@ -11,7 +11,8 @@ Welcome to Ocean Cream's documentation!
    :maxdepth: 5
    :caption: Contents:
    
-   CSS/CriticalCSS
+   CSS/tos
+   Hierarchy/tos
 
 Indices and tables
 ==================
