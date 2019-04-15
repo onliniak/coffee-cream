@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Rafael Pszenny
+# This file is distributed under the same license as the Ocean Cream package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ocean Cream \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-15 21:19+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/Hierarchy/index.rst:3
+msgid "Index"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:5
+msgid "Oto główny plik każdego motywu dla WordPressa i jeden z dwóch wymaganych do pełnej funkcjonalności (drugim jest Style.css). Zazwyczaj dzielony jest na kilka podczęści jak nagłówek, stopka, wpis, strona … ja jednak uważam, że taki \"wzorowy\" motyw jest nieczytelny i trudny do modyfikacji, więc zdecydowałem się umieścić wszystko w jednym."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:7
+msgid "Więcej informacji: https://developer.wordpress.org/themes/basics/template-hierarchy/"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:11
+msgid "Nagłówek"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:13
+msgid "Nagłówek, jak to nagłówek … zawiera całą sekcję <head> (\"głowa\"), w której za czasów HTMLa4 umieszczaliśmy wszystko, co miało być niewidoczne dla człowieka jak linki weryfikujące, tytuł strony, jej opis i takie tam."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:19
+msgid "Tu generalnie niewiele się dzieje. Po prostu rozpoczynam nowy dokument (X)HTML5."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:22
+msgid "Do nagłówka powrócisz wielokrotnie, przy okazji wklejania różnego rodzaju weryfikatorów."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:25
+msgid "Osobiście radziłbym zainteresować się jakąś wtyczką SEO/Schema, która pomoże opisać zawartość strony i jej autora w wyszukiwarkach internetowych."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:28
+msgid "Najważniejsza do zapamiętania/skopiowania jest informacja o \"Mobile zoom\", czyli regułce zmniejszającej szerokość ekranu do szerokości urządzenia mobilnego. https://developer.mozilla.org/pl/docs/Mozilla/Mobile/Viewport_meta_tag"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:33
+msgid "Menu"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:43
+msgid "W tym miejscu wyświetlę menu, nazwane \"header menu\". Oznaczę je jako <nav> oraz przypiszę im wszystkie regułki CSS .menu"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:46
+msgid "Jako NAV oznaczamy główną nawigację witryny, chwilowo nie wspieram menu pobocznego. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:50
+msgid "Zauważ, że menu jest otoczone przez <div id=\"ocean_cream_mobile_menu\">, jego zadaniem jest ukrycie menu, gdy ekran (lub okno przeglądarki) jest mniejszy od 1000px. Więcej w sekcji \"przycisk pokaż pasek boczny\" Podobną rolę ma <span id=\"ocean_cream_mobile_menu_icon\">, który odpowiada za wyświetlenie ikonki SVG (w tym wypadku \"Hamburger menu\") tylko na urządzeniach mobilnych."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:54
+msgid "Za pomocą body_class() możesz dodać nowe klasy CSS do całej strony."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:58
+msgid "Pasek boczny"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:60
+msgid "Pasek boczny to jednocześnie uwielbiana i znienawidzona część motywów (przynajmniej dla mnie), z jednej strony używa się go dość często do umieszczania \"zbędnych\" linków i informacji, a z drugiej … zaśmieca stronę. Dlatego zdecydowałem się na jego ukrycie. Chociaż nie widziałem jeszcze, by ktoś postąpił podobnie, więc czekam na komentarze."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:66
+msgid "<div id=\"ocean_cream_sidebar\">"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:67
+msgid "Ukryje nam pasek boczny, dopóki go nie wyświetlimy, więcej za chwilę"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:69
+msgid "dynamic_sidebar('sidebar');"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:69
+msgid "W tym miejscu pokaże się pasek boczny, oznaczam go jako aside, czyli wstawka/zawartość poboczna."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:71
+msgid "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:74
+msgid "Jeśli nie chcesz ukrywać paska bocznego → usuń linijki 36 i 41. <div id=\"ocean_cream_sidebar\"> ... </div>"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:80
+msgid "Artykuł/Wpisy"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:82
+msgid "Najważniejsza część strony, to właśnie tutaj wyświetlimy wszystkie wpisy. Article oznacza główną treść. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:87
+msgid "Przycisk \"Pokaż pasek boczny\""
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:89
+msgid "Skoro ukryłem pasek boczny, to dobrze by było gdyby użytkownik mógł go znów wyświetlić w prosty sposób. Wykorzystam przyciski skopiowane z https://www.w3schools.com/jsref/event_onclick.asp"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:100
+msgid "Moja wersja została przepisana w ten sposób, by wykorzystać zewnętrzny skrypt js. Pomocne, jeśli ktoś będzie chciał się bawić w CSP (chociaż nie polecam)."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:103
+msgid "Id (HTML/JS) = # (CSS)"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:105
+msgid "Zacznijmy od index.php, rozbijmy tę linijkę na"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:106
+msgid "<span id=\"ocean_cream_sidebar_open\""
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:107
+msgid "Oznaczę element jako ocean_cream_sidebar_open"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:108
+msgid "class=\"ocean_cream_button\">"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:109
+msgid "Wyświetl element jako przycisk (ang. button)"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:110
+msgid "<?php esc_html_e('Show Sidebar', 'ocean-cream'); ?>"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:112
+msgid "Wyświetl tekst \"Pokaż przycisk boczny\" i pozwól go przetłumaczyć na inne języki."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:112
+msgid "</span> → koniec elementu"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:114
+msgid "Przejdźmy do /js/buttons.js,"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:116
+msgid "document.getElementById('ocean_cream_sidebar_open').addEventListener('click', sidiBer);"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:117
+msgid "Znajdź element oznaczony jako ocean_cream_sidebar_open i wykonaj funkcję sidiBer (ang. sidebar → pasek boczny), gdy zostanie kliknięty."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:118
+msgid "function sidiBer() {"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:119
+msgid "Rozpocznij funkcję sidiBer"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:120
+msgid "var x = document.getElementById('ocean_cream_sidebar');"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:121
+msgid "Znajdź element oznaczony jako ocean_cream_sidebar i oznacz jako x."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:123
+msgid "if (x.style.display === 'block') {"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:123
+msgid "Jeśli nasz x jest otwarty (posiada regułkę css identyczną do #ocean_cream_sidebar{display:block})"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:125
+msgid "Więcej informacji https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operatory_por%C3%B3wnania"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:128
+msgid "x.style.display = 'none';}"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:128
+msgid "To go zamknij/ukryj (zmień na #ocean_cream_sidebar{display:none})"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:131
+msgid "else {x.style.display = 'block';}}"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:131
+msgid "W innym wypadku otwórz/wyświetl."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:135
+msgid "Pętla"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:137
+msgid "Nigdy nie rozumiałem pętli, w dużym uproszczeniu polega to na wyświetlanie tej samej strony ale z inną treścią, tak długo jak jest co wyświetlać."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:144
+msgid "Możesz zmienić ilość wyświetlanych wpisów w ustawieniach."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:147
+msgid "Za pomocą post_class() możesz dodać nowe klasy CSS do swoich wpisów."
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:151
+msgid "Tytuł"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:159
+msgid "Informacje/Sekcja"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:167
+msgid "Obrazek"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:175
+msgid "Treść"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:183
+#: ../../docs/Hierarchy/index.rst:215
+msgid "Paginacja"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:191
+msgid "Przycisk komentarzy"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:199
+msgid "Ukryj komentarze"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:207
+msgid "Koniec pętli"
+msgstr ""
+
+#: ../../docs/Hierarchy/index.rst:223
+msgid "Stopka"
+msgstr ""
+
+#: ../../docs/index.rst:9
+msgid "Contents:"
+msgstr ""
+
+#: ../../docs/index.rst:7
+msgid "Welcome to Ocean Cream's documentation!"
+msgstr ""
+
+#: ../../docs/index.rst:17
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../docs/index.rst:19
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../docs/index.rst:20
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../docs/index.rst:21
+msgid ":ref:`search`"
+msgstr ""
+
