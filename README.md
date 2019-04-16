@@ -1,24 +1,28 @@
 # Ocean Cream
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
+![PHP from Travis config](https://img.shields.io/travis/php-v/onliniak/ocean-cream.svg)
 [![Documentation Status](https://readthedocs.org/projects/ocean-cream/badge/?version=master)](https://ocean-cream.readthedocs.io/pl/master/?badge=master)
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/onliniak/ocean-cream/blob/master/LICENSE)
+![GitHub top language](https://img.shields.io/github/languages/top/onliniak/ocean-cream.svg)
+![Size](https://img.shields.io/badge/Size-~13KB-blue.svg)
+[![Donate](https://img.shields.io/badge/Donate-CoinPayments-blue.svg)](https://onliniak.github.io/donations)
+[![Donate](https://img.shields.io/badge/Donate-🐢-blue.svg)](TRTLv1cxpuEFMCm2WsgjUka4JFNUt9pcqVJrCjd8TruqaZNqSnDCYG5Xeu1LXpeHWsHiE6hZHqncudGz2xdhdUFjQvJFSWrzsiM)
 ![Standard](screenshot.png "Standard")
 
 Quick overwiew:
 
-- Lightweight WordPress blog theme (about 30 kB with WordPress Gutenberg CSS and emojis)
+- Only 2 php files → author.php and index.php
+- Lightweight WordPress blog theme
+  - Main index.php ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/index.php.svg)
+  - Critical.min.css (load in header) ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/css/critical.min.css.svg)
+  - Style.css (load in footer) ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/style.css.svg)
+  - Buttons.min.js ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/js/buttons.min.js.svg)
 - Non-white and minimalistic
 - Responsive web design
-- [PDF](https://buildmedia.readthedocs.org/media/pdf/ocean-cream/master/ocean-cream.pdf) (included by default in WordPress repo), [EPUB](https://readthedocs.org/projects/ocean-cream/downloads/epub/master/) and [HTML](https://readthedocs.org/projects/ocean-cream/downloads/htmlzip/master/) documentation based on Sphinx (with manual translation).
-  - I am little confused … I am not able to create "elegant" english documentation, from the other hand if I create documentation in polish no one understand that. 
 - Faster website (compared to Twenty Nineteen)
 - jQuery only on demand
 - Hidden sidebar and comments
-- Critical css for higher Google PageSpeed Insight
-    - My goal is for the theme to be at least 90% compatible with Google PageSpeed Insight after adding the cache (Expire Headers and Gzip) in htaccess.
- - 2 main branches:
-    - Master = stable = official version for WordPress repository and documentation.
-    - github-flavoured = testing = child theme with unverified or not approved features like WP Customizer, CDN, copyright protection, beige AMP style or numeric keyboard navigation.
+- My goal is for the theme to be at least 90% compatible with Google PageSpeed Insight after adding the cache (Expire Headers and Gzip) in htaccess.
 
 ## Install
 
@@ -40,9 +44,3 @@ or https://skri.ga/eastern/ (post)
 
 ## Child themes:
 + Add your child theme (full or little changes).
-
-## Donations
-
-[Donate with Coinpayments](https://onliniak.github.io/ocean-cream/donation.htm) 
-
-Chyba, że wolisz :turtle: TRTLv1cxpuEFMCm2WsgjUka4JFNUt9pcqVJrCjd8TruqaZNqSnDCYG5Xeu1LXpeHWsHiE6hZHqncudGz2xdhdUFjQvJFSWrzsiM 
