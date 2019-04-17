@@ -172,7 +172,6 @@ text-decoration:none
 /* Sidebar text and "hamburger" icon color */
 aside li,
 aside p,
-svg.i-menu,
 aside a {
 color:#fff
 }
