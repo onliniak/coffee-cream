@@ -81,7 +81,8 @@ nav.menu ul li:hover>ul {
 
     #ocean_cream_mobile_menu_icon {
         display: inline-block;
-        width: 100%
+        width: 100%;
+        color: #fff
     }
 
     article {
