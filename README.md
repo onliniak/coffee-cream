@@ -4,9 +4,8 @@
 [![Documentation Status](https://readthedocs.org/projects/ocean-cream/badge/?version=master)](https://ocean-cream.readthedocs.io/pl/master/?badge=master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/onliniak/ocean-cream/blob/master/LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/onliniak/ocean-cream.svg)
-![Size](https://img.shields.io/badge/Size-~13KB-blue.svg)
+![Size](https://img.shields.io/badge/Size-~8.5kB-blue.svg)
 [![Donate](https://img.shields.io/badge/Donate-CoinPayments-blue.svg)](https://onliniak.github.io/donations)
-[![Donate](https://img.shields.io/badge/Donate-🐢-blue.svg)](TRTLv1cxpuEFMCm2WsgjUka4JFNUt9pcqVJrCjd8TruqaZNqSnDCYG5Xeu1LXpeHWsHiE6hZHqncudGz2xdhdUFjQvJFSWrzsiM)
 ![Standard](screenshot.png "Standard")
 
 Quick overwiew:
@@ -15,7 +14,7 @@ Quick overwiew:
 - Lightweight WordPress blog theme
   - Main index.php ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/index.php.svg)
   - Critical.min.css (load in header) ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/css/critical.min.css.svg)
-  - Style.css (load in footer) ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/style.css.svg)
+  - Style.min.css (load in footer) ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/css/style.min.css.svg)
   - Buttons.min.js ![GitHub file size in bytes](https://img.shields.io/github/size/onliniak/ocean-cream/js/buttons.min.js.svg)
 - Non-white and minimalistic
 - Responsive web design
