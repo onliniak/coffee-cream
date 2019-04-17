@@ -19,12 +19,12 @@ remove_action('wp_head', 'ocean_cream_header', '1');
 add_action('wp_head', 'ocean_cream_github_header', '1');
 function ocean_cream_github_header()
 {
-    wp_enqueue_style('criticalcss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/WordPress-repo/css/critical.min.css', '20181206', 'screen');
+    wp_enqueue_style('criticalcss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/css/critical.min.css', '20181206', 'screen');
 }
 // Load other scripts and styles (after load site).
 function ocean_cream_github_footer_styles()
 {
-    wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/WordPress-repo/style.css', '20181206', 'screen');
+    wp_enqueue_style('maincss', 'https://cdn.staticaly.com/gh/onliniak/ocean-cream/master/style.min.css', '20181206', 'screen');
     wp_enqueue_script('bundle', 'https://gitcdn.xyz/repo/onliniak/ocean-cream/github-flavoured/js/bundle.min.js');
     wp_enqueue_style('printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');
 }
