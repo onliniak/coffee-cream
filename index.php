@@ -35,8 +35,10 @@ body_class(); ?>>
 <!-- Widgets, default hide -->
     <div id="ocean_cream_sidebar">
     <aside class="ocean_cream_sidebar">
+	<ul>		
     <?php
     dynamic_sidebar('sidebar'); ?>
+	</ul>
     </aside>
     </div>
 	<span id="ocean_cream_sidebar_open" class="ocean_cream_button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
@@ -45,8 +47,15 @@ body_class(); ?>>
     post_class(); ?>>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <h1><a href="<?php
-        the_permalink(); ?>"><?php
-        the_title(); ?></a></h1>
+        the_permalink(); ?>">
+		<?php
+		if (empty($post->post_title)){
+			esc_html_e('Untitled', 'ocean-cream');
+		}
+		else {
+        the_title();
+		}?>
+		</a></h1>
 <!-- Header info like date, author, category, tags etc. -->
 <section class="ocean_cream_info">
             <?php
@@ -57,15 +66,15 @@ body_class(); ?>>
             esc_html_e('on', 'ocean-cream'); ?> <?php
         echo esc_html(get_the_date()); ?>
             <?php
-            esc_html_e('in', 'ocean-cream'); ?>
-            <?php
-            the_category(', '); ?>
-            <br />
+		if (is_page()) {
+		}   else {
+            esc_html_e('in', 'ocean-cream');
+			echo ' ';
+            the_category(', ');
+			} ?>
+				<br />
                 <?php
                 the_tags(); ?>
-            <?php if (empty($post->post_title)) {
-                    echo '<br> <a class="read-more" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read More', 'ocean-cream') . '</a>';
-                };?>
 	</section>
             <?php
             if (has_post_thumbnail()) {
@@ -85,13 +94,8 @@ body_class(); ?>>
             <?php
             wp_link_pages(); ?>
 
-    <div class="OCnextpage">
             <?php
-            wp_list_comments(); ?>
-    </div>
-
-            <?php
-            if (is_single() && comments_open()) {
+            if (is_singular() && comments_open()) {
                 comments_template();
                 echo '<a href="#comments" class="ocean_cream_button">';
                 esc_html_e('Comments', 'ocean-cream');
@@ -100,7 +104,7 @@ body_class(); ?>>
             if (is_singular()) {
                 wp_enqueue_script("comment-reply");
                 esc_url(previous_post_link());
-                echo '<div class="rinav">', esc_url(next_post_link());
+                echo '<div class="ocean_cream_next_page">', esc_url(next_post_link());
                 echo '</div>';
             } elseif (is_tax()) {
                 ;

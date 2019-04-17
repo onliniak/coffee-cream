@@ -11,7 +11,8 @@ article {
 }
 
 p,
-li {
+li,
+pre.wp-block-code{
     font-size: calc(14px + 0.25vw);
     line-height: 150%;
     font-family: "Nimbus Sans", Helvetica, Arial, sans;
@@ -112,7 +113,7 @@ nav.menu ul li:hover>ul {
 }
 
 #ocean_cream_sidebar[style*='display: block']~article {
-    margin-left: 25%
+    margin-left: 27%
 }
 
 #comments {

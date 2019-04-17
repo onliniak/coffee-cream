@@ -50,7 +50,7 @@ if (!isset($content_width)) {
 //add more link to excerpt
 function ocean_cream_excerpt($more)
 {
-    return ' <a class="read-more" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read More', 'ocean-cream') . '</a>';
+    return ' <a class="read-more" href="' . esc_url(get_permalink(get_the_ID())) . '">' . esc_html(__('Read More', 'ocean-cream')) . '</a>';
 }
 add_filter('excerpt_more', 'ocean_cream_excerpt');
 
@@ -63,7 +63,7 @@ function ocean_cream_header()
 // Load other scripts and styles (after load site).
 function ocean_cream_footer()
 {
-    wp_enqueue_style('ocean_cream_maincss', get_stylesheet_uri(), array(), '20181206', 'screen');
+    wp_enqueue_style('ocean_cream_maincss', get_template_directory_uri() . '/css/style.min.css', array(), '20190417', 'screen');
     wp_enqueue_script('ocean_cream_buttons', get_template_directory_uri() . '/js/buttons.min.js');
     wp_enqueue_style('ocean_cream_printcss', get_template_directory_uri() . '/css/print.css', array(), '20181206', 'print');
 }

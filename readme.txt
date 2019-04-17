@@ -1,6 +1,6 @@
 === Ocean Cream ===
 Contributors: onliniak
-Donate link: <https://onliniak.github.io/donations>
+Donate link: https://onliniak.github.io/donations
 Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
 Requires at least: 4.0
 Tested up to: 5.1.1
@@ -95,8 +95,8 @@ The size of the font and entry / sidebar is automatically determined based on th
 = 0.97 = Fix white letters on white background (text widgets), styles/scripts variables, new submenus, add Arial font as fallback, hide www/biography when empty (author's page), change div.menu to nav.menu, "tutorial" how add social media links, wrong urls in readme.
 = 0.97.1 = Add hCard microformats to author's page (readable by browsers). Remove Railway from supported fonts and background colors from tables. Due to GPDR we cannot display e-mail, but we can display name, surname, nickname, biography, avatar and homepage url. Tested with <https://webmaster.yandex.ru/tools/microtest/> and <https://search.google.com/structured-data/testing-tool>.
 = 1.0 = New minimal PHP 5.6 <https://wordpress.org/news/2019/04/minimum-php-version-update/>, restore 0.97.1.
-= 1.0.1 = Tested with WordPress ß and new themeunittestdata (03.2019). 95% compatible with Gutenberg. Fix: Show excerpt, when search. Fix: Too small line-high. Fix: "Show comments" button is visible, when comments are disabled. New table border. Fix: Show "read more", when title is empty.
-= 1.0.2 = Move documentation and to external site. 
+= 1.0.1 = Tested with WordPress ß and new themeunittestdata (03.2019). 95% compatible with Gutenberg. Fix: Show excerpt, when search. Fix: Too small line-high. Fix: "Show comments" button is visible, when comments are disabled. New table border.
+= 1.0.2 = FIX: Comments don't display in pages, default title "Untitled" when title is empty, HTML Validator: add ul before li in sidebar, "Some texts from widgets are overflowing the sidebar.", change table/calendar border to 2 px dotted and .rinav to .ocean_cream_next_page, small letters in Gutenberg code-block; Remove: Unecessary svg class and .OCnextpage div; CSS: Optimize, new "dark terminal mode" (based on highlight.js), remove "-style blockquotes and .screen-reader-text, re-organize CSS with CSS Tidy, create style.min.css; NEW screenshot.
 
 == Inspirations ==
 
