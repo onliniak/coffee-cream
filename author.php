@@ -103,7 +103,11 @@ http://microformats.org/wiki/microformats2#authoring-->
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <li style="list-style:none">
             <a href="<?php esc_url(the_permalink()) ?>" rel="bookmark">
-            <?php the_title(); ?></a>,
+            		<?php	if (empty($post->post_title)){
+			esc_html_e('Untitled', 'ocean-cream');
+		}
+		else {
+        the_title();}?></a>,
             <?php echo get_the_date(); ?>
 			<?php esc_html_e('in', 'ocean-cream'); ?>
 			<?php the_category('&');?>
