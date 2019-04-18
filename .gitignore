@@ -1,7 +1,0 @@
-.github/
-docs/
-.travis.yml
-*.md
-Makefile
-make.bat
-ruleset.xml
