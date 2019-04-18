@@ -47,9 +47,9 @@ margin:5px 0 20px 20px
 }
 
 .attachment-post-thumbnails {
-border:7px #000 double;
+box-shadow: 5px 4px;
 height:40%;
-width:80%
+width:100%
 }
 /* Comments by post author */
 .bypostauthor {
