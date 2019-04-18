@@ -36,10 +36,5 @@ Generally, you should use WordPress repo, but at this moment I wait for approval
 3. Active
 4. [Optional] Test. Edit style.css from 0.93 to 0.90. save. Check new updates. It should be show new Ocean Cream version to update.
 
-### Zdjęcia, zdjęciami ale jak wygląda motyw "na żywo" ? | I would like to see a live version
-
-Of course, look at https://skri.ga/nieoznaczony/ (news/status)
-or https://skri.ga/eastern/ (post)
-
 ## Child themes:
 + Add your child theme (full or little changes).
