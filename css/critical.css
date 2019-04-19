@@ -86,10 +86,10 @@ nav.menu ul li:hover>ul {
     }
 
     article {
-        max-width: 100%;
+        max-width: 95%;
         margin: auto;
         border-radius: 0;
-        padding: 20px 10px
+        padding: 5px 10px 30px
     }
 }
 
