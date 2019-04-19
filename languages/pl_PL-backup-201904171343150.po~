@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-17 13:42+0000\n"
-"PO-Revision-Date: 2019-04-17 13:43+0000\n"
+"POT-Creation-Date: 2019-04-08 16:47+0000\n"
+"PO-Revision-Date: 2019-04-08 16:47+0000\n"
 "Last-Translator: Rafael Pszenny <RafaelPszenny@caramail.com>\n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -15,31 +15,27 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.2; wp-5.1.1"
 
-#: index.php:44 author.php:44
+#: index.php:42 author.php:38
 msgid "Show Sidebar"
 msgstr "Pokaż pasek boczny"
 
 #: index.php:53
-msgid "Untitled"
-msgstr "Bez Tytułu"
-
-#: index.php:62
 msgid "Written by"
 msgstr "Napisano przez"
 
-#: index.php:66
+#: index.php:57
 msgid "on"
 msgstr "dnia"
 
-#: index.php:71 author.php:108
+#: index.php:60 author.php:100
 msgid "in"
 msgstr "w"
 
-#: index.php:101
+#: index.php:90
 msgid "Comments"
 msgstr "Komentarze"
 
-#: index.php:115
+#: index.php:103
 msgid "Sorry, no posts matched your criteria."
 msgstr "Nie znaleziono postow spełniających podane kryteria."
 
@@ -53,19 +49,19 @@ msgstr[0] "%1$s Odpowiedź do &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Odpowiedzi do &ldquo;%2$s&rdquo;"
 msgstr[2] "%1$s Odpowiedzi do &ldquo;%2$s&rdquo;"
 
-#: comments.php:50
+#: comments.php:49
 msgid "Comment navigation"
 msgstr "Pozostałe komentarze"
 
-#: comments.php:53
+#: comments.php:50
 msgid "&larr; Older Comments"
 msgstr "&larr; Starsze"
 
-#: comments.php:56
+#: comments.php:51
 msgid "Newer Comments &rarr;"
 msgstr "Nowsze &rarr;"
 
-#: comments.php:63
+#: comments.php:56
 msgid "Comments are closed."
 msgstr "Komentowanie jest zabronione"
 
@@ -73,39 +69,39 @@ msgstr "Komentowanie jest zabronione"
 msgid "Header menu"
 msgstr "Menu Główne"
 
-#: functions.php:17
+#: functions.php:16
 msgid "Widget Area"
 msgstr "Pole widżetów"
 
-#: functions.php:19
+#: functions.php:18
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Przeciągnij tutaj swoje widżety, by dodać je do paska bocznego"
 
-#: functions.php:53
+#: functions.php:48
 msgid "Read More"
 msgstr "Czytaj Dalej"
 
-#: author.php:51
+#: author.php:44
 msgid "About:"
 msgstr "Cześć, jestem "
 
-#: author.php:76
+#: author.php:69
 msgid "From"
 msgstr "Od"
 
-#: author.php:80
+#: author.php:73
 msgid "Website"
 msgstr "WWW"
 
-#: author.php:90
+#: author.php:83
 msgid "Biography"
 msgstr "Kilka słów"
 
-#: author.php:98
+#: author.php:91
 msgid "My posts:"
 msgstr "Moje wpisy:"
 
-#: author.php:113
+#: author.php:104
 msgid "No posts by this author."
 msgstr "Niestety, ten autor nie napisał jeszcze żadnego wpisu. "
 

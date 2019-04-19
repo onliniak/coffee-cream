@@ -10,7 +10,7 @@ Welcome to Ocean Cream's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   /Hierarchy/index.rst
+   /docs/Hierarchy/index.rst
 
 
 Indices and tables
