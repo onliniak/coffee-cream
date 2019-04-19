@@ -5,7 +5,7 @@ Tags: featured-images, left-sidebar, custom-background, translation-ready, blog
 Requires at least: 4.7
 Tested up to: 5.1.1
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: <http://www.gnu.org/licenses/gpl-3.0.html>
 
@@ -16,9 +16,7 @@ Never waste space on your blog again! Choose hidden comments and sidebar, choose
 
 = Supported browsers =
 
-TL;DR all CSS3 browsers.
-
-Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chrome 30+/Vivaldi/"New" Opera, IE 9+, WebKit( Midori 0.5, Luakit 1.8.0, Arora 0.11, Safari 9.1.3+ etc.), tested on latest Firefox (Linux).
+Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chrome 30+/Vivaldi/"New" Opera, IE 10+, WebKit( Midori 0.5, Luakit 1.8.0, Arora 0.11, Safari 9.1.3+ etc.), tested on latest Firefox (Linux).
 
 = Tested screen resolutions =
 
@@ -26,18 +24,15 @@ Firefox 6+, Opera "Classic" 11.64-12.18 (ugly fonts), Chrome 30+/Vivaldi/"New" O
 
 = Problems =
 
-- Sticky post display only "Sticky" note.
+- Sticky post display only "Sticky post" note.
+- Embeds (Facebook, Twitter) without special style, it looks like common quote. Low priority. 
+I hope that WordPress will take care of it for me.
 - Author info without special style, low priority. You can use .ocean_cream_info CSS class. 
+- Code looks like common quote. Low priority.
 - I don't recommend screen readers and text-browsers like lynks. It's non-accessibility theme.
+Of course we pass WCAG 2.0 AA, we support old CSS3 browsers, but we never tried be 100% accesibility.
 - Max 4 columns in "classic" editor.
 - No support for custom post formats. 
-- Single/Inline quotes broken in mobile, when links are too long. 
-
-= Compatibility with CSS 2.1/HTML4 browsers =
-
-It works (reading posts, correct colors) … but 
-https://imgur.com/drqEqBK.png → post
-Images size, headers size, sticky button, mobile menu/sidebar button, comments don't work.
 
 = Help, my plugins don't works (load in footer) =
 
@@ -101,15 +96,13 @@ The size of the font and entry / sidebar is automatically determined based on th
 = 0.97.1 = Add hCard microformats to author's page (readable by browsers). Remove Railway from supported fonts and background colors from tables. Due to GPDR we cannot display e-mail, but we can display name, surname, nickname, biography, avatar and homepage url. Tested with <https://webmaster.yandex.ru/tools/microtest/> and <https://search.google.com/structured-data/testing-tool>.
 = 1.0 = New minimal PHP 5.6 <https://wordpress.org/news/2019/04/minimum-php-version-update/>, restore 0.97.1.
 = 1.0.1 = Tested with WordPress ß and new themeunittestdata (03.2019). 95% compatible with Gutenberg. Fix: Show excerpt, when search. Fix: Too small line-high. Fix: "Show comments" button is visible, when comments are disabled. New table border.
-= 1.0.2 = FIX: Comments don't display in pages, default title "Untitled" when title is empty, HTML Validator: add ul before li in sidebar, "Some texts from widgets are overflowing the sidebar.", change table/calendar border to 2 px dotted and .rinav to .ocean_cream_next_page, small letters in Gutenberg code-block; Remove: Unecessary svg class and .OCnextpage div; CSS: Optimize, new "dark terminal mode" (based on highlight.js), remove "-style blockquotes and .screen-reader-text, re-organize CSS with CSS Tidy, create style.min.css; NEW screenshot.
-= 1.0.5 = [Mobile] FIX: Black "hamburger icon", unvisible long links (temporary fix), movable page, broken inline quotes (temporary fix). [CSS] NEW: Sticky icon, animated comments form style + "post comment" button. FIX: Too small headers DELETE: info section style. [Experimental] full-page images. [SEMANTIC] Add ARIA role main to article, change section to div. [PHP] Author.php: default title "Untitled" when title is empty. Functions.php: Escape all functions.
+= 1.0.2 = FIX: Comments don't display in pages, default title "Untitled" when title is empty, HTML Validator: add ul before li in sidebar, "Some texts from widgets are overflowing the sidebar.", change table/calendar border to 2 px dotted and .rinav to .ocean_cream_next_page, small letters in Gutenberg code-block; Remove: Unecessary svg class and .OCnextpage div; CSS: Optimize, new "dark terminal mode" (based on highlight.js), remove "-style blockquotes, re-organize CSS with CSS Tidy, create style.min.css; NEW screenshot.
+= 1.0.3 = FIX errors
 
 == Inspirations ==
 
--   Yarn → colors, mobile version (<https://wordpress.org/themes/yarn/>)
+-   Yarn (colors, mobile version) (<https://wordpress.org/themes/yarn/>)
 -   "Material" colors and buttons (<https://materializecss.com/buttons.html>)
--   Twenty Nineteen → blockquotes (<https://pl.wordpress.org/themes/twentynineteen/>)
--   Google Material Design → textarea and input hover
 
 == Resources ==
 

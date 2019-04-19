@@ -41,11 +41,18 @@ body_class(); ?>>
 	</ul>
     </aside>
     </div>
-	<span id="ocean_cream_sidebar_open" class="ocean_cream_button"><?php esc_html_e('Show Sidebar', 'ocean-cream'); ?></span>
+	<span id="ocean_cream_sidebar_open" class="ocean_cream_button">
+		<?php esc_html_e('Show Sidebar', 'ocean-cream'); ?>
+	</span>
 	<!-- Your post -->
-<article <?php
-    post_class(); ?>>
+<article <?php post_class();
+		 if (is_singular()){
+			echo ' role="main">'
+		 ;} else {
+			echo '>'
+		 ;}?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<!-- Header info like date, author, category, tags etc. -->
     <h1><a href="<?php
         the_permalink(); ?>">
 		<?php
@@ -56,17 +63,18 @@ body_class(); ?>>
         the_title();
 		}?>
 		</a></h1>
-<!-- Header info like date, author, category, tags etc. -->
-<section class="ocean_cream_info">
+	<div class="ocean_cream_info">
             <?php
             esc_html_e('Written by', 'ocean-cream'); ?>
                 <?php
                 the_author_posts_link(); ?>
             <?php
-            esc_html_e('on', 'ocean-cream'); ?> <?php
-        echo esc_html(get_the_date()); ?>
+            esc_html_e('on', 'ocean-cream'); ?>
+		<?php
+			echo esc_html(get_the_date()); ?>
             <?php
 		if (is_page()) {
+			echo '';
 		}   else {
             esc_html_e('in', 'ocean-cream');
 			echo ' ';
@@ -75,7 +83,7 @@ body_class(); ?>>
 				<br />
                 <?php
                 the_tags(); ?>
-	</section>
+	</div>
             <?php
             if (has_post_thumbnail()) {
                 the_post_thumbnail('post-thumbnails');

@@ -3,7 +3,7 @@ Theme Name: Ocean Cream
 Description: Never waste space on your blog again! Choose hidden comments and sidebar, choose Ocean Cream. In addition, thanks to its lightness, it will speed up your website.
 Author: Rafael Pszenny
 Author URI: https://github.com/onliniak
-Version: 1.0.2
+Version: 1.0.5
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: ocean-cream
@@ -47,9 +47,8 @@ margin:5px 0 20px 20px
 }
 
 .attachment-post-thumbnails {
-border:7px #000 double;
-height:40%;
-width:80%
+box-shadow: 5px 4px;
+height:auto
 }
 /* Comments by post author */
 .bypostauthor {
@@ -84,9 +83,9 @@ columns:4
 .ocean_cream_button {
 border-radius:2px;
 box-shadow:
-	0 2px 2px 0 rgba(0,0,0,0.14),
-	0 3px 1px -2px rgba(0,0,0,0.12),
-	0 1px 5px 0 rgba(0,0,0,0.2);
+0 2px 2px 0 rgba(0,0,0,0.14),
+0 3px 1px -2px rgba(0,0,0,0.12),
+0 1px 5px 0 rgba(0,0,0,0.2);
 font-size:medium;
 margin-bottom:3mm
 }
@@ -109,6 +108,38 @@ text-decoration:none
 
 .page-numbers:hover {
 background:#2a91d1
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+border: 0;
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute !important;
+width: 1px;
+word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+background-color: #eee;
+clip: auto !important;
+clip-path: none;
+color: #444;
+display: block;
+font-size: 1em;
+height: auto;
+left: 5px;
+line-height: normal;
+padding: 15px 23px 14px;
+text-decoration: none;
+top: 5px;
+width: auto;
+z-index: 100000;
+/* Above WP toolbar. */
 }
 
 .wp-caption {
@@ -158,23 +189,22 @@ pre {
 overflow:auto
 }
 
-article.tag-sticky-2::before,
+/*https://www.wpbeginner.com/beginners-guide/6-cool-things-you-can-do-with-sticky-posts-in-wordpress/*/
 .sticky:before {
-background:#87CEFA;
-border:5px solid #00008B;
-color:grey;
-content:"Sticky Post";
-display:inline-block;
-font-size:16px;
-padding:15px 32px;
-text-align:center;
-text-decoration:none
+background: #521987;
+border-radius: 5px;
+content: "STICKY";
+color: #FFF;
+float: right;
+font-weight: 700;
+padding: 10px;
 }
 /* Sidebar text */
 aside li,
 aside p,
 aside a {
-color:#fff
+color:#fff;
+list-style: none
 }
 
 aside.ocean_cream_sidebar {
@@ -250,12 +280,22 @@ figure.wp-caption img {
 box-shadow:none
 }
 
+h1 a{
+font-size: 1.25em
+}
+
 img {
-box-shadow:
-	0 4px 8px 0 rgba(0,0,0,0.2),
-	0 6px 20px 0 rgba(0,0,0,0.19);
 max-width:100%
 }
+
+input[type=submit],
+input[type=reset] {
+padding:15px;
+background:#99CCFF;
+color:#333;
+border-color: #99CCFF;
+cursor:pointer;
+border-radius: 5px; }
 
 ol.children {
 list-style-type:disclosure-open
@@ -263,6 +303,19 @@ list-style-type:disclosure-open
 
 ol.comment-list {
 list-style-type:none
+}
+
+textarea,
+input {
+border:3px solid #f5eed6;
+transition:border 1s linear 0s
+}
+
+textarea:hover,
+textarea:focus,
+input:hover,
+input:focus{
+border:3px solid #606
 }
 
 table {
@@ -276,9 +329,7 @@ padding:8px
 }
 
 thead th {
-color:#FFF;
-padding-bottom:12px;
-padding-top:12px;
+padding: 12px 0;
 text-align:left
 }
 

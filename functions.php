@@ -3,7 +3,7 @@
 function ocean_cream_menu()
 {
     $locations = array(
-        'header-menu' => __('Header menu', 'ocean-cream')
+        'header-menu' => esc_html(__('Header menu', 'ocean-cream'))
     );
     register_nav_menus($locations);
 }
@@ -14,9 +14,9 @@ function ocean_cream_widgets()
 {
     register_sidebar(
         array(
-        'name' => __('Widget Area', 'ocean-cream'),
+        'name' => esc_html(__('Widget Area', 'ocean-cream')),
         'id' => 'sidebar',
-        'description' => __('Add widgets here to appear in your sidebar.', 'ocean-cream')
+        'description' => esc_html(__('Add widgets here to appear in your sidebar.', 'ocean-cream'))
         )
     );
 }
@@ -58,7 +58,7 @@ add_filter('excerpt_more', 'ocean_cream_excerpt');
 add_action('wp_head', 'ocean_cream_header', 1);
 function ocean_cream_header()
 {
-    wp_enqueue_style('criticalcss', get_template_directory_uri() . '/css/critical.min.css', array(), '20190103', 'screen');
+    wp_enqueue_style('ocean_cream_criticalcss', get_template_directory_uri() . '/css/critical.min.css', array(), '20190103', 'screen');
 }
 // Load other scripts and styles (after load site).
 function ocean_cream_footer()
