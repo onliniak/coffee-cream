@@ -76,10 +76,9 @@ script:
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
-    - if [[ "$SNIFF" == "1" ]]; then git remote rm codingformater; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "travis@travis-ci.org"; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis" -m "[skip ci]"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git remote add codingformater https://onliniak:$450fce1527580815eae65bd0e140485b531cfdf9@github.com/onliniak/ocean-cream.git > /dev/null 2>&1; fi
+    - if [[ "$SNIFF" == "1" ]]; then git remote add codingformater git@github.com:onliniak/ocean-cream.git; fi
     - if [[ "$SNIFF" == "1" ]]; then git push codingformater master --quiet; fi
