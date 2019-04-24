@@ -2,17 +2,10 @@ language: php
 
 php:
   - 5.6
+    env: cs=true
   - 7.0
   - 7.1
   - 7.2
-
-matrix:
-  include:
-    - php: 5.6
-      env: dependencies=lowest cs=true
-    - php: 7.1
-      env: dependencies=highest cs=true
-  fast_finish: true
 
 cache:
   directories:
@@ -20,10 +13,7 @@ cache:
     - $HOME/.php-cs-fixer
 
 install:
-  - if [ -z "$dependencies" ]; then travis_retry composer install --no-interaction; fi;
-  - if [ "$dependencies" = "lowest" ]; then travis_retry composer update --prefer-lowest --no-interaction; fi;
-  - if [ "$dependencies" = "highest" ]; then travis_retry composer update --no-interaction; fi;
-  - composer show
+ - composer require --dev dotsunited/php-cs-fixer-config 
 
 before_script:
   - mkdir -p "$HOME/.php-cs-fixer"
