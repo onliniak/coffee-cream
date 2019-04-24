@@ -75,7 +75,7 @@ script:
     # @link https://pear.php.net/package/PHP_CodeSniffer/
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
-    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml index.php author.php comments.php functions.php; fi
+    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml index.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "travis@travis-ci.org"; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
