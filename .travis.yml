@@ -77,7 +77,7 @@ script:
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "34192273+onliniak@users.noreply.github.com"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
+    - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "onliniak"; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis clean code"; fi
     - if [[ "$SNIFF" == "1" ]]; then git remote add codingformater git@github.com:onliniak/ocean-cream.git; fi
