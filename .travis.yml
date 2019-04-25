@@ -28,14 +28,15 @@ matrix:
         - php: '5.6'
         # aliased to a recent 7.0.x version
         - php: '7.0'
-        # aliased to a recent 7.2.x version
-        - php: '7.3'
           env: SNIFF=1
+        # aliased to a recent 7.3.x version
+        - php: '7.3'
         # bleeding edge PHP
         - php: 'nightly'
 
     allow_failures:
         - php: 'nightly'
+        - php: '7.0'
         
 # Use this to prepare the system to install prerequisites or dependencies.
 # e.g. sudo apt-get update.
@@ -78,10 +79,10 @@ script:
     # @link https://pear.php.net/package/PHP_CodeSniffer/
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
-    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "travis@travis-ci.org"; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
+    - if [[ "$SNIFF" == "1" ]]; then git remote add origin git@github.com:onliniak/ocean-cream.git; fi
+    - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
-    - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis formatter" -m "[skip ci]"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git remote add codingformater git@github.com:onliniak/ocean-cream.git; fi
-    - if [[ "$SNIFF" == "1" ]]; then git push codingformater master --quiet; fi
+    - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis Code Formatter"; fi
+    - if [[ "$SNIFF" == "1" ]]; then git push origin master; fi
