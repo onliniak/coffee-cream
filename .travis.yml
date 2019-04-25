@@ -37,14 +37,13 @@ matrix:
     allow_failures:
         - php: 'nightly'
         
-env:
-  global:
-    - secure: "J77mgJXVD4wcI+bvUByOSY9Lp+IPAETzRTgeS/QAJJqda7cpz8MSjjZdbn1f5NZlGIb0DvyQ8BKLEKUCRt4/oecVRcsLLpvyrsPBqjseRWvJe/TGOnozzkR1BhjKCyW3y2RKf8FqEXH+bYKV9xGGZM4lAsx9qyrM8giGuqU9tavp3cwa4SfAQN7xlNZFdbTKc8NAhRqFJMRZnY8ZMf50DLIJ1hG77CLCR+d2tsvPKOD3WiTqXOCYxY1yCGWov0cLjPXd5NLMsagjv6i2YmlOeCSfYctQyhPrW5u7NIuljYB7sO9HNovKAkyJdl9hVM47UN2lgu4TPwcfReQFCJBkWWug5Ezqhql56n3CPD/Leh1zR6eSRAlbt4lDi53WPmynqugtrGR0ptXBdw53hU2F2IGemk1yFpRdm5AoMiXTJDDugOCjFo8Pa/RsQMYlJIA2GRuThHJ3i9F+fza7xh4FwBdf+TH7pWxdPLuvKyfi39C77toCURbj9cSrHveaK4Pc3tVDAsphBRuichde9Tn6f+4yHz5lpcf2DwcI5KgmIhLP8eo4c40GUNFwVCvqywvybJMzGmOj6+bB9qnab5NoO6S8PqXbUlj/TqTuRSrsfIaCrl6cggdGKA/KJ+gGT8JTO+BCl7ag3aHMKMORWADijHNvOD72fFfeL2CiF0n9Zx4="
-
 # Use this to prepare the system to install prerequisites or dependencies.
 # e.g. sudo apt-get update.
 # Failures in this section will result in build status 'errored'.
 # before_install:
+before_install:
+- openssl aes-256-cbc -K $encrypted_1c48ab42d551_key -iv $encrypted_1c48ab42d551_iv
+  -in id_rsa.enc -out id_rsa -d
 
 # Use this to prepare your build for testing.
 # e.g. copy database configurations, environment variables, etc.
