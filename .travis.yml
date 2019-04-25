@@ -9,10 +9,6 @@
 # @link https://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
 sudo: false
 
-env:
-  global:
-- secure: "3Do9KSfkWWhXlye5UeuLkoW+BV1R7Q/JUNm/wgcXtQNvbsD2NH6ooYd+1IER6K+JQIR3FX+9Do88z/6CzMfNJSiUOPzn7vR+PufQJDs/Wq3olWIaWPPmEW5pxmixd54ZuPRCdThiQ+AE1pJRmyze0XZjljv1IHhGuWymaRaJ99De7qzzyDDO6tMpxTv2/sNSPLfcPDUctYYxlMOssN5z68A+Ld0lEHh+sDTGkwPFLIm7ZW6AZRVyUSBfChFF71i0+RrnI6g0sWwEhbIJIuDDFEL/5C0NRLmPKTOatnbmiBWM+K5hqBi7YBIqnfy+CXLPUyfulDBJu2Rb4RJ4hqCVS83lbr9ZHugGxQmEIUe/Hy5sZGWH2l/8Zz9iuBnWNEdCjhLW6FsBhaX1ypiLhC+HiuegSWPkkbXfagIzl3j/Xa2XEOov/r4gUaAoJKzM4xPrFG85B/5swAkDvkXenyC0yUdfF9ac2c3prAJa0ZhsIFLZGFK4vjELS7saa3FIsDGJloed6kYkcVsbtY2BL3RTY21taidE2SeMROv7VxGzmvjnCADaFVr+z1NSJyWbJhwlkcXeoGAedjZ0NWGpYlV9+3BIM8xFfQ7B0LD4oEpObK7fQATeYtuYnicYHsqEndjFjLVwHdNN4xVQeMS515PdXAURCF2VUXSN+oe/qM6zgfw="
-
 # Declare project language.
 # @link https://about.travis-ci.org/docs/user/languages/php/
 language: php
@@ -65,7 +61,6 @@ before_script:
     # Srtup Travis
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "34192273+onliniak@users.noreply.github.com"; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "onliniak"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git config push.default simple; fi
     # Connect to Github
     - if [[ "$SNIFF" == "1" ]]; then git remote set-url origin git@github.com:onliniak/ocean-cream.git; fi
 
