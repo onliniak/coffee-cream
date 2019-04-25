@@ -34,11 +34,13 @@ matrix:
 # Create SSH key for secure connect to Github
 # https://github.com/dwyl/learn-travis/blob/master/encrypted-ssh-keys-deployment.md
 before_install:
+- cd .ssh
 - openssl aes-256-cbc -K $encrypted_1c48ab42d551_key -iv $encrypted_1c48ab42d551_iv
   -in id_rsa.enc -out id_rsa -d
 - eval "$(ssh-agent -s)"
 - chmod 600 id_rsa
 - ssh-add id_rsa
+- cd ..
 - ssh -vT onliniak@github.com
 
 # Use this to prepare your build for testing.
