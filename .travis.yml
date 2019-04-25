@@ -39,7 +39,6 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 id_rsa
 - ssh-add id_rsa
-- ssh-add -l 4096 f2:64:b4:f6:fc:85:6f:ba:b1:6a:1d:90:f9:98:ee:1b
 
 # Use this to prepare your build for testing.
 # e.g. copy database configurations, environment variables, etc.
