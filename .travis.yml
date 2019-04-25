@@ -43,9 +43,9 @@ matrix:
 # https://github.com/dwyl/learn-travis/blob/master/encrypted-ssh-keys-deployment.md
 before_install:
 - openssl aes-256-cbc -K $encrypted_1c48ab42d551_key -iv $encrypted_1c48ab42d551_iv
-  -in id_rsa.enc -out id_rsa -Z
+  -in id_rsa.enc -out sshkey -d
 - ssh-agent /bin/sh
-- ssh-add id_rsa
+- ssh-add sshkey
 
 # Use this to prepare your build for testing.
 # e.g. copy database configurations, environment variables, etc.
