@@ -81,8 +81,8 @@ script:
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.email "travis@travis-ci.org"; fi
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git remote add origin git@github.com:onliniak/ocean-cream.git; fi
+    - if [[ "$SNIFF" == "1" ]]; then git remote add codeformatter git@github.com:onliniak/ocean-cream.git; fi
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
     - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis Code Formatter"; fi
-    - if [[ "$SNIFF" == "1" ]]; then git push origin master; fi
+    - if [[ "$SNIFF" == "1" ]]; then git push codeformatter master; fi
