@@ -20,22 +20,12 @@ matrix:
     fast_finish: true
 
     include:
-        # Current $required_php_version for WordPress: 5.2.4
-        # aliased to 5.2.17
-        - php: '5.2'
-          dist: precise
-        # aliased to a recent 5.6.x version
         - php: '5.6'
-        # aliased to a recent 7.0.x version
         - php: '7.0'
           env: SNIFF=1
-        # aliased to a recent 7.3.x version
         - php: '7.3'
-        # bleeding edge PHP
-        - php: 'nightly'
 
     allow_failures:
-        - php: 'nightly'
         - php: '7.0'
         
 # Use this to prepare the system to install prerequisites or dependencies.
@@ -83,7 +73,9 @@ script:
     - if [[ "$SNIFF" == "1" ]]; then git config --global user.name "Travis CI"; fi
     - if [[ "$SNIFF" == "1" ]]; then git remote add codeformatter git@github.com:onliniak/ocean-cream.git; fi
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcbf --standard=phpcs.xml *.php; fi
-    - if [[ "$SNIFF" == "1" ]]; then git status; fi
     - if [[ "$SNIFF" == "1" ]]; then git add *.php; fi
-    - if [[ "$SNIFF" == "1" ]]; then git commit -am "Travis Code Formatter"; fi
+    - if [[ "$SNIFF" == "1" ]]; then git status; fi
+    - if [[ "$SNIFF" == "1" ]]; then git commit -m "Travis Code Formatter"; fi
+    - if [[ "$SNIFF" == "1" ]]; then git status; fi
     - if [[ "$SNIFF" == "1" ]]; then git push codeformatter master; fi
+    - if [[ "$SNIFF" == "1" ]]; then git status; fi
