@@ -13,8 +13,8 @@ if (post_password_required()) {
 			// https://gist.github.com/cristianstan/ff22d64655e322bac1bd737ea35927b4
 			$ocean_cream_comments_number = get_comments_number();
 			printf(
-				/* translators: 1: number of comments, 2: post title */
 				esc_html(
+			/* translators: 1: number of comments, 2: post title */
 					_nx(
 						'%1$s Reply to &ldquo;%2$s&rdquo;',
 						'%1$s Replies to &ldquo;%2$s&rdquo;',

@@ -7,8 +7,9 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://microformats.org/profile/hcard">
 
-	<?php wp_head(); ?>
-	<?php //PHP variables
+	<?php wp_head();
+	
+	//PHP variables
 	$ocean_cream_website = get_the_author_meta('url', $post->post_author);
 	$ocean_cream_description = get_the_author_meta('description', $post->post_author);
 	$ocean_cream_given_name = get_the_author_meta('first_name', $post->post_author);
@@ -28,7 +29,7 @@
 	);?>
 		</div>
 		<span id="ocean_cream_mobile_menu_icon">
-<svg class="i-menu" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 			<path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
 		</svg>
 	</span>
@@ -113,7 +114,7 @@ http://microformats.org/wiki/microformats2#authoring-->
 				}?></a>,
 			<?php echo get_the_date(); ?>
 			<?php esc_html_e('in', 'ocean-cream'); ?>
-			<?php the_category('&');?>
+			<?php the_category(',');?>
 		</li>
 
 		<?php endwhile;

@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Rafael Pszenny
+# This file is distributed under the same license as the Ocean Cream package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ocean Cream \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-03 16:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../Philosophy/copyright.rst:2
+msgid "Copyright"
+msgstr ""
+
+#: ../../Philosophy/copyright.rst:4
+msgid "Copyright 2019, Rafael Pszenny, Ocean Cream theme."
+msgstr ""
+
+#: ../../Philosophy/copyright.rst:6
+msgid "This theme is licensed under GNU GPL 3 or later, This documentation is licensed under FreeBSD Documentation."
+msgstr ""
+
+#: ../../Philosophy/copyright.rst:9
+msgid "This repository contains both license files. COPYING (FreeBSD) in Docs directory and LICENSE (GPL 3+) in main directory."
+msgstr ""
+
+#: ../../Philosophy/copyright.rst:12
+msgid "This documentation is originally written in Polish. The author is not responsible for the content of the translations."
+msgstr ""
+
+#: ../../Philosophy/tos.rst:1
+#: ../../Philosophy/tos.rst:1
+msgid "Contents:"
+msgstr ""
+

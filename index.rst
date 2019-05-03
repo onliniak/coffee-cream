@@ -8,14 +8,13 @@ Welcome to Ocean Cream's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   /docs/Hierarchy/index.rst
+   Philosophy/tos
+   CSS/tos
+   Hierarchy/tos
 
 
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

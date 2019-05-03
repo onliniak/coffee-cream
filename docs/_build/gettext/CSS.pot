@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ocean Cream \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-14 15:39+0200\n"
+"POT-Creation-Date: 2019-05-03 16:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -295,5 +295,90 @@ msgstr ""
 
 #: ../../CSS/CriticalCSS.rst:156
 msgid "Hide comments"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:3
+msgid "StyleCSS"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:5
+msgid "Pozostałe reguły CSS, nie są wymagane do poprawnego wyświetlenia strony, dlatego załadujemy je dopiero na samym końcu."
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:9
+msgid "Info"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:12
+msgid "\"WordPress uses the header comment section of a style.css to display information about the theme in the Appearance (Themes) dashboard panel.\" <https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/>"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:15
+msgid "Github url oznacza, że motyw może być pobrany z wykorzystaniem wtyczki GitHub Updater <https://github.com/afragen/github-updater/>"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:23
+msgid "WordPress CSS"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:26
+msgid "\"Several classes for aligning images and block elements (div, p, table etc.) were introduced in WordPress 2.5: aligncenter, alignleft and alignright. In addition the class alignnone is added to images that are not aligned, so they can be styled differently if needed. The same classes are used to align images that have a caption (as of WordPress 2.6). Three additional CSS classes are needed for the captions, and one more for accessibility. Together, the classes are: \""
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:34
+msgid "\"Each Theme should have these or similar styles in its style.css file to be able to display images and captions properly. The exact HTML elements and class and ID values will depend on the structure of the Theme you are using. <https://codex.wordpress.org/CSS>\""
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:39
+msgid "Inne"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:42
+msgid "Tabele"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:49
+msgid "Komentarze"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:56
+msgid "Przyciski"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:63
+msgid "Nawigacja"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:70
+msgid "Sticky"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:77
+msgid "Sidebar"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:84
+msgid "Cytaty"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:91
+msgid "Terminal"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:98
+msgid "Definicje"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:105
+msgid "Domyślny"
+msgstr ""
+
+#: ../../CSS/StyleCSS.rst:112
+msgid "Kompatybilność"
+msgstr ""
+
+#: ../../CSS/tos.rst:1
+#: ../../CSS/tos.rst:1
+msgid "Contents:"
 msgstr ""
 

@@ -84,7 +84,7 @@ Where x = height of article/content area and vw = % of x.
 
 .. literalinclude:: /../css/critical.css
    :language: css
-   :lines: 13-23
+   :lines: 13-26
 
 ****
 Menu
@@ -111,7 +111,7 @@ I make it visible to both computers and mobile devices.
 
 .. literalinclude:: /../css/critical.css
    :language: css
-   :lines: 25-64
+   :lines: 28-67
 
 ******
 Mobile
@@ -136,7 +136,7 @@ article
 
 .. literalinclude:: /../css/critical.css
    :language: css
-   :lines: 66-92
+   :lines: 69-100
 
 ***************
 Another changes
@@ -157,4 +157,4 @@ I am last subsection, I am responsible for others changes like buttons, change e
 
 .. literalinclude:: /../css/critical.css
    :language: css
-   :lines: 94-120
+   :lines: 102-127
