@@ -9,11 +9,6 @@
 # @link https://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
 sudo: false
 
-env:
-  global:
-    - secure: "fvHJXjKSsB2h+CXrn4s2zbUbseDgoJMQ+MribgK5xX5IeXqnssl5iDXCUAD/mkXserbLpl/Si+6Z96wachV0sDHmqoCkIIZ3xAkEX85JlSebraTSS5YM8cZcPod0upDloKAGtVreEugWGSGjkDRud+d781R8LD1a3++xZZcXhr3QM8uKHYitv5Bp5aYpxyyit/0jCCaCBqQKnl0h48Z3tAGmQXvAfTZWwMEoLYPSyzs5TOMBU/L8QR4J0RfYW1HAXUSir+gjaKTqc9+av+kkWWTefacCnaVgo1p++BnSkpq2Ml43vuZ/IvIzF6yXAhwXyA3agOCCBAljcZJmm+KUtDgkGPT6Bt1jbumbwuUDg1gKoshA8g1Wdy0uKSKKqz2SFAgQEAW+gZvIgAa0rkNljf9npkOL52g09poZ+5k2U+lnaa3HcunaxKfLGt+UZPtKL6UOOmPnk6YZUt8s8kySMCKTcnCJrE+hqZ52+o4g/WASf8ZObKJgFjXANrnY2ofcgero0SIRqaAIfowgDQf5I+y8C1/b5a0YoFMhzTmqQdkKHubvD6ehntVx5l720JLQfprCdik/POieDBrYMfnJiCTPI9VGd7XRj3oSMnDSkGpP1V01zWyCJqM3b4K4TvZQlPLawtL0BI63fgnI/yctcIPvUvl9HFIuVfmjI6mwFdw="
-
-
 # Declare project language.
 # @link https://about.travis-ci.org/docs/user/languages/php/
 language: php
