@@ -14,7 +14,7 @@ if (post_password_required()) {
 			$ocean_cream_comments_number = get_comments_number();
 			printf(
 				esc_html(
-			/* translators: 1: number of comments, 2: post title */
+					/* translators: 1: number of comments, 2: post title */
 					_nx(
 						'%1$s Reply to &ldquo;%2$s&rdquo;',
 						'%1$s Replies to &ldquo;%2$s&rdquo;',
