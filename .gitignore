@@ -1,1 +1,5 @@
 /build
+index.rst
+make.bat
+Makefile
+conf.py
