@@ -1,11 +1,16 @@
 # Ocean Cream
+![Active](https://img.shields.io/wordpress/theme/installs/ocean-cream.svg?style=for-the-badge)
+![Downloads](https://img.shields.io/wordpress/theme/dt/ocean-cream.svg?style=for-the-badge)
+![WordPress Theme Rating](https://img.shields.io/wordpress/theme/rating/ocean-cream.svg?style=for-the-badge)
+![Discord](https://img.shields.io/discord/584142898694455305.svg) (https://discord.gg/kaVduNA)
+
+![GitHub Release Date](https://img.shields.io/github/release-date/onliniak/ocean-cream.svg)
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
 ![PHP from Travis config](https://img.shields.io/travis/php-v/onliniak/ocean-cream.svg)
 [![Documentation Status](https://readthedocs.org/projects/ocean-cream/badge/?version=master)](https://ocean-cream.readthedocs.io/pl/master/?badge=master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/onliniak/ocean-cream/blob/master/LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/onliniak/ocean-cream.svg)
 ![Size](https://img.shields.io/badge/Size-~8.5kB-blue.svg)
-[![Donate](https://img.shields.io/badge/Donate-CoinPayments-blue.svg)](https://onliniak.github.io/donations)
 ![Standard](screenshot.png "Standard")
 
 Quick overwiew:
@@ -25,16 +30,7 @@ Quick overwiew:
 
 ## Install
 
-Generally, you should use WordPress repo, but at this moment I wait for approval. https://themes.trac.wordpress.org/ticket/63048
-
-1. Download and install [github-updater](https://github.com/afragen/github-updater/archive/develop.zip)
-![installPlugin](https://i.imgur.com/Y1bSB48.png)
-2. Select correct theme and branch.
-![auto_installator](https://i.imgur.com/RxjBl0P.png)
-2. Wait few seconds.
-![it works](https://i.imgur.com/NKDltpK.png)
-3. Active
-4. [Optional] Test. Edit style.css from 0.93 to 0.90. save. Check new updates. It should be show new Ocean Cream version to update.
+Download from https://wordpress.org/themes/ocean-cream/ + standard installation.
 
 ## Child themes:
 + Add your child theme (full or little changes).
