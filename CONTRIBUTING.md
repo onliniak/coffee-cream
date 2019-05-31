@@ -1,9 +1,10 @@
 # Translators
 1. Translate theme.
-- If you want translate this theme to your language, please download latest [pot file](https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/ocean-cream.pot) and rename to [your_country.po](https://translate.wordpress.org/projects/wp/dev/), for example Poland → https://translate.wordpress.org/projects/wp/dev/pl/default/ → pl-PL (replace all - to _), so I create [pl_PL.po](https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/pl_PL.po).
-- After create po file → please, send pull request to https://github.com/onliniak/ocean-cream/blob/WordPress-repo/languages/
+- Please, check https://translate.wordpress.org/projects/wp-themes/ocean-cream/.
 2. Translate documentation. 
-- Similar to theme, but pot → https://github.com/onliniak/ocean-cream/tree/master/gettext
+- Download pot → https://github.com/onliniak/ocean-cream/tree/master/docs/_build/gettext
+- Rename to language.pot
+- Send Pull Request
 # Documentation
 - We use Sphinx documentation based on reStructuredText.
 - Main documentation will be in polish.
