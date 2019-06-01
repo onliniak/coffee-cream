@@ -9,6 +9,10 @@
 # @link https://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
 sudo: false
 
+env:
+  global:
+    - secure: "RFZw6TWtPdOPhmfmTV9H4QqzBS2xKFgqSIxYxk1ks1xthZizjzy/SVd4100pgfwACjYa2UCtCzSrFBxOOIVA8p4ZGI9UmD6C4oH8j0+BK9o3wA/7L8OCrGEvRce9lSnhPsgt6QMoqXxftOu6R/V7CTuqmXysHGAG68hCc/Xc1ktI/q0Bm4R6isc5mTrKs+JBlXasNj+AIbytnTCQE9g2Vr30iXxwdx5ZznKFA9JensfMwfdwun8FGmAar/0l6G5hxErRX69958gwkExRBS4R63FLxF0ZblEymeCoG0IclqNSGnM0om01Zq+07rOAalA+DQ5WEtZGOqovBLHOD4dtc/hAzgB6DydxS5lWX2QynAD8nOHzmU/z0EHIDYeiAEmBs9i2ftHWAkm2ixmkjj24FSEAnj6ZIgb79KNbVFYStLEKOFhpVJgfE9jEGmUfKQVbcMvUbVhGqbpC8CwrotUlLFFcN4n9cweUFXO0jwkpRdhOMgWoEhIqzMHNKTsSInmDhtna7BaV17WhkNoFhal4KYvgwKg4QR/cckrFFsM7VUnZTHUPGEBSD4dHPDHcPpZVh/Hi3qBWwAc1bf0Okr1QwlPEZHTjOm2elASHrg4cTZb5bpafFUtW8fM5FEen4HFqlr7p2v5t/Y0Y/col4WdX3kTboVktc1V09OU0w5MaYYk="
+
 # Declare project language.
 # @link https://about.travis-ci.org/docs/user/languages/php/
 language: php
@@ -33,10 +37,10 @@ matrix:
 # Create SSH key for secure connect to Github
 # https://github.com/dwyl/learn-travis/blob/master/encrypted-ssh-keys-deployment.md
 before_install:
-- openssl aes-256-cbc -K $encrypted_6e81f08dd0dc_key -iv $encrypted_6e81f08dd0dc_iv
-  -in id_rsa.enc -out id_rsa -d
-- eval "$(ssh-agent -s)"
+- openssl aes-256-cbc -K $encrypted_1c48ab42d551_key -iv $encrypted_1c48ab42d551_iv
+  -in github_deploy_key.enc -out id_rsa -d
 - chmod 600 id_rsa
+- eval "$(ssh-agent -s)"
 - ssh-add id_rsa
 
 # Use this to prepare your build for testing.
