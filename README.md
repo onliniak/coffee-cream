@@ -2,7 +2,6 @@
 ![Active](https://img.shields.io/wordpress/theme/installs/ocean-cream.svg?style=for-the-badge)
 ![Downloads](https://img.shields.io/wordpress/theme/dt/ocean-cream.svg?style=for-the-badge)
 ![WordPress Theme Rating](https://img.shields.io/wordpress/theme/rating/ocean-cream.svg?style=for-the-badge)
-![Discord](https://img.shields.io/discord/584142898694455305.svg) (https://discord.gg/kaVduNA)
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/onliniak/ocean-cream.svg)
 [![Build Status](https://travis-ci.org/onliniak/ocean-cream.svg?branch=master)](https://travis-ci.org/onliniak/ocean-cream)
